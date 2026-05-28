@@ -2,23 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
-    --color-primary: #0C4E6E; /* Aegean Blue */
-    --color-secondary: #5C6E4A; /* Olive Green */
-    --color-accent: #C26E4A; /* Terracotta */
-    --color-gold: #D4AF37; /* Elegant Gold */
-    --color-beige: #F5F5DC;
-    --color-bg: #F9F7F1; /* White Sand */
-    --color-text: #2D3748;
-    --color-text-light: #718096;
+    --color-primary: #111827; /* Midnight */
+    --color-secondary: #7B8B78; /* Sage Green */
+    --color-accent: #B87352; /* Clay / Terracotta */
+    --color-gold: #D6B98C; /* Champagne Gold */
+    --color-beige: #E7DED1; /* Stone Beige */
+    --color-bg: #FAF7F2; /* Warm White */
+    --color-text: #1A1A1A; /* Text Dark */
+    --color-text-light: #6B7280; /* Text Soft */
     --color-white: #FFFFFF;
+    --color-dark-navy: #111827;
     
     --radius-sm: 8px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
+    --radius-md: 18px; /* Matches buttons primary radius */
+    --radius-lg: 30px; /* Matches cards default radius */
     
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-sm: 0 8px 30px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    --shadow-md: 0 20px 60px rgba(0, 0, 0, 0.18); /* Premium shadow */
+    --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.2);
+    
+    --gradient-primary: linear-gradient(135deg, #111827 0%, #2C3A4B 100%);
+    --gradient-sunset: linear-gradient(135deg, #D6B98C 0%, #B87352 100%);
+    --gradient-luxury: linear-gradient(135deg, #2C3A4B 0%, #D6B98C 100%);
+    --gradient-light: linear-gradient(180deg, #FAF7F2 0%, #F1E8DC 100%);
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -182,28 +188,38 @@ header {
     font-size: 0.9rem;
 }
 
-.lang-btn.active, .lang-btn:hover {
+.lang-btn.active {
+    background-color: var(--color-gold);
+    color: var(--color-primary);
+}
+
+.lang-btn:hover {
     color: white;
     background-color: rgba(255,255,255,0.2);
 }
 
 .header-cta {
-    background: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-gold) 100%);
     color: white;
-    padding: 0.7rem 1.5rem;
+    padding: 0.55rem 1.25rem;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     letter-spacing: 0.5px;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(12, 78, 110, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 6px 20px rgba(194, 110, 74, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-cta:hover {
-    background: #083750;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(12, 78, 110, 0.3);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(194, 110, 74, 0.45);
     color: white;
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 .mobile-menu-btn {
@@ -930,6 +946,33 @@ footer {
     color: var(--color-accent);
 }
 
+.footer-social-links {
+    display: flex !important;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.footer-social-links a {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-stone) !important;
+    transition: all 0.3s ease;
+    margin-bottom: 0 !important;
+}
+
+.footer-social-links a:hover {
+    color: var(--color-accent) !important;
+    transform: translateY(-3px);
+}
+
+.footer-social-links i, 
+.footer-social-links svg {
+    width: 24px !important;
+    height: 24px !important;
+    stroke-width: 2px;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -1366,7 +1409,7 @@ textarea.form-control {
 
 /* Journey Comparison Section */
 .journey-comparison-section {
-    padding: 8rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(245,247,250,0.8));
     position: relative;
     border-top: 1px solid rgba(0,0,0,0.02);
@@ -1489,7 +1532,7 @@ textarea.form-control {
 
 /* Editorial FAQ Section */
 .faq-editorial-section {
-    padding: 8rem 2rem;
+    padding: 2rem 2rem 8rem 2rem;
     background: linear-gradient(135deg, #fdfbf7 0%, #f4eee0 100%);
     position: relative;
     overflow: hidden;
@@ -1829,7 +1872,7 @@ textarea.form-control {
 
 /* Contact Editorial Section (Concierge Redesign) */
 .contact-editorial-section {
-    padding: 10rem 2rem;
+    padding: 2rem 2rem 10rem 2rem;
     background: linear-gradient(135deg, #fdfbf7 0%, #f4eee0 100%);
     position: relative;
     overflow: hidden;

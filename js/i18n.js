@@ -27,6 +27,8 @@ const translations = {
         // Home – Concept
         "home.concept.title": "Unser Konzept",
         "home.concept.text": "Wir bieten exklusive Erlebnisreisen auf griechische Inseln. Erlebe authentische Traditionen, unberührte Natur und die echte Gastfreundschaft fernab vom Massentourismus.",
+        "home.concept.signature": "Inspired by Greek Island Life",
+        "home.concept.boutique": "Boutique Experiences",
 
         // Home – Packages Section
         "home.packages.badge": "Angebote",
@@ -117,6 +119,7 @@ const translations = {
         "act.hero.card.l1": "Authentische Erlebnisse",
         "act.hero.card.l2": "Versteckte griechische Inseln",
         "act.hero.card.l3": "Kleine Premium-Gruppen",
+        "act.hero.scroll": "Scrollen",
 
         // Activities Page – Intro
         "act.intro.title": "Mehr als nur Ausflüge – Wahrem Griechenland begegnen",
@@ -234,7 +237,124 @@ const translations = {
         "act.cta.title": "Welches Erlebnis passt zu dir?",
         "act.cta.desc": "Lass uns gemeinsam deine perfekte Reise zusammenstellen – ob Olivenernte, Yoga am Meer oder ein Osterfest unter Freunden.",
         "act.cta.btn1": "Pakete ansehen",
-        "act.cta.btn2": "Schreib uns"
+        "act.cta.btn2": "Schreib uns",
+
+        // =============================================
+        // Pricing Page
+        // =============================================
+        "pricing.hero.pretitle": "DEINE REISE",
+        "pricing.hero.title": "Preise / <span class=\"highlight-gold\">Packages</span>",
+        "pricing.hero.desc": "Erlebe die wahre Seele Griechenlands. Unsere handverlesenen Retreats vereinen authentische Kultur, unberührte Natur und exklusiven Premium-Komfort zu einem unvergesslichen Erlebnis.",
+        "pricing.hero.glass1": "Kleine Premium-Gruppen",
+        "pricing.hero.glass2": "Authentische Inselerlebnisse",
+        "pricing.hero.glass3": "Handgemachte Kulturreisen",
+        "pricing.hero.scroll": "Pakete ansehen",
+        "pricing.pkg.compare.title": "Zwei Reisen. Ein unvergessliches Griechenland.",
+        "pricing.pkg.compare.subtitle": "Jedes Paket wurde entwickelt, um dir die authentische Seele der griechischen Inseln näherzubringen.",
+        "pricing.pkg.compare.header.feat": "Ergebnis",
+        "pricing.pkg.compare.header.std": "10 Tage Erlebnis",
+        "pricing.pkg.compare.header.prem": "15 Tage Premium",
+        "pricing.pkg.compare.recommended": "Unsere Empfehlung",
+        "pricing.pkg.compare.feat1.title": "Boutique-Unterkünfte",
+        "pricing.pkg.compare.feat1.std": "Authentische Inselhäuser",
+        "pricing.pkg.compare.feat1.prem": "Premium Unterkünfte mit Meerblick",
+        "pricing.pkg.compare.feat2.title": "Kulinarische Erlebnisse",
+        "pricing.pkg.compare.feat2.std": "Traditionelle Vollpension",
+        "pricing.pkg.compare.feat2.prem": "Gourmet-Erlebnisse & lokale Spezialitäten",
+        "pricing.pkg.compare.feat3.title": "Wein & Verkostungen",
+        "pricing.pkg.compare.feat3.std": "Ausgewählte Verkostungen",
+        "pricing.pkg.compare.feat3.prem": "Exklusive Sommelier-Erlebnisse",
+        "pricing.pkg.compare.feat4.title": "Handwerkskunst",
+        "pricing.pkg.compare.feat4.std": "Traditionelle Workshops",
+        "pricing.pkg.compare.feat4.prem": "Private Masterclasses mit Einheimischen",
+        "pricing.pkg.compare.feat5.title": "Inselerkundungen",
+        "pricing.pkg.compare.feat5.std": "Geführte Gruppen-Touren",
+        "pricing.pkg.compare.feat5.prem": "Exklusive private Insel-Erlebnisse",
+        "pricing.pkg.compare.feat6.title": "Natur & Outdoor",
+        "pricing.pkg.compare.feat6.std": "Yoga & Naturwanderungen",
+        "pricing.pkg.compare.feat6.prem": "Erweiterte Outdoor Experiences",
+        "pricing.pkg.compare.feat7.title": "Fishing Experience",
+        "pricing.pkg.compare.feat7.std": "Traditionelles Bootsfischen",
+        "pricing.pkg.compare.feat7.prem": "Private Sunset Fishing Tour",
+        "pricing.pkg.compare.feat8.title": "Kultur & Tradition",
+        "pricing.pkg.compare.feat8.std": "Lokale Begegnungen",
+        "pricing.pkg.compare.feat8.prem": "Tiefe kulturelle Insider-Erlebnisse",
+        "pricing.pkg.compare.feat9.title": "Transfer-Service",
+        "pricing.pkg.compare.feat9.prem": "VIP Flughafen- & Inseltransfer",
+        "pricing.pkg.compare.feat10.title": "Gruppengröße",
+        "pricing.pkg.compare.feat10.std": "Kleine Gruppen",
+        "pricing.pkg.compare.feat10.prem": "Sehr limitierte Premium-Gruppen",
+        "pricing.pkg.compare.footnote": "Mehr als nur Urlaub — eine Reise in die Kultur, Natur und Seele Griechenlands.",
+        "pricing.faq.pretitle": "VOR DEINER REISE",
+        "pricing.faq.title": "Häufig gestellte Fragen",
+        "pricing.faq.desc": "Alle unsere Reisen werden individuell, authentisch und sorgfältig für dich organisiert. Hier findest du alles, was du vor deiner Reise wissen musst, um dich voll und ganz auf dein Erlebnis einzulassen.",
+        "pricing.faq.q1": "Sind die Flüge im Preis inbegriffen?",
+        "pricing.faq.a1": "<i data-lucide=\"plane\"></i><div>Nein, die Flüge nach Griechenland sind <span style=\"font-weight: 600; color: var(--color-primary);\">nicht im Preis enthalten</span>. Da unsere Gäste aus verschiedenen Ländern und Städten anreisen, lassen wir dir die Flexibilität, deine Flüge individuell zu buchen. Wir helfen dir jedoch gerne mit Empfehlungen für den besten Flughafen.</div>",
+        "pricing.faq.q2": "Wie groß sind die Reisegruppen?",
+        "pricing.faq.a2": "<i data-lucide=\"users\"></i><div>Um ein möglichst authentisches und persönliches Erlebnis zu garantieren, beschränken wir unsere Gruppen auf <span style=\"font-weight: 600; color: var(--color-primary);\">maximal 10-12 Personen</span>. Bei der Premium-Experience gibt es sogar Tage, die komplett privat oder in einer noch kleineren Gruppe stattfinden.</div>",
+        "pricing.faq.q3": "Welches Fitnesslevel ist erforderlich?",
+        "pricing.faq.a3": "<i data-lucide=\"activity\"></i><div>Ein durchschnittliches Fitnesslevel ist vollkommen ausreichend. Unsere Touren beinhalten leichte Wanderungen und Spaziergänge, jedoch <span style=\"font-weight: 600; color: var(--color-primary);\">keine extremen sportlichen Herausforderungen</span>. Wenn du spezielle Einschränkungen hast, sag uns einfach im Voraus Bescheid.</div>",
+        "pricing.faq.q4": "Wie lauten die Stornierungsbedingungen?",
+        "pricing.faq.a4": "<i data-lucide=\"calendar-off\"></i><div>Du kannst deine Reise bis zu <span style=\"font-weight: 600; color: var(--color-primary);\">60 Tage vor Reisebeginn kostenlos stornieren</span> oder umbuchen. Ab dem 59. Tag fallen gestaffelte Stornierungsgebühren an. Wir empfehlen generell den Abschluss einer Reiserücktrittsversicherung.</div>",
+        "pricing.faq.cta.title": "Noch Fragen?",
+        "pricing.faq.cta.desc": "Lass uns deine Reise gemeinsam planen.",
+
+        // =============================================
+        // Contact Page
+        // =============================================
+        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.title": "Lass uns deine <span class=\"highlight-gold\">Reise</span> planen",
+        "contact.hero.desc": "Wir freuen uns darauf, deine individuelle Griechenland-Erfahrung zu gestalten.<br>Schreib uns oder ruf uns direkt an.",
+        "contact.info.intro": "Persönliche Beratung für authentische Inselerlebnisse.",
+        "contact.info.phone.title": "Telefon",
+        "contact.info.phone.hours": "Mo-Fr, 09:00 - 18:00 Uhr",
+        "contact.info.email.title": "E-Mail",
+        "contact.info.location.title": "Location",
+        "contact.info.whatsapp": "Chat auf WhatsApp",
+        "contact.form.pretitle": "LET'S CONNECT",
+        "contact.form.title": "Sende uns eine Nachricht",
+        "contact.form.label.name": "Name",
+        "contact.form.placeholder.name": "Dein vollständiger Name",
+        "contact.form.label.email": "E-Mail",
+        "contact.form.placeholder.email": "Deine E-Mail Adresse",
+        "contact.form.label.interest": "Interesse an",
+        "contact.form.placeholder.interest": "z.B. Kulturelle Entdeckungsreise",
+        "contact.form.label.message": "Deine Nachricht",
+        "contact.form.placeholder.message": "Wie können wir dir helfen? Teile uns gerne auch schon gewünschte Reisedaten mit.",
+        "contact.form.submit": "Nachricht senden",
+
+        // =============================================
+        // Imprint & Privacy Pages
+        // =============================================
+        "imprint.hero.title": "Impressum",
+        "imprint.hero.badge": "Offizielle Info",
+        "imprint.sidebar.imprint": "Impressum",
+        "imprint.sidebar.privacy": "Datenschutz",
+        "imprint.sidebar.terms": "AGB",
+        "imprint.company.title": "Unternehmen",
+        "imprint.company.name": "Griechenland Adventure & Culture Trips",
+        "imprint.company.addr": "Musterstraße 1<br>12345 Athen, Griechenland",
+        "imprint.contact.title": "Kontakt",
+        "imprint.contact.phone": "Telefon: +30 210 123 4567",
+        "imprint.contact.email": "E-Mail: ",
+        "imprint.responsible.title": "Verantwortlich",
+        "imprint.vat.title": "Umsatzsteuer-ID",
+        "imprint.vat.text": "Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>EL 123456789",
+
+        "privacy.hero.title": "Datenschutz",
+        "privacy.sidebar.general": "Allgemeines",
+        "privacy.sidebar.collection": "Datenerfassung",
+        "privacy.sidebar.form": "Kontaktformular",
+        "privacy.sec1.title": "1. Datenschutz auf einen Blick",
+        "privacy.sec1.subtitle": "Allgemeine Hinweise",
+        "privacy.sec1.text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.",
+        "privacy.sec2.title": "2. Datenerfassung auf dieser Website",
+        "privacy.sec2.subtitle1": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+        "privacy.sec2.text1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.",
+        "privacy.sec2.subtitle2": "Wie erfassen wir Ihre Daten?",
+        "privacy.sec2.text2": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+        "privacy.sec3.title": "3. Kontaktformular",
+        "privacy.sec3.text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
     },
 
     en: {
@@ -265,6 +385,8 @@ const translations = {
         // Home – Concept
         "home.concept.title": "Our Concept",
         "home.concept.text": "We offer exclusive adventure trips to Greek islands. Experience authentic traditions, untouched nature and true hospitality far away from mass tourism.",
+        "home.concept.signature": "Inspired by Greek Island Life",
+        "home.concept.boutique": "Boutique Experiences",
 
         // Home – Packages Section
         "home.packages.badge": "Offers",
@@ -355,6 +477,7 @@ const translations = {
         "act.hero.card.l1": "Authentic Experiences",
         "act.hero.card.l2": "Hidden Greek Islands",
         "act.hero.card.l3": "Small Premium Groups",
+        "act.hero.scroll": "Scroll",
 
         // Activities Page – Intro
         "act.intro.title": "More than just excursions – Encounter the true Greece",
@@ -472,7 +595,124 @@ const translations = {
         "act.cta.title": "Which Experience Suits You?",
         "act.cta.desc": "Let's create your perfect trip together – whether it's olive harvesting, yoga by the sea or an Easter celebration among friends.",
         "act.cta.btn1": "View Packages",
-        "act.cta.btn2": "Contact Us"
+        "act.cta.btn2": "Contact Us",
+
+        // =============================================
+        // Pricing Page
+        // =============================================
+        "pricing.hero.pretitle": "YOUR JOURNEY",
+        "pricing.hero.title": "Pricing / <span class=\"highlight-gold\">Packages</span>",
+        "pricing.hero.desc": "Experience the true soul of Greece. Our handpicked retreats combine authentic culture, untouched nature and exclusive premium comfort into an unforgettable experience.",
+        "pricing.hero.glass1": "Small Premium Groups",
+        "pricing.hero.glass2": "Authentic Island Experiences",
+        "pricing.hero.glass3": "Handcrafted Cultural Journeys",
+        "pricing.hero.scroll": "Explore Packages",
+        "pricing.pkg.compare.title": "Two Journeys. One Unforgettable Greece.",
+        "pricing.pkg.compare.subtitle": "Each package is designed to bring you closer to the authentic soul of the Greek islands.",
+        "pricing.pkg.compare.header.feat": "Experience",
+        "pricing.pkg.compare.header.std": "10 Days Experience",
+        "pricing.pkg.compare.header.prem": "15 Days Premium",
+        "pricing.pkg.compare.recommended": "Our Recommendation",
+        "pricing.pkg.compare.feat1.title": "Boutique Accommodations",
+        "pricing.pkg.compare.feat1.std": "Authentic Island Houses",
+        "pricing.pkg.compare.feat1.prem": "Premium Sea View Accommodations",
+        "pricing.pkg.compare.feat2.title": "Culinary Experiences",
+        "pricing.pkg.compare.feat2.std": "Traditional Full Board",
+        "pricing.pkg.compare.feat2.prem": "Gourmet Experiences & Local Specialties",
+        "pricing.pkg.compare.feat3.title": "Wine & Tastings",
+        "pricing.pkg.compare.feat3.std": "Selected Tastings",
+        "pricing.pkg.compare.feat3.prem": "Exclusive Sommelier Experiences",
+        "pricing.pkg.compare.feat4.title": "Craftsmanship",
+        "pricing.pkg.compare.feat4.std": "Traditional Workshops",
+        "pricing.pkg.compare.feat4.prem": "Private Masterclasses with Locals",
+        "pricing.pkg.compare.feat5.title": "Island Explorations",
+        "pricing.pkg.compare.feat5.std": "Guided Group Tours",
+        "pricing.pkg.compare.feat5.prem": "Exclusive Private Island Experiences",
+        "pricing.pkg.compare.feat6.title": "Nature & Outdoor",
+        "pricing.pkg.compare.feat6.std": "Yoga & Nature Hikes",
+        "pricing.pkg.compare.feat6.prem": "Extended Outdoor Experiences",
+        "pricing.pkg.compare.feat7.title": "Fishing Experience",
+        "pricing.pkg.compare.feat7.std": "Traditional Boat Fishing",
+        "pricing.pkg.compare.feat7.prem": "Private Sunset Fishing Tour",
+        "pricing.pkg.compare.feat8.title": "Culture & Tradition",
+        "pricing.pkg.compare.feat8.std": "Local Encounters",
+        "pricing.pkg.compare.feat8.prem": "Deep Cultural Insider Experiences",
+        "pricing.pkg.compare.feat9.title": "Transfer Service",
+        "pricing.pkg.compare.feat9.prem": "VIP Airport & Island Transfer",
+        "pricing.pkg.compare.feat10.title": "Group Size",
+        "pricing.pkg.compare.feat10.std": "Small Groups",
+        "pricing.pkg.compare.feat10.prem": "Very Limited Premium Groups",
+        "pricing.pkg.compare.footnote": "More than just a holiday — a journey into the culture, nature and soul of Greece.",
+        "pricing.faq.pretitle": "BEFORE YOUR JOURNEY",
+        "pricing.faq.title": "Frequently Asked Questions",
+        "pricing.faq.desc": "All our journeys are organized individually, authentically and carefully for you. Here you will find everything you need to know before your trip to fully immerse yourself in your experience.",
+        "pricing.faq.q1": "Are flights included in the price?",
+        "pricing.faq.a1": "<i data-lucide=\"plane\"></i><div>No, flights to Greece are <span style=\"font-weight: 600; color: var(--color-primary);\">not included in the price</span>. Since our guests arrive from various countries and cities, we leave you the flexibility to book your flights individually. We are happy to help with recommendations for the best airport.</div>",
+        "pricing.faq.q2": "How large are the travel groups?",
+        "pricing.faq.a2": "<i data-lucide=\"users\"></i><div>To guarantee an authentic and personal experience, we limit our groups to a <span style=\"font-weight: 600; color: var(--color-primary);\">maximum of 10-12 people</span>. For the Premium Experience, some days are completely private or in an even smaller group.</div>",
+        "pricing.faq.q3": "What fitness level is required?",
+        "pricing.faq.a3": "<i data-lucide=\"activity\"></i><div>An average fitness level is perfectly sufficient. Our tours include light hikes and walks, but <span style=\"font-weight: 600; color: var(--color-primary);\">no extreme sporting challenges</span>. If you have specific restrictions, just let us know in advance.</div>",
+        "pricing.faq.q4": "What are the cancellation policies?",
+        "pricing.faq.a4": "<i data-lucide=\"calendar-off\"></i><div>You can cancel or rebook your trip <span style=\"font-weight: 600; color: var(--color-primary);\">free of charge up to 60 days before the start of the trip</span>. From the 59th day, staggered cancellation fees apply. We generally recommend travel cancellation insurance.</div>",
+        "pricing.faq.cta.title": "Still have questions?",
+        "pricing.faq.cta.desc": "Let's plan your journey together.",
+
+        // =============================================
+        // Contact Page
+        // =============================================
+        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.title": "Let's plan your <span class=\"highlight-gold\">journey</span>",
+        "contact.hero.desc": "We look forward to creating your individual Greek experience.<br>Write to us or call us directly.",
+        "contact.info.intro": "Personalized advice for authentic island experiences.",
+        "contact.info.phone.title": "Phone",
+        "contact.info.phone.hours": "Mon-Fri, 09:00 AM - 06:00 PM",
+        "contact.info.email.title": "Email",
+        "contact.info.location.title": "Location",
+        "contact.info.whatsapp": "Chat on WhatsApp",
+        "contact.form.pretitle": "LET'S CONNECT",
+        "contact.form.title": "Send us a message",
+        "contact.form.label.name": "Name",
+        "contact.form.placeholder.name": "Your full name",
+        "contact.form.label.email": "Email",
+        "contact.form.placeholder.email": "Your email address",
+        "contact.form.label.interest": "Interested in",
+        "contact.form.placeholder.interest": "e.g., Cultural Discovery Journey",
+        "contact.form.label.message": "Your message",
+        "contact.form.placeholder.message": "How can we help you? Feel free to share your desired travel dates.",
+        "contact.form.submit": "Send Message",
+
+        // =============================================
+        // Imprint & Privacy Pages
+        // =============================================
+        "imprint.hero.title": "Imprint",
+        "imprint.hero.badge": "Official Info",
+        "imprint.sidebar.imprint": "Imprint",
+        "imprint.sidebar.privacy": "Privacy Policy",
+        "imprint.sidebar.terms": "Terms & Conditions",
+        "imprint.company.title": "Company",
+        "imprint.company.name": "Greece Adventure & Culture Trips",
+        "imprint.company.addr": "Sample Street 1<br>12345 Athens, Greece",
+        "imprint.contact.title": "Contact",
+        "imprint.contact.phone": "Phone: +30 210 123 4567",
+        "imprint.contact.email": "Email: ",
+        "imprint.responsible.title": "Responsible Person",
+        "imprint.vat.title": "VAT ID",
+        "imprint.vat.text": "VAT identification number according to §27 a of the German VAT Act:<br>EL 123456789",
+
+        "privacy.hero.title": "Privacy Policy",
+        "privacy.sidebar.general": "General Info",
+        "privacy.sidebar.collection": "Data Collection",
+        "privacy.sidebar.form": "Contact Form",
+        "privacy.sec1.title": "1. Privacy at a Glance",
+        "privacy.sec1.subtitle": "General Notes",
+        "privacy.sec1.text": "The following notes provide a simple overview of what happens to your personal data when you visit this website.",
+        "privacy.sec2.title": "2. Data Collection on This Website",
+        "privacy.sec2.subtitle1": "Who is responsible for data collection on this website?",
+        "privacy.sec2.text1": "Data processing on this website is carried out by the website operator. You can find their contact details in the imprint of this website.",
+        "privacy.sec2.subtitle2": "How do we collect your data?",
+        "privacy.sec2.text2": "On the one hand, your data is collected when you communicate it to us. This can, for example, be data that you enter in a contact form.",
+        "privacy.sec3.title": "3. Contact Form",
+        "privacy.sec3.text": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We do not pass on this data without your consent."
     },
 
     fr: {
@@ -503,6 +743,8 @@ const translations = {
         // Home – Concept
         "home.concept.title": "Notre Concept",
         "home.concept.text": "Nous proposons des voyages exclusifs sur les îles grecques. Découvrez des traditions authentiques, une nature intacte et une véritable hospitalité loin du tourisme de masse.",
+        "home.concept.signature": "Inspiré par la vie insulaire grecque",
+        "home.concept.boutique": "Expériences de charme",
 
         // Home – Packages Section
         "home.packages.badge": "Offres",
@@ -593,6 +835,7 @@ const translations = {
         "act.hero.card.l1": "Expériences Authentiques",
         "act.hero.card.l2": "Îles Grecques Cachées",
         "act.hero.card.l3": "Petits Groupes Premium",
+        "act.hero.scroll": "Défiler",
 
         // Activities Page – Intro
         "act.intro.title": "Plus que de simples excursions – Rencontrer la vraie Grèce",
@@ -710,7 +953,124 @@ const translations = {
         "act.cta.title": "Quelle Expérience Vous Convient ?",
         "act.cta.desc": "Créons ensemble votre voyage parfait – que ce soit la récolte des olives, du yoga en bord de mer ou une fête de Pâques entre amis.",
         "act.cta.btn1": "Voir les Forfaits",
-        "act.cta.btn2": "Écrivez-nous"
+        "act.cta.btn2": "Écrivez-nous",
+
+        // =============================================
+        // Pricing Page
+        // =============================================
+        "pricing.hero.pretitle": "VOTRE VOYAGE",
+        "pricing.hero.title": "Prix / <span class=\"highlight-gold\">Forfaits</span>",
+        "pricing.hero.desc": "Découvrez la véritable âme de la Grèce. Nos retraites triées sur le volet allient culture authentique, nature préservée et confort exclusif pour une expérience inoubliable.",
+        "pricing.hero.glass1": "Petits Groupes Premium",
+        "pricing.hero.glass2": "Expériences Insulaires Authentiques",
+        "pricing.hero.glass3": "Voyages Culturels Sur Mesure",
+        "pricing.hero.scroll": "Découvrir les Forfaits",
+        "pricing.pkg.compare.title": "Deux Voyages. Une Grèce Inoubliable.",
+        "pricing.pkg.compare.subtitle": "Chaque forfait est conçu pour vous rapprocher de l'âme authentique des îles grecques.",
+        "pricing.pkg.compare.header.feat": "Expérience",
+        "pricing.pkg.compare.header.std": "10 Jours Expérience",
+        "pricing.pkg.compare.header.prem": "15 Jours Premium",
+        "pricing.pkg.compare.recommended": "Notre Recommandation",
+        "pricing.pkg.compare.feat1.title": "Hébergements de Charme",
+        "pricing.pkg.compare.feat1.std": "Maisons d'Île Authentiques",
+        "pricing.pkg.compare.feat1.prem": "Hébergements Premium avec Vue Mer",
+        "pricing.pkg.compare.feat2.title": "Expériences Culinaires",
+        "pricing.pkg.compare.feat2.std": "Pension Complète Traditionnelle",
+        "pricing.pkg.compare.feat2.prem": "Expériences Gastronomiques & Spécialités Locales",
+        "pricing.pkg.compare.feat3.title": "Vin & Dégustations",
+        "pricing.pkg.compare.feat3.std": "Dégustations Sélectionnées",
+        "pricing.pkg.compare.feat3.prem": "Expériences Sommelier Exclusives",
+        "pricing.pkg.compare.feat4.title": "Artisanat",
+        "pricing.pkg.compare.feat4.std": "Ateliers Traditionnels",
+        "pricing.pkg.compare.feat4.prem": "Masterclasses Privées avec les Locaux",
+        "pricing.pkg.compare.feat5.title": "Explorations de l'Île",
+        "pricing.pkg.compare.feat5.std": "Visites Guidées en Groupe",
+        "pricing.pkg.compare.feat5.prem": "Expériences Privées Exclusives sur l'Île",
+        "pricing.pkg.compare.feat6.title": "Nature & Plein Air",
+        "pricing.pkg.compare.feat6.std": "Yoga & Randonnées Nature",
+        "pricing.pkg.compare.feat6.prem": "Expériences de Plein Air Étendues",
+        "pricing.pkg.compare.feat7.title": "Expérience de Pêche",
+        "pricing.pkg.compare.feat7.std": "Pêche en Bateau Traditionnelle",
+        "pricing.pkg.compare.feat7.prem": "Tour de Pêche Privé au Coucher du Soleil",
+        "pricing.pkg.compare.feat8.title": "Culture & Tradition",
+        "pricing.pkg.compare.feat8.std": "Rencontres Locales",
+        "pricing.pkg.compare.feat8.prem": "Expériences Culturelles Profondes",
+        "pricing.pkg.compare.feat9.title": "Service de Transfert",
+        "pricing.pkg.compare.feat9.prem": "Transfert VIP Aéroport & Île",
+        "pricing.pkg.compare.feat10.title": "Taille du Groupe",
+        "pricing.pkg.compare.feat10.std": "Petits Groupes",
+        "pricing.pkg.compare.feat10.prem": "Groupes Premium Très Limités",
+        "pricing.pkg.compare.footnote": "Plus que de simples vacances — un voyage dans la culture, la nature et l'âme de la Grèce.",
+        "pricing.faq.pretitle": "AVANT VOTRE VOYAGE",
+        "pricing.faq.title": "Foire Aux Questions",
+        "pricing.faq.desc": "Tous nos voyages sont organisés individuellement, de manière authentique et soignée pour vous. Vous trouverez ici tout ce que vous devez savoir avant votre voyage pour vous imprégner pleinement de votre expérience.",
+        "pricing.faq.q1": "Les vols sont-ils inclus dans le prix ?",
+        "pricing.faq.a1": "<i data-lucide=\"plane\"></i><div>Non, les vols vers la Grèce ne sont <span style=\"font-weight: 600; color: var(--color-primary);\">pas inclus dans le prix</span>. Comme nos clients arrivent de différents pays et villes, nous vous laissons la flexibilité de réserver vos vols individuellement. Nous serons ravis de vous aider avec des recommandations pour le meilleur aéroport.</div>",
+        "pricing.faq.q2": "Quelle est la taille des groupes de voyage ?",
+        "pricing.faq.a2": "<i data-lucide=\"users\"></i><div>Pour garantir une expérience authentique et personnelle, nous limitons nos groupes à un <span style=\"font-weight: 600; color: var(--color-primary);\">maximum de 10-12 personnes</span>. Pour la Premium Experience, certains jours sont complètement privés ou dans un groupe encore plus restreint.</div>",
+        "pricing.faq.q3": "Quel niveau de forme physique est requis ?",
+        "pricing.faq.a3": "<i data-lucide=\"activity\"></i><div>Un niveau de forme physique moyen est tout à fait suffisant. Nos circuits comprennent des randonnées et des promenades légères, mais <span style=\"font-weight: 600; color: var(--color-primary);\">aucun défi sportif extrême</span>. Si vous avez des restrictions spécifiques, prévenez-nous simplement à l'avance.</div>",
+        "pricing.faq.q4": "Quelles sont les conditions d'annulation ?",
+        "pricing.faq.a4": "<i data-lucide=\"calendar-off\"></i><div>Vous pouvez annuler ou modifier votre réservation <span style=\"font-weight: 600; color: var(--color-primary);\">sans frais jusqu'à 60 jours avant le début du voyage</span>. À partir du 59e jour, des frais d'annulation échelonnés s'appliquent. Nous recommandons généralement une assurance annulation de voyage.</div>",
+        "pricing.faq.cta.title": "Encore des questions ?",
+        "pricing.faq.cta.desc": "Planifions votre voyage ensemble.",
+
+        // =============================================
+        // Contact Page
+        // =============================================
+        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.title": "Planifions votre <span class=\"highlight-gold\">voyage</span>",
+        "contact.hero.desc": "Nous avons hâte de concevoir votre expérience grecque sur mesure.<br>Écrivez-nous ou appelez-nous directement.",
+        "contact.info.intro": "Conseils personnalisés pour des expériences insulaires authentiques.",
+        "contact.info.phone.title": "Téléphone",
+        "contact.info.phone.hours": "Lun-Ven, 09:00 - 18:00",
+        "contact.info.email.title": "E-mail",
+        "contact.info.location.title": "Lieu",
+        "contact.info.whatsapp": "Chatter sur WhatsApp",
+        "contact.form.pretitle": "LET'S CONNECT",
+        "contact.form.title": "Envoyez-nous un message",
+        "contact.form.label.name": "Nom",
+        "contact.form.placeholder.name": "Votre nom complet",
+        "contact.form.label.email": "E-mail",
+        "contact.form.placeholder.email": "Votre adresse e-mail",
+        "contact.form.label.interest": "Intéressé par",
+        "contact.form.placeholder.interest": "par ex., Voyage de Découverte Culturelle",
+        "contact.form.label.message": "Votre message",
+        "contact.form.placeholder.message": "Comment pouvons-nous vous aider ? N'hésitez pas à nous faire part de vos dates de voyage souhaitées.",
+        "contact.form.submit": "Envoyer le message",
+
+        // =============================================
+        // Imprint & Privacy Pages
+        // =============================================
+        "imprint.hero.title": "Mentions Légales",
+        "imprint.hero.badge": "Info Officielle",
+        "imprint.sidebar.imprint": "Mentions Légales",
+        "imprint.sidebar.privacy": "Confidentialité",
+        "imprint.sidebar.terms": "CGV",
+        "imprint.company.title": "Entreprise",
+        "imprint.company.name": "Grèce Adventure & Culture Trips",
+        "imprint.company.addr": "Rue Exemple 1<br>12345 Athènes, Grèce",
+        "imprint.contact.title": "Contact",
+        "imprint.contact.phone": "Téléphone : +30 210 123 4567",
+        "imprint.contact.email": "E-mail : ",
+        "imprint.responsible.title": "Responsable",
+        "imprint.vat.title": "N° TVA",
+        "imprint.vat.text": "Numéro d'identification TVA conformément à l'art. 27 a de la loi allemande relative à la TVA :<br>EL 123456789",
+
+        "privacy.hero.title": "Protection des Données",
+        "privacy.sidebar.general": "Généralités",
+        "privacy.sidebar.collection": "Collecte de Données",
+        "privacy.sidebar.form": "Formulaire de Contact",
+        "privacy.sec1.title": "1. Aperçu de la protection des données",
+        "privacy.sec1.subtitle": "Remarques Générales",
+        "privacy.sec1.text": "Les remarques suivantes fournissent un aperçu simple de ce qu'il advient de vos données personnelles lorsque vous visitez ce site web.",
+        "privacy.sec2.title": "2. Collecte de données sur ce site web",
+        "privacy.sec2.subtitle1": "Qui est responsable de la collecte de données sur ce site web ?",
+        "privacy.sec2.text1": "Le traitement des données sur ce site web est effectué par l'exploitant du site. Vous trouverez ses coordonnées dans les mentions légales de ce site web.",
+        "privacy.sec2.subtitle2": "Comment collectons-nous vos données ?",
+        "privacy.sec2.text2": "D'une part, vos données sont collectées lorsque vous nous les communiquez. Il peut s'agir, par exemple, de données que vous saisissez dans un formulaire de contact.",
+        "privacy.sec3.title": "3. Formulaire de contact",
+        "privacy.sec3.text": "Si vous nous envoyez des demandes via le formulaire de contact, vos indications du formulaire de demande, y compris les coordonnées que vous y avez fournies, seront stockées chez nous dans le but de traiter la demande et en cas de questions complémentaires. Nous ne transmettons pas ces données sans votre consentement."
     }
 };
 
@@ -727,7 +1087,12 @@ function applyTranslations() {
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[currentLang] && translations[currentLang][key]) {
-            element.textContent = translations[currentLang][key];
+            const translationText = translations[currentLang][key];
+            if (translationText.includes('<') || translationText.includes('&')) {
+                element.innerHTML = translationText;
+            } else {
+                element.textContent = translationText;
+            }
         }
     });
     

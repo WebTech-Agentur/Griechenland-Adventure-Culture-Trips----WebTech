@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutz - Griechenland Adventure & Culture Trips</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <i data-lucide="sun"></i>Greece<span>Trips</span>
+                <i data-lucide="tree-palm"></i>Greece<span>Trips</span>
             </a>
             <nav class="nav-links">
                 <a href="index.html" data-i18n="nav.home">Homepage</a>
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </nav>
+            <div class="nav-actions">
                 <div class="lang-switcher">
                     <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
                     <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
                     <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
                 </div>
-            </nav>
+                <a href="contact.html" class="header-cta" data-i18n="cta.btn.contact">Kontakt aufnehmen</a>
+            </div>
             <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
         </div>
     </header>
@@ -37,7 +41,7 @@
             </div>
             <div class="legal-hero-content">
                 <div class="legal-hero-pretitle">SAFE • TRANSPARENT • TRUSTED</div>
-                <h1 class="legal-hero-title">Datenschutz</h1>
+                <h1 class="legal-hero-title" data-i18n="privacy.hero.title">Datenschutz</h1>
                 <div class="legal-hero-badge">
                     <i data-lucide="shield-check"></i> GDPR Compliant
                 </div>
@@ -49,32 +53,32 @@
             <!-- Sticky Navigation -->
             <aside class="legal-sidebar">
                 <ul class="legal-nav">
-                    <li><a href="#allgemein" class="active">Allgemeines</a></li>
-                    <li><a href="#datenerfassung">Datenerfassung</a></li>
-                    <li><a href="#kontaktformular">Kontaktformular</a></li>
+                    <li><a href="#allgemein" class="active" data-i18n="privacy.sidebar.general">Allgemeines</a></li>
+                    <li><a href="#datenerfassung" data-i18n="privacy.sidebar.collection">Datenerfassung</a></li>
+                    <li><a href="#kontaktformular" data-i18n="privacy.sidebar.form">Kontaktformular</a></li>
                 </ul>
             </aside>
 
             <!-- Legal Cards -->
             <div class="legal-content">
                 <section id="allgemein" class="legal-card">
-                    <h2>1. Datenschutz auf einen Blick</h2>
-                    <h3>Allgemeine Hinweise</h3>
-                    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+                    <h2 data-i18n="privacy.sec1.title">1. Datenschutz auf einen Blick</h2>
+                    <h3 data-i18n="privacy.sec1.subtitle">Allgemeine Hinweise</h3>
+                    <p data-i18n="privacy.sec1.text">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
                 </section>
 
                 <section id="datenerfassung" class="legal-card">
-                    <h2>2. Datenerfassung auf dieser Website</h2>
-                    <h3>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
-                    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+                    <h2 data-i18n="privacy.sec2.title">2. Datenerfassung auf dieser Website</h2>
+                    <h3 data-i18n="privacy.sec2.subtitle1">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h3>
+                    <p data-i18n="privacy.sec2.text1">Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
                     
-                    <h3>Wie erfassen wir Ihre Daten?</h3>
-                    <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+                    <h3 data-i18n="privacy.sec2.subtitle2">Wie erfassen wir Ihre Daten?</h3>
+                    <p data-i18n="privacy.sec2.text2">Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
                 </section>
 
                 <section id="kontaktformular" class="legal-card">
-                    <h2>3. Kontaktformular</h2>
-                    <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+                    <h2 data-i18n="privacy.sec3.title">3. Kontaktformular</h2>
+                    <p data-i18n="privacy.sec3.text">Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
                 </section>
             </div>
         </section>
@@ -83,7 +87,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="sun"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
                 <p>Authentische Erlebnisse auf griechischen Inseln.</p>
             </div>
             <div class="footer-col">
@@ -94,9 +98,26 @@
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
             </div>
             <div class="footer-col">
-                <h3>Legal</h3>
+                <h3 data-i18n="footer.legal">Legal</h3>
                 <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
                 <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.social">Social Media</h3>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">

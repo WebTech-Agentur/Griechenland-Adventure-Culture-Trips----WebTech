@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Griechenland Adventure & Culture Trips</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <i data-lucide="sun"></i>
+                <i data-lucide="tree-palm"></i>
                 Greece<span>Trips</span>
             </a>
             
@@ -22,13 +23,16 @@
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
                 <a href="contact.html" class="active" data-i18n="nav.contact">Kontakt</a>
-                
+            </nav>
+
+            <div class="nav-actions">
                 <div class="lang-switcher">
                     <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
                     <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
                     <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
                 </div>
-            </nav>
+                <a href="contact.html" class="header-cta" data-i18n="cta.btn.contact">Kontakt aufnehmen</a>
+            </div>
 
             <button class="mobile-menu-btn">
                 <i data-lucide="menu"></i>
@@ -45,9 +49,9 @@
             </div>
             
             <div class="hero-cinematic-content" style="text-align: center; padding-left: 0; display: flex; flex-direction: column; align-items: center;">
-                <div class="hero-pre-title" style="justify-content: center;">GET IN TOUCH</div>
-                <h1 class="hero-headline-asym" style="color: white; margin-bottom: 0.5rem; text-align: center;">Lass uns deine <span class="highlight-gold">Reise</span> planen</h1>
-                <p class="hero-description" style="max-width: 500px; color: rgba(255,255,255,0.9); margin-top: 0; text-align: center;">Wir freuen uns darauf, deine individuelle Griechenland-Erfahrung zu gestalten.<br>Schreib uns oder ruf uns direkt an.</p>
+                <div class="hero-pre-title" style="justify-content: center;" data-i18n="contact.hero.pretitle">GET IN TOUCH</div>
+                <h1 class="hero-headline-asym" style="color: white; margin-bottom: 0.5rem; text-align: center;" data-i18n="contact.hero.title">Lass uns deine <span class="highlight-gold">Reise</span> planen</h1>
+                <p class="hero-description" style="max-width: 500px; color: rgba(255,255,255,0.9); margin-top: 0; text-align: center;" data-i18n="contact.hero.desc">Wir freuen uns darauf, deine individuelle Griechenland-Erfahrung zu gestalten.<br>Schreib uns oder ruf uns direkt an.</p>
             </div>
         </section>
 
@@ -62,21 +66,21 @@
                 
                 <!-- Left: Contact Info -->
                 <div class="contact-info-block">
-                    <p class="contact-intro">Persönliche Beratung für authentische Inselerlebnisse.</p>
+                    <p class="contact-intro" data-i18n="contact.info.intro">Persönliche Beratung für authentische Inselerlebnisse.</p>
                     
                     <div class="contact-detail-item">
                         <div class="contact-detail-icon"><i data-lucide="phone" style="width:20px; height:20px;"></i></div>
                         <div class="contact-detail-text">
-                            <h4>Telefon</h4>
+                            <h4 data-i18n="contact.info.phone.title">Telefon</h4>
                             <p>+49 123 4567 890</p>
-                            <p style="font-size: 0.85rem; margin-top: 0.2rem; opacity: 0.7;">Mo-Fr, 09:00 - 18:00 Uhr</p>
+                            <p style="font-size: 0.85rem; margin-top: 0.2rem; opacity: 0.7;" data-i18n="contact.info.phone.hours">Mo-Fr, 09:00 - 18:00 Uhr</p>
                         </div>
                     </div>
                     
                     <div class="contact-detail-item">
                         <div class="contact-detail-icon"><i data-lucide="mail" style="width:20px; height:20px;"></i></div>
                         <div class="contact-detail-text">
-                            <h4>E-Mail</h4>
+                            <h4 data-i18n="contact.info.email.title">E-Mail</h4>
                             <a href="mailto:hello@greecetrips.com">hello@greecetrips.com</a>
                         </div>
                     </div>
@@ -84,13 +88,13 @@
                     <div class="contact-detail-item">
                         <div class="contact-detail-icon"><i data-lucide="map-pin" style="width:20px; height:20px;"></i></div>
                         <div class="contact-detail-text">
-                            <h4>Location</h4>
+                            <h4 data-i18n="contact.info.location.title">Location</h4>
                             <p>Ermou Street 15<br>10563 Athen, Griechenland</p>
                         </div>
                     </div>
                     
                     <a href="https://wa.me/491234567890" target="_blank" class="btn-whatsapp">
-                        <i data-lucide="message-circle" style="width: 22px; height: 22px;"></i> Chat auf WhatsApp
+                        <i data-lucide="message-circle" style="width: 22px; height: 22px;"></i> <span data-i18n="contact.info.whatsapp">Chat auf WhatsApp</span>
                     </a>
                     
                     <div class="contact-socials">
@@ -102,31 +106,31 @@
 
                 <!-- Right: Glassmorphism Form -->
                 <div class="contact-glass-form">
-                    <span class="contact-form-pretitle">LET'S CONNECT</span>
-                    <h3>Sende uns eine Nachricht</h3>
+                    <span class="contact-form-pretitle" data-i18n="contact.form.pretitle">LET'S CONNECT</span>
+                    <h3 data-i18n="contact.form.title">Sende uns eine Nachricht</h3>
                     <form action="#" method="POST">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" required>
+                            <label for="name" data-i18n="contact.form.label.name">Name</label>
+                            <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" data-i18n-placeholder="contact.form.placeholder.name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">E-Mail</label>
-                            <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" required>
+                            <label for="email" data-i18n="contact.form.label.email">E-Mail</label>
+                            <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" data-i18n-placeholder="contact.form.placeholder.email" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="interest">Interesse an</label>
-                            <input type="text" id="interest" name="interest" class="luxury-input" placeholder="z.B. Kulturelle Entdeckungsreise">
+                            <label for="interest" data-i18n="contact.form.label.interest">Interesse an</label>
+                            <input type="text" id="interest" name="interest" class="luxury-input" placeholder="z.B. Kulturelle Entdeckungsreise" data-i18n-placeholder="contact.form.placeholder.interest">
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Deine Nachricht</label>
-                            <textarea id="message" name="message" class="luxury-input" placeholder="Wie können wir dir helfen? Teile uns gerne auch schon gewünschte Reisedaten mit." required></textarea>
+                            <label for="message" data-i18n="contact.form.label.message">Deine Nachricht</label>
+                            <textarea id="message" name="message" class="luxury-input" placeholder="Wie können wir dir helfen? Teile uns gerne auch schon gewünschte Reisedaten mit." data-i18n-placeholder="contact.form.placeholder.message" required></textarea>
                         </div>
                         
                         <button type="submit" class="btn-luxury btn-luxury-gold" style="width: 100%; text-align: center; margin-top: 1rem; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                            <i data-lucide="send" style="width: 18px; height: 18px;"></i> Nachricht senden
+                            <i data-lucide="send" style="width: 18px; height: 18px;"></i> <span data-i18n="contact.form.submit">Nachricht senden</span>
                         </button>
                     </form>
                 </div>
@@ -137,7 +141,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="sun"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
                 <p>Authentische Erlebnisse auf griechischen Inseln.</p>
             </div>
             <div class="footer-col">
@@ -153,11 +157,20 @@
                 <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
             </div>
             <div class="footer-col">
-                <h3>Social Media</h3>
-                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-                    <a href="#"><i data-lucide="instagram"></i></a>
-                    <a href="#"><i data-lucide="facebook"></i></a>
-                    <a href="#"><i data-lucide="youtube"></i></a>
+                <h3 data-i18n="footer.social">Social Media</h3>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
                 </div>
             </div>
         </div>
