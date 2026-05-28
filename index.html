@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griechenland Adventure & Culture Trips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="sun"></i>
+                Greece<span>Trips</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="active" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+                
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </nav>
+
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-image" style="background-image: url('images/hero_bg.png');"></div>
+            <div class="hero-content">
+                <div class="hero-pre-title">AUTHENTIC GREEK EXPERIENCES</div>
+                <h1 data-i18n="home.hero.title">Entdecke das <span class="highlight-gold">wahre</span> Griechenland</h1>
+                <p data-i18n="home.hero.subtitle">Finde die absolute Ruhe, entdecke das echte Inselleben und erlebe exklusive Momente, die für immer bleiben.</p>
+                <a href="contact.html" class="btn-glass" data-i18n="home.hero.cta">Erlebe die Magie</a>
+            </div>
+            
+            <div class="hero-glass-card">
+                <div class="hero-glass-item"><i data-lucide="users"></i> Small Premium Groups</div>
+                <div class="hero-glass-item"><i data-lucide="sun"></i> Authentic Island Experiences</div>
+                <div class="hero-glass-item"><i data-lucide="compass"></i> Handcrafted Cultural Journeys</div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <div class="concept-editorial-container">
+            <section class="concept-section">
+                <div class="section-title">
+                    <i data-lucide="sun" style="color: var(--color-gold); width: 20px; height: 20px;"></i>
+                    <h2 data-i18n="home.concept.title">Unser Konzept</h2>
+                </div>
+                <p class="concept-text" data-i18n="home.concept.text">
+                    Wir bieten exklusive Erlebnisreisen auf griechische Inseln. Erlebe <span class="editorial-highlight">authentische Traditionen</span>, <span class="editorial-highlight">unberührte Natur</span> und die <span class="editorial-highlight">echte Gastfreundschaft</span> fernab vom Massentourismus.
+                </p>
+                <div class="concept-signature-card">
+                    <span>Inspired by Greek Island Life</span>
+                    <small>Boutique Experiences</small>
+                </div>
+            </section>
+        </div>
+
+        <!-- Packages Highlights -->
+        <section class="container packages-section">
+            <div class="section-title interactive-title">
+                <div class="title-badge"><i data-lucide="sparkles" style="width: 16px; height: 16px;"></i> Angebote</div>
+                <h2 data-i18n="home.packages.title" class="gradient-text">Unsere Pakete</h2>
+                <p class="title-subtitle">Wähle das perfekte Erlebnis für deinen unvergesslichen Urlaub in Griechenland.</p>
+            </div>
+
+            <div class="luxury-pricing-grid">
+                <!-- Standard Package -->
+                <div class="luxury-card">
+                    <div class="luxury-card-content">
+                        <div class="emotional-tags">
+                            <span class="emotional-tag">Ideal für Entdecker</span>
+                            <span class="emotional-tag">Authentische Inselmomente</span>
+                        </div>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;" data-i18n="package.1.title">Kulturelle Entdeckungsreise</h3>
+                        <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Perfekt für Reisende, die das authentische Griechenland in einer intensiven und inspirierenden Reise erleben möchten.</p>
+                        
+                        <div class="luxury-price-wrapper">
+                            <span class="price-label">10 Tage Erlebnis ab</span>
+                            <div class="luxury-price" data-i18n="package.1.price">2.600 €</div>
+                        </div>
+
+                        <ul class="luxury-features-list">
+                            <li><i data-lucide="check" style="width: 20px; height: 20px;"></i> Unterkunft in Boutique-Hotels</li>
+                            <li><i data-lucide="coffee" style="width: 20px; height: 20px;"></i> Traditionelle Vollpension</li>
+                            <li><i data-lucide="leaf" style="width: 20px; height: 20px;"></i> Traditionelle Workshops</li>
+                            <li><i data-lucide="compass" style="width: 20px; height: 20px;"></i> Geführte Gruppen-Touren</li>
+                        </ul>
+                        <a href="pricing.html" class="btn-luxury" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="luxury-card luxury-card-premium">
+                    <div class="luxury-badge">Tiefe kulturelle Einblicke</div>
+                    <div class="luxury-card-content">
+                        <div class="emotional-tags">
+                            <span class="emotional-tag">Beliebteste Wahl</span>
+                            <span class="emotional-tag">Exklusives Erlebnis</span>
+                        </div>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: white; margin-bottom: 0.5rem;" data-i18n="package.2.title">Exklusives Griechenland-Erlebnis</h3>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Eine exklusive Premium-Erfahrung mit erweiterten Kulturmomenten, privaten Erlebnissen und luxuriösen Inselabenteuern.</p>
+                        
+                        <div class="luxury-price-wrapper">
+                            <span class="price-label">15 Tage Premium ab</span>
+                            <div class="luxury-price" data-i18n="package.2.price">3.000 €</div>
+                        </div>
+
+                        <ul class="luxury-features-list">
+                            <li><i data-lucide="sun" style="width: 20px; height: 20px;"></i> Premium-Hotels mit Meerblick</li>
+                            <li><i data-lucide="wine" style="width: 20px; height: 20px;"></i> Gourmet-Erlebnisse & Weine</li>
+                            <li><i data-lucide="crown" style="width: 20px; height: 20px;"></i> Private Masterclasses</li>
+                            <li><i data-lucide="ship" style="width: 20px; height: 20px;"></i> Private Insel-Erlebnisse</li>
+                        </ul>
+                        <a href="pricing.html" class="btn-luxury btn-luxury-gold" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Highlights -->
+        <section class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.activities.title">Highlights der Aktivitäten</h2>
+            </div>
+            
+            <div class="grid-3">
+                <!-- 1. Olive -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/1200x/9a/4b/82/9a4b825e1d4ea3909dfa67b39c7a24a3.jpg" alt="Olives" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.olive.title">Olivenernte & Produktion</h3>
+                        <p data-i18n="act.olive.desc">Vom Sammeln der Oliven bis zur Ölgewinnung.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Island Life -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/1200x/8d/3c/04/8d3c04473be94d31334ac4586a8a901c.jpg" alt="Island" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.island.title">Authentisches Inselleben</h3>
+                        <p data-i18n="act.island.desc">Alltag der Menschen in abgelegenen Regionen kennenlernen.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Workshops -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/ee/f7/c8/eef7c8f7f3fd9a506ef3228f220638ea.jpg" alt="Workshop" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.workshop.title">Workshops mit Einheimischen</h3>
+                        <p data-i18n="act.workshop.desc">Traditionen, Handwerk und lokales Wissen erleben.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Easter -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/ba/08/e1/ba08e138247f71bcf8969bbef5987cd0.jpg" alt="Easter" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.easter.title">Traditionelle Osterfeste</h3>
+                        <p data-i18n="act.easter.desc">Erlebe das authentische griechische Osterfest.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Goat & Cheese -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://cdn.shopify.com/s/files/1/0441/7683/4722/files/d1.jpg?v=1706178713" alt="Goat Cheese" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.goat.title">Ziegenherden & Käse</h3>
+                        <p data-i18n="act.goat.desc">Melken und traditionelle Herstellung kennenlernen.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Nature -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/1200x/41/36/15/4136154288fe7beb585b522e7ff98359.jpg" alt="Nature" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.nature.title">Natur- & Waldinseln</h3>
+                        <p data-i18n="act.nature.desc">Bereise unberührte Naturlandschaften.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Fishing -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/ae/d1/72/aed172eadb6de0f73cef4fa4a2e7cb53.jpg" alt="Fishing" class="card-img" style="object-position: center 80%;">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.fishing.title">Bootsfischen</h3>
+                        <p data-i18n="act.fishing.desc">Erlebe eine authentische Fishing Experience auf dem Meer.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Yoga -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/13/e6/08/13e60845ffa1bb30808351784ec67ee2.jpg" alt="Yoga" class="card-img" style="object-position: center 80%;">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.yoga.title">Outdoor-Yoga</h3>
+                        <p data-i18n="act.yoga.desc">Entspanne bei Yoga mitten in der Natur.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Wine -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/1200x/47/16/d6/4716d6c02dd8689059cf7d2d761e28e4.jpg" alt="Wine" class="card-img" style="object-position: center 80%;">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.wine.title">Weinproduktion</h3>
+                        <p data-i18n="act.wine.desc">Von der Weinernte bis zur Verkostung mit Sommelier.</p>
+                    </div>
+                </div>
+
+                <!-- 10. Craftsmanship -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/08/83/c6/0883c64f8701fb4855ef12d99d8428f8.jpg" alt="Craftsmanship" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.craft.title">Handwerkskunst</h3>
+                        <p data-i18n="act.craft.desc">Entdecke die authentische Handwerkskunst der Inselbewohner.</p>
+                    </div>
+                </div>
+
+                <!-- 11. Ceramics -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="https://i.pinimg.com/736x/61/53/4a/61534a22deb1ce05ea6c530dec79118c.jpg" alt="Ceramics" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title" data-i18n="act.ceramic.title">Keramik-Workshop</h3>
+                        <p data-i18n="act.ceramic.desc">Eigene Figuren aus Erde und Draht herstellen und brennen.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Call to Action -->
+        <div class="container" style="padding-top: 0;">
+            <section class="cta-section" style="background: linear-gradient(135deg, rgba(194,110,74,0.05), rgba(92,110,74,0.1)); border-radius: var(--radius-lg); padding: 5rem 2rem; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.03); position: relative; overflow: hidden; border: 1px solid rgba(194,110,74,0.2);">
+                
+                <!-- Decorative Background Orbs -->
+                <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--color-accent); border-radius: 50%; opacity: 0.1; filter: blur(40px);"></div>
+                <div style="position: absolute; bottom: -50px; left: -50px; width: 200px; height: 200px; background: var(--color-secondary); border-radius: 50%; opacity: 0.1; filter: blur(40px);"></div>
+
+                <div style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto;">
+                    <h2 data-i18n="cta.title" style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 1.5rem;">Bereit für dein Griechenland-Abenteuer?</h2>
+                    <p data-i18n="cta.desc" style="color: var(--color-text-light); font-size: 1.2rem; margin-bottom: 3rem;">Kontaktiere uns für ein individuelles Angebot oder sichere dir direkt einen Platz für unsere exklusiven Erlebnisreisen.</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="pricing.html" class="btn btn-primary" style="background-color: var(--color-accent); font-size: 1.1rem; padding: 1.2rem 2.5rem; border-radius: 50px; box-shadow: 0 10px 20px rgba(194,110,74,0.3);" data-i18n="cta.btn.book">Jetzt Paket wählen</a>
+                        <a href="contact.html" class="btn btn-outline" style="border-radius: 50px; font-size: 1.1rem; padding: 1.2rem 2.5rem;" data-i18n="cta.btn.contact">Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;">
+                    <i data-lucide="sun"></i>
+                    Greece<span style="color: var(--color-accent)">Trips</span>
+                </a>
+                <p>Authentische Erlebnisse auf griechischen Inseln.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+            </div>
+            <div class="footer-col">
+                <h3>Social Media</h3>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <a href="contact.html" class="whatsapp-btn">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

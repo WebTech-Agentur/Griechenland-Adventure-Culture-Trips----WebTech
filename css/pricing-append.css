@@ -1,0 +1,93 @@
+
+/* Modern Pricing Cards */
+.pricing-grid {
+    align-items: center; /* Ensures the premium card can scale nicely relative to the normal card */
+}
+
+.pricing-card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    position: relative;
+    border: 1px solid #E2E8F0;
+    transition: var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.pricing-header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.pricing-card .card-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.price-suffix {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+}
+
+.premium-card {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(12, 78, 110, 0.2);
+}
+
+.premium-card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 30px 60px rgba(12, 78, 110, 0.3);
+}
+
+.premium-card .pricing-header {
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.premium-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(194, 110, 74, 0.3);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: white;
+}

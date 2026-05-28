@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Griechenland Adventure & Culture Trips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="sun"></i>Greece<span>Trips</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 100px;">
+            <div class="card" style="padding: 3rem;">
+                <h1 data-i18n="footer.imprint">Impressum</h1>
+                <p><strong>Griechenland Adventure & Culture Trips</strong><br>
+                Musterstraße 1<br>
+                12345 Athen, Griechenland</p>
+
+                <p><strong>Vertreten durch:</strong><br>
+                Max Mustermann</p>
+
+                <p><strong>Kontakt:</strong><br>
+                Telefon: +30 210 123 4567<br>
+                E-Mail: hello@greecetrips.com</p>
+
+                <p><strong>Umsatzsteuer-ID:</strong><br>
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                EL 123456789</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="sun"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <p>Authentische Erlebnisse auf griechischen Inseln.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

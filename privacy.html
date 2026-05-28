@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Griechenland Adventure & Culture Trips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="sun"></i>Greece<span>Trips</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+            </nav>
+            <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 100px;">
+            <div class="card" style="padding: 3rem;">
+                <h1 data-i18n="footer.privacy">Datenschutzerklärung</h1>
+                
+                <h3>1. Datenschutz auf einen Blick</h3>
+                <p><strong>Allgemeine Hinweise</strong><br>
+                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+
+                <h3>2. Datenerfassung auf dieser Website</h3>
+                <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+
+                <p><strong>Wie erfassen wir Ihre Daten?</strong><br>
+                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+
+                <h3>3. Kontaktformular</h3>
+                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="sun"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <p>Authentische Erlebnisse auf griechischen Inseln.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preise - Griechenland Adventure & Culture Trips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="sun"></i>Greece<span>Trips</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" class="active" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('de')">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+                <a href="contact.html" class="header-cta">Book Now</a>
+            </div>
+            <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cinematic Luxury Hero -->
+        <section class="hero-cinematic" style="background: linear-gradient(rgba(12, 78, 110, 0.6), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1096&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center;">
+            <!-- Animated Background Lights -->
+            <div class="hero-light-orbs">
+                <div class="orb orb-1" style="background: rgba(212, 175, 55, 0.3);"></div>
+                <div class="orb orb-2" style="background: rgba(255, 255, 255, 0.1);"></div>
+                <div class="orb orb-3"></div>
+            </div>
+
+            <div class="hero-cinematic-content">
+                <div class="hero-pre-title">YOUR JOURNEY</div>
+                
+                <h1 class="hero-headline-asym" style="color: white;">
+                    Preise / <span class="highlight-gold">Packages</span>
+                </h1>
+                
+                <p class="hero-description" style="color: rgba(255,255,255,0.9);">
+                    Erlebe die wahre Seele Griechenlands. Unsere handverlesenen Retreats vereinen authentische Kultur, unberührte Natur und exklusiven Premium-Komfort zu einem unvergesslichen Erlebnis.
+                </p>
+
+                <div class="hero-pills-wrapper">
+                    <div class="hero-pill" style="color: white; background: rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.2);">
+                        <i data-lucide="users" style="width: 16px; height: 16px;"></i> Small Premium Groups
+                    </div>
+                    <div class="hero-pill" style="color: white; background: rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.2);">
+                        <i data-lucide="sun" style="width: 16px; height: 16px;"></i> Authentic Island Experiences
+                    </div>
+                    <div class="hero-pill" style="color: white; background: rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.2);">
+                        <i data-lucide="compass" style="width: 16px; height: 16px;"></i> Handcrafted Cultural Journeys
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-hint-wrapper">
+                <a href="#packages" class="scroll-hint-btn">
+                    <span style="margin-bottom: 5px;">Explore Packages</span>
+                    <i data-lucide="arrow-down" style="width: 20px; height: 20px;"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section id="packages" class="container" style="margin-top: 4rem; position: relative; z-index: 10;">
+            
+            <div class="luxury-pricing-grid">
+                <!-- Standard Package -->
+                <div class="luxury-card">
+                    <div class="luxury-card-content">
+                        <div class="emotional-tags">
+                            <span class="emotional-tag">Ideal für Entdecker</span>
+                            <span class="emotional-tag">Authentische Inselmomente</span>
+                        </div>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;" data-i18n="package.1.title">Kulturelle Entdeckungsreise</h3>
+                        <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Perfekt für Reisende, die das authentische Griechenland in einer intensiven und inspirierenden Reise erleben möchten.</p>
+                        
+                        <div class="luxury-price-wrapper">
+                            <span class="price-label">10 Tage Erlebnis ab</span>
+                            <div class="luxury-price" data-i18n="package.1.price">2.600 €</div>
+                        </div>
+
+                        <ul class="luxury-features-list">
+                            <li><i data-lucide="check" style="width: 20px; height: 20px;"></i> Unterkunft in Boutique-Hotels</li>
+                            <li><i data-lucide="coffee" style="width: 20px; height: 20px;"></i> Traditionelle Vollpension</li>
+                            <li><i data-lucide="leaf" style="width: 20px; height: 20px;"></i> Traditionelle Workshops</li>
+                            <li><i data-lucide="compass" style="width: 20px; height: 20px;"></i> Geführte Gruppen-Touren</li>
+                        </ul>
+                        <a href="contact.html" class="btn-luxury" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="luxury-card luxury-card-premium">
+                    <div class="luxury-badge">Tiefe kulturelle Einblicke</div>
+                    <div class="luxury-card-content">
+                        <div class="emotional-tags">
+                            <span class="emotional-tag">Beliebteste Wahl</span>
+                            <span class="emotional-tag">Exklusives Erlebnis</span>
+                        </div>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: white; margin-bottom: 0.5rem;" data-i18n="package.2.title">Exklusives Griechenland-Erlebnis</h3>
+                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Eine exklusive Premium-Erfahrung mit erweiterten Kulturmomenten, privaten Erlebnissen und luxuriösen Inselabenteuern.</p>
+                        
+                        <div class="luxury-price-wrapper">
+                            <span class="price-label">15 Tage Premium ab</span>
+                            <div class="luxury-price" data-i18n="package.2.price">3.000 €</div>
+                        </div>
+
+                        <ul class="luxury-features-list">
+                            <li><i data-lucide="sun" style="width: 20px; height: 20px;"></i> Premium-Hotels mit Meerblick</li>
+                            <li><i data-lucide="wine" style="width: 20px; height: 20px;"></i> Gourmet-Erlebnisse & Weine</li>
+                            <li><i data-lucide="crown" style="width: 20px; height: 20px;"></i> Private Masterclasses</li>
+                            <li><i data-lucide="ship" style="width: 20px; height: 20px;"></i> Private Insel-Erlebnisse</li>
+                        </ul>
+                        <a href="contact.html" class="btn-luxury btn-luxury-gold" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Comparison -->
+        <section class="journey-comparison-section">
+            <div class="section-title">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 1rem;">Zwei Reisen. Ein unvergessliches Griechenland.</h2>
+                <p class="title-subtitle" style="font-size: 1.15rem;">Jedes Paket wurde entwickelt, um dir die authentische Seele der griechischen Inseln näherzubringen.</p>
+            </div>
+            
+            <div class="journey-table-container">
+                <div class="compare-row-luxury" style="border-bottom: 2px solid rgba(0,0,0,0.05); padding-bottom: 1.5rem; margin-bottom: 1rem;">
+                    <div class="compare-feature-luxury" style="font-weight: 700; color: var(--color-text);">Erlebnis</div>
+                    <div class="compare-val val-standard-lux" style="font-weight: 700; color: var(--color-primary); font-size: 1.1rem;">10 Tage Erlebnis</div>
+                    <div class="compare-val premium-column-highlight" style="font-weight: 700; font-size: 1.2rem;">
+                        <div class="badge-recommended">Unsere Empfehlung</div>
+                        15 Tage Premium
+                    </div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="bed-double" class="feature-icon" style="width: 22px; height: 22px;"></i> Boutique-Unterkünfte
+                    </div>
+                    <div class="compare-val val-standard-lux">Authentische Inselhäuser</div>
+                    <div class="compare-val premium-column-highlight">Premium Unterkünfte mit Meerblick</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="coffee" class="feature-icon" style="width: 22px; height: 22px;"></i> Kulinarische Erlebnisse
+                    </div>
+                    <div class="compare-val val-standard-lux">Traditionelle Vollpension</div>
+                    <div class="compare-val premium-column-highlight">Gourmet-Erlebnisse & lokale Spezialitäten</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="wine" class="feature-icon" style="width: 22px; height: 22px;"></i> Wein & Verkostungen
+                    </div>
+                    <div class="compare-val val-standard-lux">Ausgewählte Verkostungen</div>
+                    <div class="compare-val premium-column-highlight">Exklusive Sommelier-Erlebnisse</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="hammer" class="feature-icon" style="width: 22px; height: 22px;"></i> Handwerkskunst
+                    </div>
+                    <div class="compare-val val-standard-lux">Traditionelle Workshops</div>
+                    <div class="compare-val premium-column-highlight">Private Masterclasses mit Einheimischen</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="map" class="feature-icon" style="width: 22px; height: 22px;"></i> Inselerkundungen
+                    </div>
+                    <div class="compare-val val-standard-lux">Geführte Gruppen-Touren</div>
+                    <div class="compare-val premium-column-highlight">Exklusive private Insel-Erlebnisse</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="tree-pine" class="feature-icon" style="width: 22px; height: 22px;"></i> Natur & Outdoor
+                    </div>
+                    <div class="compare-val val-standard-lux">Yoga & Naturwanderungen</div>
+                    <div class="compare-val premium-column-highlight">Erweiterte Outdoor Experiences</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="anchor" class="feature-icon" style="width: 22px; height: 22px;"></i> Fishing Experience
+                    </div>
+                    <div class="compare-val val-standard-lux">Traditionelles Bootsfischen</div>
+                    <div class="compare-val premium-column-highlight">Private Sunset Fishing Tour</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="heart-handshake" class="feature-icon" style="width: 22px; height: 22px;"></i> Kultur & Tradition
+                    </div>
+                    <div class="compare-val val-standard-lux">Lokale Begegnungen</div>
+                    <div class="compare-val premium-column-highlight">Tiefe kulturelle Insider-Erlebnisse</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="car" class="feature-icon" style="width: 22px; height: 22px;"></i> Transfer-Service
+                    </div>
+                    <div class="compare-val val-standard-lux"><i data-lucide="minus" style="color: #CBD5E0; width: 20px; height: 20px;"></i></div>
+                    <div class="compare-val premium-column-highlight">VIP Flughafen- & Inseltransfer</div>
+                </div>
+                
+                <div class="compare-row-luxury row-hover-glow">
+                    <div class="compare-feature-luxury">
+                        <i data-lucide="users" class="feature-icon" style="width: 22px; height: 22px;"></i> Gruppengröße
+                    </div>
+                    <div class="compare-val val-standard-lux">Kleine Gruppen</div>
+                    <div class="compare-val premium-column-highlight">Sehr limitierte Premium-Gruppen</div>
+                </div>
+
+                <div class="compare-footnote">Mehr als nur Urlaub — eine Reise in die Kultur, Natur und Seele Griechenlands.</div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-editorial-section">
+            <div class="faq-orbs" style="position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(212, 175, 55, 0.05); top: -100px; right: -100px; filter: blur(100px);"></div>
+            <div class="faq-orbs" style="position: absolute; width: 300px; height: 300px; border-radius: 50%; background: rgba(212, 175, 55, 0.08); bottom: -50px; left: -50px; filter: blur(80px);"></div>
+            
+            <div class="faq-editorial-grid">
+                <!-- Left Column: Sticky Title & Description -->
+                <div class="faq-left-content">
+                    <span class="faq-pre-title">VOR DEINER REISE</span>
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--color-primary); line-height: 1.2;">Häufig gestellte Fragen</h2>
+                    <p class="faq-description">Alle unsere Reisen werden individuell, authentisch und sorgfältig für dich organisiert. Hier findest du alles, was du vor deiner Reise wissen musst, um dich voll und ganz auf dein Erlebnis einzulassen.</p>
+                </div>
+                
+                <!-- Right Column: Accordion Cards -->
+                <div class="faq-right-content">
+                    <details class="faq-glass-card">
+                        <summary>
+                            Sind die Flüge im Preis inbegriffen?
+                            <div class="faq-toggle-icon"></div>
+                        </summary>
+                        <div class="faq-answer-inner">
+                            <i data-lucide="plane"></i>
+                            <div>
+                                Nein, die Flüge nach Griechenland sind <span style="font-weight: 600; color: var(--color-primary);">nicht im Preis enthalten</span>. Da unsere Gäste aus verschiedenen Ländern und Städten anreisen, lassen wir dir die Flexibilität, deine Flüge individuell zu buchen. Wir helfen dir jedoch gerne mit Empfehlungen für den besten Flughafen.
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-glass-card">
+                        <summary>
+                            Wie groß sind die Reisegruppen?
+                            <div class="faq-toggle-icon"></div>
+                        </summary>
+                        <div class="faq-answer-inner">
+                            <i data-lucide="users"></i>
+                            <div>
+                                Um ein möglichst authentisches und persönliches Erlebnis zu garantieren, beschränken wir unsere Gruppen auf <span style="font-weight: 600; color: var(--color-primary);">maximal 10-12 Personen</span>. Bei der Premium-Experience gibt es sogar Tage, die komplett privat oder in einer noch kleineren Gruppe stattfinden.
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="faq-glass-card">
+                        <summary>
+                            Welches Fitnesslevel ist erforderlich?
+                            <div class="faq-toggle-icon"></div>
+                        </summary>
+                        <div class="faq-answer-inner">
+                            <i data-lucide="activity"></i>
+                            <div>
+                                Ein durchschnittliches Fitnesslevel ist vollkommen ausreichend. Unsere Touren beinhalten leichte Wanderungen und Spaziergänge, jedoch <span style="font-weight: 600; color: var(--color-primary);">keine extremen sportlichen Herausforderungen</span>. Wenn du spezielle Einschränkungen hast, sag uns einfach im Voraus Bescheid.
+                            </div>
+                        </div>
+                    </details>
+
+                    <details class="faq-glass-card">
+                        <summary>
+                            Wie lauten die Stornierungsbedingungen?
+                            <div class="faq-toggle-icon"></div>
+                        </summary>
+                        <div class="faq-answer-inner">
+                            <i data-lucide="calendar-off"></i>
+                            <div>
+                                Du kannst deine Reise bis zu <span style="font-weight: 600; color: var(--color-primary);">60 Tage vor Reisebeginn kostenlos stornieren</span> oder umbuchen. Ab dem 59. Tag fallen gestaffelte Stornierungsgebühren an. Wir empfehlen generell den Abschluss einer Reiserücktrittsversicherung.
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Bottom CTA inside the right column -->
+                    <div class="faq-premium-cta">
+                        <h4>Noch Fragen?</h4>
+                        <p style="color: var(--color-text-light); margin-bottom: 2rem;">Lass uns deine Reise gemeinsam planen.</p>
+                        <a href="contact.html" class="btn-luxury" style="display: inline-flex; align-items: center; gap: 0.5rem;"><i data-lucide="message-circle" style="width: 18px; height: 18px;"></i> Kontakt aufnehmen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="sun"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <p>Authentische Erlebnisse auf griechischen Inseln.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+            </div>
+            <div class="footer-col">
+                <h3>Social Media</h3>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
