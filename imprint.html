@@ -29,23 +29,72 @@
     </header>
 
     <main>
-        <section class="container" style="padding-top: 100px;">
-            <div class="card" style="padding: 3rem;">
-                <h1 data-i18n="footer.imprint">Impressum</h1>
-                <p><strong>Griechenland Adventure & Culture Trips</strong><br>
-                Musterstraße 1<br>
-                12345 Athen, Griechenland</p>
+        <!-- Legal Editorial Hero -->
+        <section class="legal-hero">
+            <div class="legal-hero-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+            <div class="legal-hero-content">
+                <div class="legal-hero-pretitle">TRUST & TRANSPARENCY</div>
+                <h1 class="legal-hero-title">Impressum</h1>
+                <div class="legal-hero-badge">
+                    <i data-lucide="check-circle"></i> Official Info
+                </div>
+            </div>
+        </section>
 
-                <p><strong>Vertreten durch:</strong><br>
-                Max Mustermann</p>
+        <!-- Legal Content Grid -->
+        <section class="legal-container">
+            <!-- Sticky Navigation -->
+            <aside class="legal-sidebar">
+                <ul class="legal-nav">
+                    <li><a href="imprint.html" class="active">Impressum</a></li>
+                    <li><a href="privacy.html">Datenschutz</a></li>
+                    <li><a href="#">AGB</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </aside>
 
-                <p><strong>Kontakt:</strong><br>
-                Telefon: +30 210 123 4567<br>
-                E-Mail: hello@greecetrips.com</p>
+            <!-- Legal Cards -->
+            <div class="legal-content">
+                <section class="legal-card" style="padding-bottom: 2rem;">
+                    
+                    <div class="legal-info-block">
+                        <h3><i data-lucide="map-pin"></i> Unternehmen</h3>
+                        <p><strong>Griechenland Adventure & Culture Trips</strong><br>
+                        Musterstraße 1<br>
+                        12345 Athen, Griechenland</p>
+                    </div>
 
-                <p><strong>Umsatzsteuer-ID:</strong><br>
-                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
-                EL 123456789</p>
+                    <hr class="legal-divider">
+
+                    <div class="legal-info-block">
+                        <h3><i data-lucide="phone"></i> Kontakt</h3>
+                        <p>Telefon: +30 210 123 4567<br>
+                        E-Mail: <a href="mailto:hello@greecetrips.com" style="color: var(--color-gold); text-decoration: none;">hello@greecetrips.com</a></p>
+                    </div>
+
+                    <hr class="legal-divider">
+
+                    <div class="legal-info-block">
+                        <h3><i data-lucide="user"></i> Verantwortlich</h3>
+                        <p>Max Mustermann</p>
+                    </div>
+
+                    <hr class="legal-divider">
+
+                    <div class="legal-info-block">
+                        <h3><i data-lucide="shield"></i> Umsatzsteuer-ID</h3>
+                        <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+                        EL 123456789</p>
+                    </div>
+
+                    <div class="legal-signature">
+                        <i data-lucide="sun"></i>
+                        <p style="font-size: 0.85rem; font-family: 'Outfit', sans-serif; letter-spacing: 2px; text-transform: uppercase; margin-top: 0.5rem; font-weight: 500; color: rgba(212, 175, 55, 0.8);">Boutique Experiences</p>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
