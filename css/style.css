@@ -2974,3 +2974,230 @@ textarea.luxury-input {
         box-shadow: 0 4px 15px rgba(10, 46, 70, 0.15) !important;
     }
 }
+
+/* ==========================================================================
+   Luxurious Travel Magazine - Editorial Activities Redesign
+   ========================================================================== */
+
+.activities-editorial-wrapper {
+    background-color: #FAF5ED !important;
+    padding: 7.5rem 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Asymmetric Magazine Grid */
+.grid-editorial-asymmetric {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+/* Premium Experience Card Style */
+.card-editorial {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(10, 46, 70, 0.03);
+    border: 1px solid rgba(10, 46, 70, 0.03);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 420px;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+}
+
+/* Card Aspect and Grid Spanning */
+.card-featured-lg {
+    grid-column: span 8;
+    grid-row: span 2;
+    min-height: 650px;
+}
+
+.card-featured-wide {
+    grid-column: span 8;
+    min-height: 450px;
+}
+
+.card-editorial-compact {
+    grid-column: span 4;
+}
+
+.card-showcase-12 {
+    grid-column: span 12;
+    flex-direction: row !important;
+    min-height: 480px;
+}
+
+.card-showcase-12 .card-img-wrapper {
+    width: 55%;
+    height: 100%;
+    min-height: 480px;
+}
+
+.card-showcase-12 .card-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+/* Images & Overlays */
+.card-editorial .card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+.card-featured-lg .card-img-wrapper {
+    height: 75%;
+}
+
+.card-featured-wide .card-img-wrapper {
+    height: 60%;
+}
+
+.card-editorial-compact .card-img-wrapper {
+    height: 55%;
+}
+
+.card-editorial .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Floating Glassmorphic Tags */
+.card-editorial-tag {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0.55rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+/* Typography for Magazine Vibe */
+.card-editorial .card-content {
+    padding: 2.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #ffffff;
+    z-index: 2;
+}
+
+.card-editorial .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.card-featured-lg .card-title {
+    font-size: 2.2rem;
+}
+
+.card-editorial .card-description {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.98rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Active Editorial Hovers */
+.card-editorial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(211, 97, 53, 0.08), 0 12px 35px rgba(10, 46, 70, 0.04);
+    border-color: rgba(211, 97, 53, 0.15);
+}
+
+.card-editorial:hover .card-img {
+    transform: scale(1.06);
+}
+
+.card-editorial:hover .card-title {
+    color: var(--color-accent);
+}
+
+.card-editorial:hover .card-editorial-tag {
+    background: var(--color-accent);
+    color: #ffffff;
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 15px rgba(211, 97, 53, 0.3);
+}
+
+/* Responsive Editorial Rules */
+@media (max-width: 1024px) {
+    .grid-editorial-asymmetric {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .card-featured-lg,
+    .card-featured-wide,
+    .card-editorial-compact,
+    .card-showcase-12 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        min-height: 400px !important;
+        flex-direction: column !important;
+    }
+    
+    .card-showcase-12 .card-img-wrapper,
+    .card-showcase-12 .card-content {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .card-showcase-12 .card-img-wrapper {
+        height: 250px !important;
+    }
+    
+    .card-showcase-12 .card-content {
+        padding: 2.2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .activities-editorial-wrapper {
+        padding: 5rem 0;
+    }
+    
+    .grid-editorial-asymmetric {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+    
+    .card-editorial {
+        min-height: 380px !important;
+    }
+    
+    .card-featured-lg .card-title {
+        font-size: 1.75rem;
+    }
+}
