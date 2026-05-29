@@ -45,12 +45,12 @@
     color: white;
     border-color: var(--color-primary);
     transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(12, 78, 110, 0.2);
+    box-shadow: 0 20px 40px rgba(10, 46, 70, 0.2);
 }
 
 .premium-card:hover {
     transform: scale(1.05) translateY(-10px);
-    box-shadow: 0 30px 60px rgba(12, 78, 110, 0.3);
+    box-shadow: 0 30px 60px rgba(10, 46, 70, 0.3);
 }
 
 .premium-card .pricing-header {
@@ -70,7 +70,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(194, 110, 74, 0.3);
+    box-shadow: 0 4px 10px rgba(211, 97, 53, 0.3);
 }
 
 .btn-outline {
