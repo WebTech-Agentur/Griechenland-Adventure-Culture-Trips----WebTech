@@ -1127,29 +1127,49 @@ textarea.form-control {
 .activity-feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 0rem; /* Handled by offsets */
     align-items: center;
-    margin-bottom: 4rem;
-    padding: 2rem;
-    border-radius: var(--radius-lg);
+    margin-bottom: 9rem;
+    padding: 0;
+    border-radius: 0;
     transition: var(--transition);
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-.activity-feature:hover {
-    background: rgba(255,255,255,0.6);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+.activity-feature-content {
+    background: rgba(250, 245, 237, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(216, 178, 110, 0.22);
+    padding: 3.5rem;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(10, 46, 70, 0.03);
+    position: relative;
+    z-index: 10;
+    margin-left: -5rem;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.activity-feature.reverse .activity-feature-content {
+    margin-right: -5rem;
+    margin-left: 0;
+}
+
+.activity-feature:hover .activity-feature-content {
+    border-color: rgba(211, 97, 53, 0.3);
+    box-shadow: 0 25px 50px rgba(211, 97, 53, 0.08), 0 10px 30px rgba(10, 46, 70, 0.04);
 }
 
 /* Contextual Activity feature styles for Nature & Outdoors */
-.activity-feature-sage-olive {
-    background: rgba(121, 138, 117, 0.05);
-    border: 1px solid rgba(121, 138, 117, 0.15);
+.activity-feature-sage-olive .activity-feature-content {
+    border-color: rgba(121, 138, 117, 0.25);
 }
 
-.activity-feature-sage-olive:hover {
-    background: rgba(121, 138, 117, 0.08) !important;
+.activity-feature-sage-olive:hover .activity-feature-content {
     border-color: var(--color-secondary) !important;
-    box-shadow: 0 20px 40px rgba(121, 138, 117, 0.1) !important;
+    box-shadow: 0 25px 50px rgba(121, 138, 117, 0.12), 0 10px 30px rgba(10, 46, 70, 0.04) !important;
 }
 
 .activity-feature-sage-olive .activity-tag {
@@ -1166,46 +1186,55 @@ textarea.form-control {
 }
 
 .activity-feature-img {
-    border-radius: var(--radius-lg);
+    border-radius: 32px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    aspect-ratio: 4/3;
+    box-shadow: 0 15px 45px rgba(10, 46, 70, 0.06);
+    aspect-ratio: 16/11;
+    position: relative;
+    z-index: 1;
 }
 
 .activity-feature-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .activity-feature:hover .activity-feature-img img {
-    transform: scale(1.05);
+    transform: scale(1.06);
 }
 
 .activity-feature-content h3 {
-    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.activity-feature:hover .activity-feature-content h3 {
+    color: var(--color-accent);
 }
 
 .activity-feature-content p {
     color: var(--color-text-light);
     line-height: 1.8;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
 }
 
 .activity-tag {
     display: inline-block;
     background: rgba(211, 97, 53, 0.1);
     color: var(--color-accent);
-    padding: 0.4rem 1rem;
+    padding: 0.45rem 1.1rem;
     border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.76rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.2rem;
 }
 
 .activity-highlights {
@@ -1308,6 +1337,21 @@ textarea.form-control {
     .activity-feature.reverse {
         grid-template-columns: 1fr;
         direction: ltr;
+    }
+
+    .activity-feature {
+        margin-bottom: 5rem !important;
+    }
+
+    .activity-feature-content {
+        margin-left: 0 !important;
+        padding: 2.2rem !important;
+        border-radius: 24px !important;
+        margin-top: -2.5rem !important;
+    }
+
+    .activity-feature.reverse .activity-feature-content {
+        margin-right: 0 !important;
     }
 
     /* Mobile Hero Section Optimization */
@@ -2976,228 +3020,314 @@ textarea.luxury-input {
 }
 
 /* ==========================================================================
-   Luxurious Travel Magazine - Editorial Activities Redesign
+   Luxurious Travel Magazine - Immersive Experience-Gallery Redesign
    ========================================================================== */
 
 .activities-editorial-wrapper {
     background-color: #FAF5ED !important;
-    padding: 7.5rem 0;
+    padding: 9rem 0;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-/* Asymmetric Magazine Grid */
+/* Immersive Editorial Collage Grid */
 .grid-editorial-asymmetric {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 2.5rem;
-    margin-top: 3.5rem;
+    gap: 4.5rem 3rem; /* Generous spacing for luxury feel */
+    margin-top: 4.5rem;
 }
 
-/* Premium Experience Card Style */
-.card-editorial {
-    background: #ffffff;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 12px 40px rgba(10, 46, 70, 0.03);
-    border: 1px solid rgba(10, 46, 70, 0.03);
+/* Borderless Cinematic Experience Wrapper */
+.gallery-item {
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 420px;
-    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
 }
 
-/* Card Aspect and Grid Spanning */
-.card-featured-lg {
-    grid-column: span 8;
-    grid-row: span 2;
-    min-height: 650px;
+/* Dynamic Offset Shifts to Create Collage Feel */
+.gallery-item-offset-up {
+    transform: translateY(-45px);
 }
 
-.card-featured-wide {
-    grid-column: span 8;
-    min-height: 450px;
+.gallery-item-offset-down {
+    transform: translateY(45px);
 }
 
-.card-editorial-compact {
+/* Asymmetric Grid Column Spanning */
+.span-8-cols-lg {
+    grid-column: span 8;
+    min-height: 520px;
+}
+
+.span-4-cols-compact {
     grid-column: span 4;
+    min-height: 380px;
 }
 
-.card-showcase-12 {
+.span-12-cols-spread {
     grid-column: span 12;
-    flex-direction: row !important;
-    min-height: 480px;
-}
-
-.card-showcase-12 .card-img-wrapper {
-    width: 55%;
-    height: 100%;
-    min-height: 480px;
-}
-
-.card-showcase-12 .card-content {
-    width: 45%;
+    min-height: 580px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 3.5rem;
 }
 
-/* Images & Overlays */
-.card-editorial .card-img-wrapper {
+/* Image Wrappers (Borderless & Deep Rounded) */
+.gallery-image-wrapper {
     position: relative;
     width: 100%;
-    height: 65%;
+    border-radius: 32px;
     overflow: hidden;
     background-color: var(--color-primary);
+    box-shadow: 0 15px 45px rgba(10, 46, 70, 0.05);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-featured-lg .card-img-wrapper {
-    height: 75%;
+/* Aspect Ratios for Variety */
+.span-8-cols-lg .gallery-image-wrapper {
+    aspect-ratio: 16/10;
 }
 
-.card-featured-wide .card-img-wrapper {
-    height: 60%;
+.span-4-cols-compact .gallery-image-wrapper {
+    aspect-ratio: 4/5; /* Beautiful portrait style */
 }
 
-.card-editorial-compact .card-img-wrapper {
-    height: 55%;
+.span-12-cols-spread .gallery-image-wrapper {
+    width: 60%;
+    aspect-ratio: 16/9;
 }
 
-.card-editorial .card-img {
+.gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Floating Glassmorphic Tags */
-.card-editorial-tag {
+/* Translucent Glassmorphic Floating Tags */
+.gallery-tag-glass {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(10, 46, 70, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.55rem 1.25rem;
     border-radius: 50px;
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 1.8px;
     text-transform: uppercase;
-    color: var(--color-primary);
+    color: #ffffff;
     z-index: 10;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
-/* Typography for Magazine Vibe */
-.card-editorial .card-content {
+/* Floating Overlapping Captions */
+.gallery-caption-overlay {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    background: rgba(250, 245, 237, 0.88); /* Translucent Ivory sand tonality */
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(216, 178, 110, 0.22);
     padding: 2.2rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: #ffffff;
-    z-index: 2;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(10, 46, 70, 0.03);
+    z-index: 5;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-editorial .card-title {
+.gallery-caption-overlap {
+    margin-top: -3.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: rgba(250, 245, 237, 0.95); /* Rich ivory layered sheet */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(216, 178, 110, 0.22);
+    padding: 2.2rem;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(10, 46, 70, 0.03);
+    position: relative;
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Layout for the Full Width Spread description on the right */
+.span-12-cols-spread .gallery-side-caption {
+    width: 40%;
+    padding-left: 1rem;
+}
+
+/* Fine Minimalist Details & Typography */
+.gallery-title {
     font-family: 'Playfair Display', serif;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-primary);
-    margin-bottom: 0.8rem;
-    line-height: 1.3;
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
     transition: color 0.3s ease;
 }
 
-.card-featured-lg .card-title {
+.span-8-cols-lg .gallery-title {
     font-size: 2.2rem;
 }
 
-.card-editorial .card-description {
+.gallery-desc {
     font-family: 'Outfit', sans-serif;
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     color: var(--color-text-light);
     line-height: 1.7;
     margin: 0;
 }
 
-/* Active Editorial Hovers */
-.card-editorial:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 60px rgba(211, 97, 53, 0.08), 0 12px 35px rgba(10, 46, 70, 0.04);
-    border-color: rgba(211, 97, 53, 0.15);
+.gallery-meta-divider {
+    border-top: 1px solid rgba(10, 46, 70, 0.1);
+    margin-top: 1.2rem;
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-accent);
+    font-weight: 700;
 }
 
-.card-editorial:hover .card-img {
+/* Active Hover Transitions (Boutique Feel) */
+.gallery-item:hover .gallery-image-wrapper {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(211, 97, 53, 0.06), 0 15px 45px rgba(10, 46, 70, 0.05);
+}
+
+.gallery-item:hover .gallery-image {
     transform: scale(1.06);
 }
 
-.card-editorial:hover .card-title {
+.gallery-item:hover .gallery-title {
     color: var(--color-accent);
 }
 
-.card-editorial:hover .card-editorial-tag {
-    background: var(--color-accent);
-    color: #ffffff;
-    border-color: var(--color-accent);
-    box-shadow: 0 4px 15px rgba(211, 97, 53, 0.3);
+.gallery-item:hover .gallery-caption-overlay,
+.gallery-item:hover .gallery-caption-overlap {
+    border-color: rgba(211, 97, 53, 0.3);
+    box-shadow: 0 20px 45px rgba(211, 97, 53, 0.08), 0 10px 25px rgba(10, 46, 70, 0.04);
 }
 
-/* Responsive Editorial Rules */
+/* Responsive Experience Gallery Overrides */
 @media (max-width: 1024px) {
+    .activities-editorial-wrapper {
+        padding: 6rem 0;
+    }
+    
     .grid-editorial-asymmetric {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 3.5rem 2rem;
     }
     
-    .card-featured-lg,
-    .card-featured-wide,
-    .card-editorial-compact,
-    .card-showcase-12 {
+    .span-8-cols-lg,
+    .span-4-cols-compact,
+    .span-12-cols-spread {
         grid-column: span 1 !important;
-        grid-row: span 1 !important;
-        min-height: 400px !important;
+        min-height: auto !important;
+        transform: none !important;
         flex-direction: column !important;
+        gap: 0 !important;
     }
     
-    .card-showcase-12 .card-img-wrapper,
-    .card-showcase-12 .card-content {
+    .gallery-image-wrapper {
         width: 100% !important;
-        height: auto !important;
+        aspect-ratio: 4/3 !important;
     }
     
-    .card-showcase-12 .card-img-wrapper {
-        height: 250px !important;
+    .gallery-caption-overlap {
+        margin-top: -2rem !important;
     }
     
-    .card-showcase-12 .card-content {
-        padding: 2.2rem !important;
+    .span-12-cols-spread .gallery-side-caption {
+        width: 100% !important;
+        margin-top: -2rem !important;
+        padding-left: 0 !important;
+    }
+    
+    .span-12-cols-spread .gallery-side-caption > div {
+        background: rgba(250, 245, 237, 0.95);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(216, 178, 110, 0.22);
+        padding: 2.2rem;
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(10, 46, 70, 0.03);
     }
 }
 
 @media (max-width: 768px) {
-    .activities-editorial-wrapper {
-        padding: 5rem 0;
-    }
-    
     .grid-editorial-asymmetric {
-        grid-template-columns: 1fr;
-        gap: 1.8rem;
+        grid-template-columns: 1fr !important;
+        gap: 3rem;
     }
     
-    .card-editorial {
-        min-height: 380px !important;
+    .span-8-cols-lg .gallery-title {
+        font-size: 1.8rem;
     }
     
-    .card-featured-lg .card-title {
-        font-size: 1.75rem;
+    .gallery-caption-overlay {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        margin-top: -2rem !important;
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .gallery-caption-overlap {
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+        padding: 1.5rem !important;
+    }
+    
+    .span-12-cols-spread .gallery-side-caption > div {
+        padding: 1.5rem !important;
+    }
+}
+
+/* Immersive Reveal Scroll Animations */
+.gallery-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1), transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Maintain custom offset states when revealed */
+.gallery-item-offset-up.gallery-reveal.revealed {
+    transform: translateY(-45px);
+}
+
+.gallery-item-offset-down.gallery-reveal.revealed {
+    transform: translateY(45px);
+}
+
+@media (max-width: 1024px) {
+    .gallery-item-offset-up.gallery-reveal.revealed,
+    .gallery-item-offset-down.gallery-reveal.revealed {
+        transform: translateY(0) !important;
     }
 }
