@@ -16,7 +16,7 @@ const translations = {
         "footer.social": "Folge uns",
 
         // Home – Hero
-        "home.hero.pretitle": "AUTHENTISCHE GRIECHISCHE ERLEBNISSE",
+        "home.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "home.hero.title": "Entdecke das wahre Griechenland",
         "home.hero.subtitle": "Finde die absolute Ruhe, entdecke das echte Inselleben und erlebe exklusive Momente, die für immer bleiben.",
         "home.hero.cta": "Erlebe die Magie",
@@ -110,7 +110,7 @@ const translations = {
         // =============================================
         // Activities Page – Hero
         // =============================================
-        "act.hero.pretitle": "ERLEBNIS • KULTUR • NATUR",
+        "act.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "act.hero.title": "Erlebe die Seele Griechenlands",
         "act.hero.desc": "Fernab vom Massentourismus erwarten dich authentische Inselerlebnisse voller Kultur, Natur und echter Begegnungen. Entdecke versteckte Dörfer, traditionelle Handwerkskunst, mediterrane Lebensfreude und unvergessliche Momente zwischen Meer, Olivenhainen und Sonnenuntergängen.",
         "act.hero.btn1": "Erlebnisse entdecken",
@@ -242,7 +242,7 @@ const translations = {
         // =============================================
         // Pricing Page
         // =============================================
-        "pricing.hero.pretitle": "DEINE REISE",
+        "pricing.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "pricing.hero.title": "Preise / <span class=\"highlight-gold\">Packages</span>",
         "pricing.hero.desc": "Erlebe die wahre Seele Griechenlands. Unsere handverlesenen Retreats vereinen authentische Kultur, unberührte Natur und exklusiven Premium-Komfort zu einem unvergesslichen Erlebnis.",
         "pricing.hero.glass1": "Kleine Premium-Gruppen",
@@ -302,7 +302,7 @@ const translations = {
         // =============================================
         // Contact Page
         // =============================================
-        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "contact.hero.title": "Lass uns deine <span class=\"highlight-gold\">Reise</span> planen",
         "contact.hero.desc": "Wir freuen uns darauf, deine individuelle Griechenland-Erfahrung zu gestalten.<br>Schreib uns oder ruf uns direkt an.",
         "contact.info.intro": "Persönliche Beratung für authentische Inselerlebnisse.",
@@ -326,6 +326,7 @@ const translations = {
         // =============================================
         // Imprint & Privacy Pages
         // =============================================
+        "legal.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "imprint.hero.title": "Impressum",
         "imprint.hero.badge": "Offizielle Info",
         "imprint.sidebar.imprint": "Impressum",
@@ -374,7 +375,7 @@ const translations = {
         "footer.social": "Follow Us",
 
         // Home – Hero
-        "home.hero.pretitle": "AUTHENTIC GREEK EXPERIENCES",
+        "home.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "home.hero.title": "Discover the true Greece",
         "home.hero.subtitle": "Find absolute tranquility, discover authentic island life and experience exclusive moments that last forever.",
         "home.hero.cta": "Experience the Magic",
@@ -468,7 +469,7 @@ const translations = {
         // =============================================
         // Activities Page – Hero
         // =============================================
-        "act.hero.pretitle": "EXPERIENCE • CULTURE • NATURE",
+        "act.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "act.hero.title": "Experience the Soul of Greece",
         "act.hero.desc": "Far from mass tourism, authentic island experiences full of culture, nature and genuine encounters await you. Discover hidden villages, traditional craftsmanship, Mediterranean joie de vivre and unforgettable moments between sea, olive groves and sunsets.",
         "act.hero.btn1": "Explore Experiences",
@@ -600,7 +601,7 @@ const translations = {
         // =============================================
         // Pricing Page
         // =============================================
-        "pricing.hero.pretitle": "YOUR JOURNEY",
+        "pricing.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "pricing.hero.title": "Pricing / <span class=\"highlight-gold\">Packages</span>",
         "pricing.hero.desc": "Experience the true soul of Greece. Our handpicked retreats combine authentic culture, untouched nature and exclusive premium comfort into an unforgettable experience.",
         "pricing.hero.glass1": "Small Premium Groups",
@@ -660,7 +661,7 @@ const translations = {
         // =============================================
         // Contact Page
         // =============================================
-        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "contact.hero.title": "Let's plan your <span class=\"highlight-gold\">journey</span>",
         "contact.hero.desc": "We look forward to creating your individual Greek experience.<br>Write to us or call us directly.",
         "contact.info.intro": "Personalized advice for authentic island experiences.",
@@ -684,6 +685,7 @@ const translations = {
         // =============================================
         // Imprint & Privacy Pages
         // =============================================
+        "legal.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "imprint.hero.title": "Imprint",
         "imprint.hero.badge": "Official Info",
         "imprint.sidebar.imprint": "Imprint",
@@ -826,7 +828,7 @@ const translations = {
         // =============================================
         // Activities Page – Hero
         // =============================================
-        "act.hero.pretitle": "EXPÉRIENCE • CULTURE • NATURE",
+        "act.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "act.hero.title": "Découvrez l'Âme de la Grèce",
         "act.hero.desc": "Loin du tourisme de masse, des expériences insulaires authentiques pleines de culture, de nature et de rencontres sincères vous attendent. Découvrez des villages cachés, l'artisanat traditionnel, la joie de vivre méditerranéenne et des moments inoubliables entre mer, oliveraies et couchers de soleil.",
         "act.hero.btn1": "Découvrir les Expériences",
@@ -958,7 +960,7 @@ const translations = {
         // =============================================
         // Pricing Page
         // =============================================
-        "pricing.hero.pretitle": "VOTRE VOYAGE",
+        "pricing.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "pricing.hero.title": "Prix / <span class=\"highlight-gold\">Forfaits</span>",
         "pricing.hero.desc": "Découvrez la véritable âme de la Grèce. Nos retraites triées sur le volet allient culture authentique, nature préservée et confort exclusif pour une expérience inoubliable.",
         "pricing.hero.glass1": "Petits Groupes Premium",
@@ -1018,7 +1020,7 @@ const translations = {
         // =============================================
         // Contact Page
         // =============================================
-        "contact.hero.pretitle": "GET IN TOUCH",
+        "contact.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "contact.hero.title": "Planifions votre <span class=\"highlight-gold\">voyage</span>",
         "contact.hero.desc": "Nous avons hâte de concevoir votre expérience grecque sur mesure.<br>Écrivez-nous ou appelez-nous directement.",
         "contact.info.intro": "Conseils personnalisés pour des expériences insulaires authentiques.",
@@ -1042,6 +1044,7 @@ const translations = {
         // =============================================
         // Imprint & Privacy Pages
         // =============================================
+        "legal.hero.pretitle": "EXPÉRIENCES GRECQUES AUTHENTIQUES",
         "imprint.hero.title": "Mentions Légales",
         "imprint.hero.badge": "Info Officielle",
         "imprint.sidebar.imprint": "Mentions Légales",

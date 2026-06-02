@@ -45,6 +45,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     overflow-x: hidden;
+    zoom: 75%;
 }
 
 a {
@@ -350,6 +351,9 @@ main {
     text-align: center;
     color: var(--color-white);
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-bg-image {
@@ -398,7 +402,7 @@ main {
     font-weight: 600;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.9);
+    color: #0078C0;
     margin-bottom: 2rem;
     animation: fadeInDown 1s ease-out;
 }
@@ -994,6 +998,22 @@ main {
     margin-bottom: 1.5rem;
 }
 
+/* Activities CTA Section */
+.activities-cta-section {
+    padding-top: 0;
+    margin-top: -3rem;
+}
+
+.activities-cta-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 5rem 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
 /* Footer */
 footer {
     background-color: var(--color-primary);
@@ -1368,11 +1388,35 @@ textarea.form-control {
         padding: 4rem 1.5rem 1rem 1.5rem;
     }
 
+    .container {
+        padding: 2rem 1.25rem;
+    }
+
     .premium-intro-section + .container {
         padding-top: 1rem;
     }
 
+    .activity-feature {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
 
+    .activity-feature:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .interactive-title {
+        padding: 1rem 0;
+    }
+
+    .activities-cta-section {
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+
+    .activities-cta-card {
+        padding: 3rem 1.5rem;
+    }
 }
 
 /* Interactive Section Title */
@@ -1972,7 +2016,7 @@ textarea.form-control {
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 4px;
-    color: var(--color-gold);
+    color: #0078C0;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -1986,7 +2030,7 @@ textarea.form-control {
     content: '';
     height: 1px;
     width: 40px;
-    background: rgba(212, 175, 55, 0.5);
+    background: rgba(0, 120, 192, 0.5);
 }
 
 .hero-headline-asym {
@@ -2419,7 +2463,7 @@ textarea.luxury-input {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 8px;
-    color: var(--color-gold);
+    color: #0078C0;
     text-transform: uppercase;
     margin-bottom: 2rem;
     opacity: 0;
@@ -2938,7 +2982,28 @@ textarea.luxury-input {
     }
 
     .legal-container {
-        padding: 3rem 1.2rem !important;
+        padding: 2.5rem 1rem !important;
+    }
+
+    .legal-card {
+        padding: 2.2rem 1.5rem !important;
+        max-width: 550px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .legal-info-block h3 {
+        justify-content: center !important;
+    }
+
+    .legal-card p, 
+    .legal-card ul, 
+    .legal-card li, 
+    .legal-card strong, 
+    .legal-card a, 
+    .legal-info-block p {
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     .legal-nav {
@@ -2952,6 +3017,7 @@ textarea.luxury-input {
 
     .legal-nav li {
         margin: 0 !important;
+        flex-shrink: 0 !important;
     }
 
     .legal-nav a {
@@ -2972,5 +3038,29 @@ textarea.luxury-input {
         border-color: var(--color-primary) !important;
         border-left: none !important;
         box-shadow: 0 4px 15px rgba(10, 46, 70, 0.15) !important;
+    }
+}
+
+/* Mobile Header UI Optimizations for Small Screens */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0.8rem 0.75rem !important;
+    }
+
+    .logo {
+        font-size: 1.2rem !important;
+    }
+
+    .lang-switcher {
+        padding: 1px !important;
+    }
+
+    .lang-btn {
+        padding: 0.2rem 0.4rem !important;
+        font-size: 0.72rem !important;
+    }
+
+    .mobile-menu-btn {
+        padding: 0.2rem !important;
     }
 }
