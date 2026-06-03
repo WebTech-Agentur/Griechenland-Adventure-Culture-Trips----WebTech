@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -11,11 +11,11 @@
 <body>
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="homepage.html" class="logo">
                 <i data-lucide="tree-palm"></i>Greece<span>Trips</span>
             </a>
             <nav class="nav-links">
-                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="homepage.html" data-i18n="nav.home">Homepage</a>
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" class="active" data-i18n="nav.pricing">Preise / Packages</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
@@ -78,161 +78,136 @@
             
             <div class="luxury-pricing-grid">
                 <!-- Standard Package -->
-                <div class="luxury-card">
-                    <div class="luxury-card-content">
-                        <div class="emotional-tags">
-                            <span class="emotional-tag" data-i18n="home.pkg1.tag1">Ideal für Entdecker</span>
-                            <span class="emotional-tag" data-i18n="home.pkg1.tag2">Authentische Inselmomente</span>
-                        </div>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem;" data-i18n="package.1.title">Kulturelle Entdeckungsreise</h3>
-                        <p style="color: var(--color-text-light); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;" data-i18n="home.pkg1.desc">Perfekt für Reisende, die das authentische Griechenland in einer intensiven und inspirierenden Reise erleben möchten.</p>
-                        
-                        <div class="luxury-price-wrapper">
-                            <span class="price-label" data-i18n="home.pkg1.priceLabel">10 Tage Erlebnis ab</span>
-                            <div class="luxury-price" data-i18n="package.1.price">2.600 €</div>
+                <div class="luxury-card" style="border: none; position: relative; overflow: visible; border-radius: 24px; padding: 4px; background: #003366; box-shadow: 0 20px 50px rgba(0, 51, 102, 0.15);">
+                    <!-- Badge -->
+                    <div style="position: absolute; top: -15px; right: -15px; background: linear-gradient(135deg, #D4AF37, #C5A028); color: white; padding: 8px 16px; border-radius: 30px; font-weight: bold; font-size: 0.9rem; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4); z-index: 10;">
+                        ⭐ Premium Erlebnis
+                    </div>
+                    
+                    <div class="luxury-card-content" style="background: white; border-radius: 20px; padding: 3rem 2.5rem; text-align: center; height: 100%;">
+                        <div class="emotional-tags" style="margin-bottom: 1.5rem; display: flex; justify-content: center; gap: 0.8rem;">
+                            <span class="emotional-tag" style="background: rgba(0, 180, 216, 0.1); color: #00B4D8; border: none; border-radius: 20px; padding: 6px 14px; font-weight: 600;">Ideal für Entdecker</span>
+                            <span class="emotional-tag" style="background: rgba(0, 180, 216, 0.1); color: #00B4D8; border: none; border-radius: 20px; padding: 6px 14px; font-weight: 600;">Authentische Inselmomente</span>
                         </div>
 
-                        <ul class="luxury-features-list">
-                            <li><i data-lucide="check" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg1.f1">Unterkunft in Boutique-Hotels</span></li>
-                            <li><i data-lucide="coffee" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg1.f2">Traditionelle Vollpension</span></li>
-                            <li><i data-lucide="leaf" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg1.f3">Traditionelle Workshops</span></li>
-                            <li><i data-lucide="compass" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg1.f4">Geführte Gruppen-Touren</span></li>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2.6rem; color: #003366; margin-bottom: 0.5rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1;">10 Tage All-Inclusive Experience</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem; font-weight: 300;">Authentische Urlaubsjourney durch die griechischen Inseln</p>
+                        
+                        <!-- Price Box -->
+                        <div style="background: linear-gradient(135deg, rgba(0, 180, 216, 0.15), rgba(0, 180, 216, 0.05)); border-radius: 16px; padding: 2rem; margin-bottom: 2.5rem; border: 1px solid rgba(0, 180, 216, 0.3); box-shadow: 0 10px 20px rgba(0, 180, 216, 0.1);">
+                            <span style="display: block; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; font-weight: 700; color: #00B4D8; margin-bottom: 0.5rem;">Preis</span>
+                            <div style="font-size: 3.5rem; font-weight: 800; color: #003366; line-height: 1;">2.600 €</div>
+                        </div>
+
+                        <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; font-weight: 700; margin-bottom: 1.5rem; color: #003366;">Leistungen</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2.5rem;">
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: #333; margin-bottom: 1.2rem; font-weight: 400;"><i data-lucide="check-circle" style="width: 24px; height: 24px; color: #00B4D8;"></i> <span>Unterkunft</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: #333; margin-bottom: 1.2rem; font-weight: 400;"><i data-lucide="coffee" style="width: 24px; height: 24px; color: #00B4D8;"></i> <span>Frühstück, Mittagessen und Abendessen</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: #333; margin-bottom: 1.2rem; font-weight: 400;"><i data-lucide="sun" style="width: 24px; height: 24px; color: #00B4D8;"></i> <span>Workshops und Aktivitäten</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: #333; margin-bottom: 1.2rem; font-weight: 400;"><i data-lucide="compass" style="width: 24px; height: 24px; color: #00B4D8;"></i> <span>Geführte Erlebnisse auf den Inseln</span></li>
                         </ul>
-                        <a href="contact.html" class="btn-luxury" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                        
+                        <div style="background: #F5F0E6; border-radius: 12px; padding: 15px 20px; margin-bottom: 2.5rem; text-align: center; border-left: 4px solid #D4AF37;">
+                            <p style="font-size: 1rem; color: #555; margin: 0;"><strong>Hinweis:</strong><br>• Getränke sind nicht inklusive</p>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-luxury" style="width: 100%; display: block; text-align: center; border-radius: 50px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; font-size: 1.2rem; padding: 1.2rem 2rem; background: linear-gradient(135deg, #003366, #002244); color: white; border: none; box-shadow: 0 10px 20px rgba(0, 51, 102, 0.3);">Reise beginnen</a>
                     </div>
                 </div>
 
                 <!-- Premium Package -->
-                <div class="luxury-card luxury-card-premium">
-                    <div class="luxury-badge" data-i18n="home.pkg2.badge">Tiefe kulturelle Einblicke</div>
-                    <div class="luxury-card-content">
-                        <div class="emotional-tags">
-                            <span class="emotional-tag" data-i18n="home.pkg2.tag1">Beliebteste Wahl</span>
-                            <span class="emotional-tag" data-i18n="home.pkg2.tag2">Exklusives Erlebnis</span>
-                        </div>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; color: white; margin-bottom: 0.5rem;" data-i18n="package.2.title">Exklusives Griechenland-Erlebnis</h3>
-                        <p style="color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;" data-i18n="home.pkg2.desc">Eine exklusive Premium-Erfahrung mit erweiterten Kulturmomenten, privaten Erlebnissen und luxuriösen Inselabenteuern.</p>
-                        
-                        <div class="luxury-price-wrapper">
-                            <span class="price-label" data-i18n="home.pkg2.priceLabel">15 Tage Premium ab</span>
-                            <div class="luxury-price" data-i18n="package.2.price">3.000 €</div>
+                <div class="luxury-card" style="border: 2px solid #D4AF37; position: relative; overflow: visible; border-radius: 24px; padding: 4px; background: #001a33; box-shadow: 0 20px 50px rgba(212, 175, 55, 0.2);">
+                    <!-- Badge -->
+                    <div style="position: absolute; top: -18px; right: -18px; background: linear-gradient(135deg, #F3E5AB, #D4AF37, #C5A028); color: #001a33; padding: 10px 20px; border-radius: 30px; font-weight: 800; font-size: 0.95rem; box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5); z-index: 10; display: flex; align-items: center; gap: 6px;">
+                        <span>👑</span> VIP Experience
+                    </div>
+                    
+                    <div class="luxury-card-content" style="background: linear-gradient(180deg, rgba(0,34,68,0.95), rgba(0,26,51,1)); border-radius: 20px; padding: 3rem 2.5rem; text-align: center; height: 100%; border: 1px solid rgba(212, 175, 55, 0.2);">
+                        <div class="emotional-tags" style="margin-bottom: 1.5rem; display: flex; justify-content: center; gap: 0.8rem;">
+                            <span class="emotional-tag" style="background: rgba(212, 175, 55, 0.1); color: #F3E5AB; border: 1px solid rgba(212,175,55,0.3); border-radius: 20px; padding: 6px 14px; font-weight: 600;">Luxury Edition</span>
+                            <span class="emotional-tag" style="background: rgba(212, 175, 55, 0.1); color: #F3E5AB; border: 1px solid rgba(212,175,55,0.3); border-radius: 20px; padding: 6px 14px; font-weight: 600;">Signature Collection</span>
                         </div>
 
-                        <ul class="luxury-features-list">
-                            <li><i data-lucide="sun" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg2.f1">Premium-Hotels mit Meerblick</span></li>
-                            <li><i data-lucide="wine" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg2.f2">Gourmet-Erlebnisse & Weine</span></li>
-                            <li><i data-lucide="crown" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg2.f3">Private Masterclasses</span></li>
-                            <li><i data-lucide="ship" style="width: 20px; height: 20px;"></i> <span data-i18n="home.pkg2.f4">Private Insel-Erlebnisse</span></li>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 2.6rem; color: #F3E5AB; margin-bottom: 0.5rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.1;">15 Tage Premium Experience</h3>
+                        <p style="color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem; font-weight: 300;">Authentische Urlaubsjourney durch die griechischen Inseln</p>
+                        
+                        <!-- Price Box -->
+                        <div style="background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, rgba(212,175,55,0.05) 100%); border-radius: 16px; padding: 2.5rem 2rem; margin-bottom: 2.5rem; border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: inset 0 0 20px rgba(212,175,55,0.1), 0 10px 30px rgba(0,0,0,0.5);">
+                            <span style="display: block; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; font-weight: 700; color: #D4AF37; margin-bottom: 1rem;">Preis</span>
+                            <div style="font-size: 4rem; font-weight: 800; color: #F3E5AB; line-height: 1; text-shadow: 0 2px 10px rgba(212,175,55,0.3);">3.000 €</div>
+                        </div>
+
+                        <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; font-weight: 700; margin-bottom: 1.5rem; color: #D4AF37;">Exklusive Leistungen</p>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2.5rem;">
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: white; margin-bottom: 1.2rem; font-weight: 300;"><i data-lucide="check-circle" style="width: 24px; height: 24px; color: #D4AF37;"></i> <span>Unterkunft</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: white; margin-bottom: 1.2rem; font-weight: 300;"><i data-lucide="coffee" style="width: 24px; height: 24px; color: #D4AF37;"></i> <span>Frühstück, Mittagessen und Abendessen</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: white; margin-bottom: 1.2rem; font-weight: 300;"><i data-lucide="star" style="width: 24px; height: 24px; color: #D4AF37;"></i> <span>Alle Workshops und Aktivitäten</span></li>
+                            <li style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.15rem; color: white; margin-bottom: 1.2rem; font-weight: 300;"><i data-lucide="compass" style="width: 24px; height: 24px; color: #D4AF37;"></i> <span>Erweiterte Insel- und Kulturerlebnisse</span></li>
                         </ul>
-                        <a href="contact.html" class="btn-luxury btn-luxury-gold" style="width: 100%; display: block; text-align: center;" data-i18n="package.btn">Reise beginnen</a>
+                        
+                        <div style="background: rgba(212,175,55,0.05); border-radius: 12px; padding: 15px 20px; margin-bottom: 2.5rem; text-align: center; border: 1px solid rgba(212,175,55,0.2);">
+                            <p style="font-size: 1rem; color: #D4AF37; margin: 0;"><strong>Hinweis:</strong><br><span style="color: rgba(255,255,255,0.7);">• Getränke sind nicht inklusive</span></p>
+                        </div>
+                        
+                        <a href="contact.html" class="btn-luxury" style="width: 100%; display: block; text-align: center; border-radius: 50px; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; font-size: 1.2rem; padding: 1.2rem 2rem; background: linear-gradient(135deg, #F3E5AB, #D4AF37); color: #001a33; border: none; box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);">Exklusive Reise anfragen</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Journey Comparison -->
-        <section class="journey-comparison-section">
+        <section class="journey-comparison-section" style="padding-bottom: 6rem;">
             <div class="section-title">
                 <h2 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 1rem;" data-i18n="pricing.pkg.compare.title">Zwei Reisen. Ein unvergessliches Griechenland.</h2>
                 <p class="title-subtitle" style="font-size: 1.15rem;" data-i18n="pricing.pkg.compare.subtitle">Jedes Paket wurde entwickelt, um dir die authentische Seele der griechischen Inseln näherzubringen.</p>
             </div>
             
-            <div class="journey-table-container">
-                <div class="compare-row-luxury" style="border-bottom: 2px solid rgba(0,0,0,0.05); padding-bottom: 1.5rem; margin-bottom: 1rem;">
-                    <div class="compare-feature-luxury" style="font-weight: 700; color: var(--color-text);" data-i18n="pricing.pkg.compare.header.feat">Erlebnis</div>
-                    <div class="compare-val val-standard-lux" style="font-weight: 700; color: var(--color-primary); font-size: 1.1rem;" data-i18n="pricing.pkg.compare.header.std">10 Tage Erlebnis</div>
-                    <div class="compare-val premium-column-highlight" style="font-weight: 700; font-size: 1.2rem;">
-                        <div class="badge-recommended" data-i18n="pricing.pkg.compare.recommended">Unsere Empfehlung</div>
-                        <span data-i18n="pricing.pkg.compare.header.prem">15 Tage Premium</span>
-                    </div>
-                </div>
+            <div class="journey-worlds-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; max-width: 1000px; margin: 4rem auto 0;">
                 
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="bed-double" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat1.title">Boutique-Unterkünfte</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat1.std">Authentische Inselhäuser</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat1.prem">Premium Unterkünfte mit Meerblick</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="coffee" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat2.title">Kulinarische Erlebnisse</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat2.std">Traditionelle Vollpension</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat2.prem">Gourmet-Erlebnisse & lokale Spezialitäten</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="wine" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat3.title">Wein & Verkostungen</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat3.std">Ausgewählte Verkostungen</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat3.prem">Exklusive Sommelier-Erlebnisse</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="hammer" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat4.title">Handwerkskunst</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat4.std">Traditionelle Workshops</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat4.prem">Private Masterclasses mit Einheimischen</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="map" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat5.title">Inselerkundungen</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat5.std">Geführte Gruppen-Touren</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat5.prem">Exklusive private Insel-Erlebnisse</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="tree-pine" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat6.title">Natur & Outdoor</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat6.std">Yoga & Naturwanderungen</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat6.prem">Erweiterte Outdoor Experiences</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="anchor" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat7.title">Fishing Experience</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat7.std">Traditionelles Bootsfischen</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat7.prem">Private Sunset Fishing Tour</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="heart-handshake" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat8.title">Kultur & Tradition</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat8.std">Lokale Begegnungen</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat8.prem">Tiefe kulturelle Insider-Erlebnisse</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="car" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat9.title">Transfer-Service</span>
-                    </div>
-                    <div class="compare-val val-standard-lux"><i data-lucide="minus" style="color: #CBD5E0; width: 20px; height: 20px;"></i></div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat9.prem">VIP Flughafen- & Inseltransfer</div>
-                </div>
-                
-                <div class="compare-row-luxury row-hover-glow">
-                    <div class="compare-feature-luxury">
-                        <i data-lucide="users" class="feature-icon" style="width: 22px; height: 22px;"></i> <span data-i18n="pricing.pkg.compare.feat10.title">Gruppengröße</span>
-                    </div>
-                    <div class="compare-val val-standard-lux" data-i18n="pricing.pkg.compare.feat10.std">Kleine Gruppen</div>
-                    <div class="compare-val premium-column-highlight" data-i18n="pricing.pkg.compare.feat10.prem">Sehr limitierte Premium-Gruppen</div>
+                <!-- 10 Tage Erlebnis -->
+                <div style="border: 3px solid #003366; border-radius: 20px; padding: 3rem 2rem; background: white; box-shadow: 0 15px 35px rgba(0, 51, 102, 0.1); display: flex; flex-direction: column;">
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #003366; margin-bottom: 2rem; text-align: center;">10 Tage Erlebnis</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0; flex-grow: 1;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Authentisches Griechenland</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Boutique-Unterkünfte</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Traditionelle Kulinarik</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Ausgewählte Weinverkostungen</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Geführte Inselerkundungen</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="check" style="color: #003366; min-width: 20px; margin-top: 3px;"></i> <span style="color: #444; font-size: 1.1rem;">Kleine Gruppen</span></li>
+                    </ul>
                 </div>
 
-                <div class="compare-footnote" data-i18n="pricing.pkg.compare.footnote">Mehr als nur Urlaub — eine Reise in die Kultur, Natur und Seele Griechenlands.</div>
+                <!-- 15 Tage Premium -->
+                <div style="border: 3px solid #D4AF37; border-radius: 20px; padding: 3rem 2rem; background: linear-gradient(180deg, #fffcf5, #fff); box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15); display: flex; flex-direction: column; position: relative;">
+                    <!-- Badge -->
+                    <div style="position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #F3E5AB, #D4AF37); color: #001a33; padding: 6px 20px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; white-space: nowrap; box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);">
+                        ⭐ Unsere Empfehlung
+                    </div>
+
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #D4AF37; margin-bottom: 1.5rem; text-align: center;">15 Tage Premium</h3>
+                    
+                    <p style="text-align: center; font-weight: 700; color: #003366; margin-bottom: 1.5rem; font-size: 1rem; border-bottom: 1px solid rgba(212,175,55,0.3); padding-bottom: 1rem;">Alles aus dem Erlebnis-Paket plus:</p>
+
+                    <ul style="list-style: none; padding: 0; margin: 0; flex-grow: 1;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">Premium-Unterkünfte mit Meerblick</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">Gourmet-Erlebnisse & lokale Spezialitäten</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">Private Inselerkundungen</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">Exklusive Wein- und Verkostungserlebnisse</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">VIP-Flughafen- & Inseltransfers</span></li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;"><i data-lucide="star" style="color: #D4AF37; min-width: 20px; margin-top: 3px;"></i> <span style="color: #333; font-size: 1.1rem; font-weight: 500;">Sehr limitierte Premium-Gruppen</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="max-width: 800px; margin: 3rem auto 0; text-align: center; background: rgba(0, 51, 102, 0.03); padding: 1.5rem 2rem; border-radius: 15px; border-left: 4px solid #D4AF37;">
+                <p style="font-size: 1.15rem; color: #444; margin: 0; line-height: 1.6;">
+                    <strong style="color: #003366;">Die Premium-Reise</strong> beinhaltet alle Leistungen der Erlebnis-Reise und erweitert diese um exklusive Unterkünfte, private Erlebnisse und VIP-Services.
+                </p>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq-editorial-section">
+        <section class="faq-editorial-section" style="padding-top: 8rem;">
             <div class="faq-orbs" style="position: absolute; width: 400px; height: 400px; border-radius: 50%; background: rgba(212, 175, 55, 0.05); top: -100px; right: -100px; filter: blur(100px);"></div>
             <div class="faq-orbs" style="position: absolute; width: 300px; height: 300px; border-radius: 50%; background: rgba(212, 175, 55, 0.08); bottom: -50px; left: -50px; filter: blur(80px);"></div>
             
@@ -312,12 +287,12 @@
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <a href="index.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
+                <a href="homepage.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
                 <p>Authentische Erlebnisse auf griechischen Inseln.</p>
             </div>
             <div class="footer-col">
                 <h3>Links</h3>
-                <a href="index.html" data-i18n="nav.home">Homepage</a>
+                <a href="homepage.html" data-i18n="nav.home">Homepage</a>
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>

@@ -943,7 +943,7 @@ main {
 }
 
 .card-title {
-    color: var(--color-primary);
+    color: #003366 !important;
     margin-bottom: 0.5rem;
 }
 
@@ -962,7 +962,7 @@ main {
 }
 
 .card-sage-olive .card-title {
-    color: #4A5847 !important; /* Premium deep olive tone */
+    color: #003366 !important;
 }
 
 .card-price {
@@ -3062,5 +3062,45 @@ textarea.luxury-input {
 
     .mobile-menu-btn {
         padding: 0.2rem !important;
+    }
+}
+
+/* 
+   ENGLISH-ONLY MOBILE RESPONSIVE STYLING FOR IMPRINT/PRIVACY
+*/
+@media (max-width: 768px) {
+    html[lang="en"] .legal-container {
+        padding: 4rem 24px !important;
+        margin: 0 auto !important;
+        box-sizing: border-box !important;
+    }
+
+    html[lang="en"] .legal-card,
+    html[lang="en"] .legal-info-block,
+    html[lang="en"] .legal-info-block p,
+    html[lang="en"] .legal-info-block h3,
+    html[lang="en"] .legal-info-block span,
+    html[lang="en"] .legal-info-block strong,
+    html[lang="en"] .legal-signature,
+    html[lang="en"] .legal-signature p {
+        text-align: center !important;
+        justify-content: center !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: auto !important;
+        align-items: center !important;
+    }
+    
+    html[lang="en"] .legal-card {
+        padding: 2.2rem 24px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        max-width: 550px !important;
+    }
+
+    html[lang="en"] .legal-divider {
+        background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.4), transparent) !important;
+        width: 100% !important;
     }
 }

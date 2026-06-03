@@ -1085,6 +1085,7 @@ let currentLang = localStorage.getItem('lang') || 'de';
 function changeLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('lang', lang);
+    document.documentElement.lang = currentLang;
     applyTranslations();
     updateActiveLangButton();
 }
@@ -1123,6 +1124,7 @@ function updateActiveLangButton() {
 
 // Run on page load
 document.addEventListener('DOMContentLoaded', () => {
+    document.documentElement.lang = currentLang;
     applyTranslations();
     updateActiveLangButton();
 });
