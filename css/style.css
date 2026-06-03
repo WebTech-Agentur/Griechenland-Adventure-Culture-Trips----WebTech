@@ -402,7 +402,7 @@ main {
     font-weight: 600;
     letter-spacing: 6px;
     text-transform: uppercase;
-    color: #0078C0;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
     animation: fadeInDown 1s ease-out;
 }
@@ -2016,7 +2016,7 @@ textarea.form-control {
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 4px;
-    color: #0078C0;
+    color: rgba(255, 255, 255, 0.95);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -2030,7 +2030,7 @@ textarea.form-control {
     content: '';
     height: 1px;
     width: 40px;
-    background: rgba(0, 120, 192, 0.5);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .hero-headline-asym {
@@ -2386,7 +2386,7 @@ textarea.luxury-input {
 .legal-hero {
     position: relative;
     padding: 220px 5% 150px 5%;
-    background: linear-gradient(135deg, #fdfbf7 0%, #f4ebd8 100%); /* warmer, sandier gradient */
+    background: linear-gradient(135deg, #0A2E46 0%, #16405B 100%); /* warmer, sandier gradient */
     text-align: left;
     overflow: hidden;
     display: flex;
@@ -2463,7 +2463,7 @@ textarea.luxury-input {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 8px;
-    color: #0078C0;
+    color: rgba(255, 255, 255, 0.95);
     text-transform: uppercase;
     margin-bottom: 2rem;
     opacity: 0;
@@ -2475,7 +2475,7 @@ textarea.luxury-input {
     font-size: clamp(3.5rem, 7vw, 5.5rem);
     line-height: 1.05;
     margin: 0;
-    background: linear-gradient(135deg, var(--color-primary) 0%, #3a5a78 100%);
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-bottom: 0.2em; /* Prevent clipping */
