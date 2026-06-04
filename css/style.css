@@ -39,6 +39,10 @@ html {
     scroll-behavior: smooth;
 }
 
+[id] {
+    scroll-margin-top: 120px; /* Offset for sticky header when jumping to anchors */
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--color-bg);
