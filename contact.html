@@ -104,33 +104,85 @@
                     </div>
                 </div>
 
-                <!-- Right: Glassmorphism Form -->
+                <!-- Right: Glassmorphism Reservation Form -->
                 <div id="contact-form" class="contact-glass-form">
-                    <span class="contact-form-pretitle" data-i18n="contact.form.pretitle">LET'S CONNECT</span>
-                    <h3 data-i18n="contact.form.title">Sende uns eine Nachricht</h3>
+                    <span class="contact-form-pretitle" data-i18n="contact.form.pretitle">JETZT ANFRAGEN</span>
+                    <h3 data-i18n="contact.form.title">Dein Erlebnis reservieren</h3>
                     <form action="#" method="POST">
                         <div class="form-group">
-                            <label for="name" data-i18n="contact.form.label.name">Name</label>
-                            <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" data-i18n-placeholder="contact.form.placeholder.name" required>
+                            <label for="package-select" data-i18n="booking.label.package">Wunsch-Paket</label>
+                            <select id="package-select" name="package" class="luxury-input" style="appearance: none; -webkit-appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220%22 y=%220%22 fill=%22none%22 stroke=%22%23798A75%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 15px center; background-size: 16px; padding-right: 40px;" required>
+                                <option value="pkg1" data-price="2600" data-i18n="booking.package1">10 Tage All-Inclusive Experience (2.600 € / Person)</option>
+                                <option value="pkg2" data-price="3000" data-i18n="booking.package2">15 Tage Premium Experience (3.000 € / Person)</option>
+                            </select>
                         </div>
                         
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="travel-date" data-i18n="booking.label.date">Gewünschtes Reisedatum</label>
+                                <input type="date" id="travel-date" name="date" class="luxury-input" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="guest-count" data-i18n="booking.label.guests">Teilnehmeranzahl</label>
+                                <select id="guest-count" name="guests" class="luxury-input" style="appearance: none; -webkit-appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220%22 y=%220%22 fill=%22none%22 stroke=%22%23798A75%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 15px center; background-size: 16px;" required>
+                                    <option value="1">1 Person</option>
+                                    <option value="2" selected>2 Personen</option>
+                                    <option value="3">3 Personen</option>
+                                    <option value="4">4 Personen</option>
+                                    <option value="5">5+ Personen</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <label for="email" data-i18n="contact.form.label.email">E-Mail</label>
-                            <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" data-i18n-placeholder="contact.form.placeholder.email" required>
+                            <label data-i18n="booking.label.addons">Exklusive Extras (Optional)</label>
+                            <div style="display: flex; flex-direction: column; gap: 0.8rem; margin-top: 0.5rem;">
+                                <label style="display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: var(--color-text-light); cursor: pointer;">
+                                    <input type="checkbox" id="addon-transfer" name="addon_transfer" class="luxury-checkbox" data-price="150" style="accent-color: var(--color-accent); width: 18px; height: 18px;">
+                                    <span data-i18n="booking.addon.transfer">VIP Flughafen- & Inseltransfer (+150 €)</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: var(--color-text-light); cursor: pointer;">
+                                    <input type="checkbox" id="addon-wine" name="addon_wine" class="luxury-checkbox" data-price="80" style="accent-color: var(--color-accent); width: 18px; height: 18px;">
+                                    <span data-i18n="booking.addon.wine">Private Weinverkostung Masterclass (+80 € / Person)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="name" data-i18n="contact.form.label.name">Name</label>
+                                <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" data-i18n-placeholder="contact.form.placeholder.name" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label for="email" data-i18n="contact.form.label.email">E-Mail</label>
+                                <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" data-i18n-placeholder="contact.form.placeholder.email" required>
+                            </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="interest" data-i18n="contact.form.label.interest">Interesse an</label>
-                            <input type="text" id="interest" name="interest" class="luxury-input" placeholder="z.B. Kulturelle Entdeckungsreise" data-i18n-placeholder="contact.form.placeholder.interest">
+                        <!-- Real-time Booking Summary Box -->
+                        <div class="booking-summary-box" style="background: rgba(121, 138, 117, 0.08); border: 1px solid rgba(121, 138, 117, 0.2); border-radius: var(--radius-sm); padding: 1.5rem; margin-bottom: 2rem;">
+                            <h4 style="font-family: 'Playfair Display', serif; color: var(--color-primary); margin-bottom: 1rem; font-size: 1.25rem;" data-i18n="booking.summary.title">Deine Reservierungsübersicht</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text-light);">
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span id="summary-pkg-name">10 Tage All-Inclusive Experience</span>
+                                    <span id="summary-pkg-price">2.600 €</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <span data-i18n="booking.summary.guests">Teilnehmer</span>
+                                    <span id="summary-guests">2x</span>
+                                </div>
+                                <div id="summary-addons-row" style="display: none; flex-direction: column; gap: 0.25rem; border-top: 1px dashed rgba(0,0,0,0.1); padding-top: 0.5rem; margin-top: 0.25rem;">
+                                    <!-- Addons dynamically injected -->
+                                </div>
+                                <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(121, 138, 117, 0.3); padding-top: 0.8rem; margin-top: 0.5rem; font-weight: 700; color: var(--color-primary); font-size: 1.15rem;">
+                                    <span data-i18n="booking.summary.total">Geschätzter Gesamtpreis</span>
+                                    <span id="summary-total-price">5.200 €</span>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="message" data-i18n="contact.form.label.message">Deine Nachricht</label>
-                            <textarea id="message" name="message" class="luxury-input" placeholder="Wie können wir dir helfen? Teile uns gerne auch schon gewünschte Reisedaten mit." data-i18n-placeholder="contact.form.placeholder.message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-luxury btn-luxury-gold" style="width: 100%; text-align: center; margin-top: 1rem; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                            <i data-lucide="send" style="width: 18px; height: 18px;"></i> <span data-i18n="contact.form.submit">Nachricht senden</span>
+                        <button type="submit" class="btn-luxury btn-luxury-gold" style="width: 100%; text-align: center; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                            <i data-lucide="calendar-check" style="width: 18px; height: 18px;"></i> <span data-i18n="contact.form.submit">Buchungsanfrage senden</span>
                         </button>
                     </form>
                 </div>
@@ -182,5 +234,86 @@
     <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script>lucide.createIcons();</script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const packageSelect = document.getElementById('package-select');
+            const guestSelect = document.getElementById('guest-count');
+            const addonTransfer = document.getElementById('addon-transfer');
+            const addonWine = document.getElementById('addon-wine');
+            
+            const summaryPkgName = document.getElementById('summary-pkg-name');
+            const summaryPkgPrice = document.getElementById('summary-pkg-price');
+            const summaryGuests = document.getElementById('summary-guests');
+            const summaryAddonsRow = document.getElementById('summary-addons-row');
+            const summaryTotalPrice = document.getElementById('summary-total-price');
+
+            function updatePrice() {
+                const selectedOption = packageSelect.options[packageSelect.selectedIndex];
+                const basePrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
+                const guests = parseInt(guestSelect.value) || 1;
+                
+                let pkgTotalPrice = basePrice * guests;
+                let addonsPrice = 0;
+                let addonsHTML = '';
+
+                // Update text names in summary based on current selected language
+                const isEnglish = document.documentElement.lang === 'en';
+                const isFrench = document.documentElement.lang === 'fr';
+
+                let pkgName = selectedOption.text.split('(')[0].trim();
+                summaryPkgName.textContent = pkgName;
+                summaryPkgPrice.textContent = (basePrice).toLocaleString() + ' € / Pers.';
+                
+                if (isEnglish) {
+                    summaryGuests.textContent = guests + (guests > 1 ? ' Guests' : ' Guest');
+                } else if (isFrench) {
+                    summaryGuests.textContent = guests + (guests > 1 ? ' Participants' : ' Participant');
+                } else {
+                    summaryGuests.textContent = guests + (guests > 1 ? ' Personen' : ' Person');
+                }
+
+                if (addonTransfer.checked) {
+                    const price = parseInt(addonTransfer.getAttribute('data-price'));
+                    addonsPrice += price;
+                    let name = isEnglish ? 'VIP Airport & Island Transfer' : isFrench ? 'Transfert VIP Aéroport & Île' : 'VIP Flughafen- & Inseltransfer';
+                    addonsHTML += `<div style="display: flex; justify-content: space-between;"><span>+ ${name}</span><span>${price} €</span></div>`;
+                }
+
+                if (addonWine.checked) {
+                    const pricePerPerson = parseInt(addonWine.getAttribute('data-price'));
+                    const price = pricePerPerson * guests;
+                    addonsPrice += price;
+                    let name = isEnglish ? 'Private Wine Tasting Masterclass' : isFrench ? 'Masterclass Privée de Dégustation' : 'Private Weinverkostung Masterclass';
+                    addonsHTML += `<div style="display: flex; justify-content: space-between;"><span>+ ${name}</span><span>${price} € (${pricePerPerson} € x ${guests})</span></div>`;
+                }
+
+                if (addonsHTML) {
+                    summaryAddonsRow.innerHTML = addonsHTML;
+                    summaryAddonsRow.style.display = 'flex';
+                } else {
+                    summaryAddonsRow.style.display = 'none';
+                }
+
+                const total = pkgTotalPrice + addonsPrice;
+                summaryTotalPrice.textContent = total.toLocaleString() + ' €';
+            }
+
+            // Listeners
+            packageSelect.addEventListener('change', updatePrice);
+            guestSelect.addEventListener('change', updatePrice);
+            addonTransfer.addEventListener('change', updatePrice);
+            addonWine.addEventListener('change', updatePrice);
+
+            // Initial calculation
+            updatePrice();
+
+            // Re-calculate when language switches
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    setTimeout(updatePrice, 100);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
