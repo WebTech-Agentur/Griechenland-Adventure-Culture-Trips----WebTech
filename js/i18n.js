@@ -5,6 +5,7 @@ const translations = {
         "nav.activities": "Aktivitäten",
         "nav.pricing": "Preise / Packages",
         "nav.contact": "Kontakt",
+        "nav.book": "Buchen",
 
         // Footer
         "footer.imprint": "Impressum",
@@ -365,6 +366,7 @@ const translations = {
         "nav.activities": "Activities",
         "nav.pricing": "Pricing / Packages",
         "nav.contact": "Contact",
+        "nav.book": "Book",
 
         // Footer
         "footer.imprint": "Imprint",
@@ -725,6 +727,7 @@ const translations = {
         "nav.activities": "Activités",
         "nav.pricing": "Prix / Forfaits",
         "nav.contact": "Contact",
+        "nav.book": "Réserver",
 
         // Footer
         "footer.imprint": "Mentions légales",
