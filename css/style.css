@@ -209,8 +209,8 @@ header {
 }
 
 .header-cta {
-    background: var(--color-accent); /* Modern Terracotta */
-    color: white;
+    background: var(--color-gold);
+    color: var(--color-primary);
     padding: 0.6rem 1.4rem;
     border-radius: 50px;
     font-weight: 600;
@@ -218,7 +218,7 @@ header {
     letter-spacing: 0.5px;
     transition: var(--transition);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 6px 20px rgba(211, 97, 53, 0.2);
+    box-shadow: 0 6px 20px rgba(216, 178, 110, 0.25);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -228,7 +228,7 @@ header {
     background: white;
     color: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(211, 97, 53, 0.35);
+    box-shadow: 0 10px 25px rgba(216, 178, 110, 0.4);
     border-color: var(--color-gold);
 }
 
