@@ -323,9 +323,6 @@ const translations = {
         "booking.package1": "10 Tage All-Inclusive Experience (2.600 € / Person)",
         "booking.package2": "15 Tage Premium Experience (3.000 € / Person)",
         "booking.label.date": "Gewünschtes Reisedatum",
-        "booking.label.addons": "Exklusive Extras (Optional)",
-        "booking.addon.transfer": "VIP Flughafen- & Inseltransfer (+150 €)",
-        "booking.addon.wine": "Private Weinverkostung Masterclass (+80 € / Person)",
         "booking.summary.title": "Deine Reservierungsübersicht",
         "booking.summary.total": "Geschätzter Gesamtpreis",
 
@@ -709,9 +706,6 @@ const translations = {
         "booking.package1": "10 Days All-Inclusive Experience (2,600 € / Person)",
         "booking.package2": "15 Days Premium Experience (3,000 € / Person)",
         "booking.label.date": "Preferred Travel Date",
-        "booking.label.addons": "Exclusive Add-ons (Optional)",
-        "booking.addon.transfer": "VIP Airport & Island Transfer (+150 €)",
-        "booking.addon.wine": "Private Wine Tasting Masterclass (+80 € / Person)",
         "booking.summary.title": "Your Reservation Summary",
         "booking.summary.total": "Estimated Total Price",
 
@@ -1095,9 +1089,6 @@ const translations = {
         "booking.package1": "Expérience Tout Inclus de 10 Jours (2 600 € / Personne)",
         "booking.package2": "Expérience Premium de 15 Jours (3 000 € / Personne)",
         "booking.label.date": "Date de Voyage Souhaitée",
-        "booking.label.addons": "Extras Exclusifs (Optionnel)",
-        "booking.addon.transfer": "Transfert VIP Aéroport & Île (+150 €)",
-        "booking.addon.wine": "Masterclass Privée de Dégustation de Vins (+80 € / Personne)",
         "booking.summary.title": "Votre Récapitulatif de Réservation",
         "booking.summary.total": "Prix Total Estimé",
 
