@@ -1203,7 +1203,19 @@ const translations = {
     }
 };
 
-let currentLang = localStorage.getItem('lang') || 'de';
+let currentLang = localStorage.getItem('lang');
+
+if (!currentLang) {
+    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (browserLang.startsWith('fr')) {
+        currentLang = 'fr';
+    } else if (browserLang.startsWith('de')) {
+        currentLang = 'de';
+    } else {
+        currentLang = 'en'; // English as default for US, UK, and other international regions
+    }
+    localStorage.setItem('lang', currentLang);
+}
 
 function changeLanguage(lang) {
     currentLang = lang;
