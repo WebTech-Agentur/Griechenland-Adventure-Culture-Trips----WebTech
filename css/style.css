@@ -258,6 +258,11 @@ main {
     padding: 4rem 2rem;
 }
 
+/* Reduce top padding for adjacent containers to keep spacing balanced */
+.container + .container {
+    padding-top: 1.5rem;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -1157,6 +1162,10 @@ textarea.form-control {
     padding: 2rem;
     border-radius: var(--radius-lg);
     transition: var(--transition);
+}
+
+.activity-feature:last-of-type {
+    margin-bottom: 0;
 }
 
 .activity-feature:hover {
