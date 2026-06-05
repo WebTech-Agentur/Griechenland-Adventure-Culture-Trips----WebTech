@@ -305,7 +305,7 @@ const translations = {
         // =============================================
         "contact.hero.pretitle": "RESERVIERUNG",
         "contact.hero.title": "Sichere dir dein <span class=\"highlight-gold\">Griechenland-Abenteuer</span>",
-        "contact.hero.desc": "Wähle dein Wunsch-Paket, die Teilnehmeranzahl und exklusive Add-ons. Wir senden dir innerhalb von 24 Stunden dein maßgeschneidertes Angebot.",
+        "contact.hero.desc": "Wähle dein Wunsch-Paket und exklusive Add-ons. Wir senden dir innerhalb von 24 Stunden dein maßgeschneidertes Angebot.",
         "contact.info.intro": "Persönliche Beratung für authentische Inselerlebnisse.",
         "contact.info.phone.title": "Telefon",
         "contact.info.phone.hours": "Mo-Fr, 09:00 - 18:00 Uhr",
@@ -320,11 +320,13 @@ const translations = {
         "contact.form.placeholder.email": "Deine E-Mail Adresse",
         "contact.form.submit": "Buchungsanfrage senden",
         "booking.label.package": "Wunsch-Paket",
+        "booking.package1": "10 Tage All-Inclusive Experience (2.600 € / Person)",
+        "booking.package2": "15 Tage Premium Experience (3.000 € / Person)",
         "booking.label.date": "Gewünschtes Reisedatum",
-        "booking.label.guests": "Teilnehmeranzahl",
         "booking.label.addons": "Exklusive Extras (Optional)",
+        "booking.addon.transfer": "VIP Flughafen- & Inseltransfer (+150 €)",
+        "booking.addon.wine": "Private Weinverkostung Masterclass (+80 € / Person)",
         "booking.summary.title": "Deine Reservierungsübersicht",
-        "booking.summary.guests": "Teilnehmer",
         "booking.summary.total": "Geschätzter Gesamtpreis",
 
         // =============================================
@@ -689,7 +691,7 @@ const translations = {
         // =============================================
         "contact.hero.pretitle": "RESERVATION",
         "contact.hero.title": "Secure your <span class=\"highlight-gold\">Greek Adventure</span>",
-        "contact.hero.desc": "Choose your desired package, guest count, and exclusive add-ons. We will send you a tailored offer within 24 hours.",
+        "contact.hero.desc": "Choose your desired package and exclusive add-ons. We will send you a tailored offer within 24 hours.",
         "contact.info.intro": "Personalized advice for authentic island experiences.",
         "contact.info.phone.title": "Phone",
         "contact.info.phone.hours": "Mon-Fri, 09:00 AM - 06:00 PM",
@@ -704,11 +706,13 @@ const translations = {
         "contact.form.placeholder.email": "Your email address",
         "contact.form.submit": "Send Booking Request",
         "booking.label.package": "Desired Package",
+        "booking.package1": "10 Days All-Inclusive Experience (2,600 € / Person)",
+        "booking.package2": "15 Days Premium Experience (3,000 € / Person)",
         "booking.label.date": "Preferred Travel Date",
-        "booking.label.guests": "Number of Guests",
         "booking.label.addons": "Exclusive Add-ons (Optional)",
+        "booking.addon.transfer": "VIP Airport & Island Transfer (+150 €)",
+        "booking.addon.wine": "Private Wine Tasting Masterclass (+80 € / Person)",
         "booking.summary.title": "Your Reservation Summary",
-        "booking.summary.guests": "Guests",
         "booking.summary.total": "Estimated Total Price",
 
         // =============================================
@@ -1073,7 +1077,7 @@ const translations = {
         // =============================================
         "contact.hero.pretitle": "RÉSERVATION",
         "contact.hero.title": "Sécurisez votre <span class=\"highlight-gold\">Aventure en Grèce</span>",
-        "contact.hero.desc": "Choisissez votre forfait, le nombre de participants et ajoutez des extras exclusifs. Nous vous enverrons une offre personnalisée sous 24 heures.",
+        "contact.hero.desc": "Choisissez votre forfait et ajoutez des extras exclusifs. Nous vous enverrons une offre personnalisée sous 24 heures.",
         "contact.info.intro": "Conseils personnalisés pour des expériences insulaires authentiques.",
         "contact.info.phone.title": "Téléphone",
         "contact.info.phone.hours": "Lun-Ven, 09:00 - 18:00",
@@ -1088,11 +1092,13 @@ const translations = {
         "contact.form.placeholder.email": "Votre adresse e-mail",
         "contact.form.submit": "Envoyer la Demande de Réservation",
         "booking.label.package": "Forfait Souhaité",
+        "booking.package1": "Expérience Tout Inclus de 10 Jours (2 600 € / Personne)",
+        "booking.package2": "Expérience Premium de 15 Jours (3 000 € / Personne)",
         "booking.label.date": "Date de Voyage Souhaitée",
-        "booking.label.guests": "Nombre de Participants",
         "booking.label.addons": "Extras Exclusifs (Optionnel)",
+        "booking.addon.transfer": "Transfert VIP Aéroport & Île (+150 €)",
+        "booking.addon.wine": "Masterclass Privée de Dégustation de Vins (+80 € / Personne)",
         "booking.summary.title": "Votre Récapitulatif de Réservation",
-        "booking.summary.guests": "Participants",
         "booking.summary.total": "Prix Total Estimé",
 
         // =============================================
