@@ -45,10 +45,10 @@ const translations = {
         "home.pkg1.title": "Kulturelle Entdeckungsreise",
         "home.pkg1.desc": "Perfekt für Reisende, die das authentische Griechenland in einer intensiven und inspirierenden Reise erleben möchten.",
         "home.pkg1.priceLabel": "10 Tage Erlebnis ab",
-        "home.pkg1.f1": "Unterkunft in Boutique-Hotels",
-        "home.pkg1.f2": "Traditionelle Vollpension",
-        "home.pkg1.f3": "Traditionelle Workshops",
-        "home.pkg1.f4": "Geführte Gruppen-Touren",
+        "home.pkg1.f1": "Unterkunft",
+        "home.pkg1.f2": "Frühstück, Mittagessen und Abendessen",
+        "home.pkg1.f3": "Workshops und Aktivitäten",
+        "home.pkg1.f4": "Geführte Erlebnisse auf den Inseln",
 
         // Home – Package 2
         "home.pkg2.badge": "Tiefe kulturelle Einblicke",
@@ -57,10 +57,10 @@ const translations = {
         "home.pkg2.title": "Exklusives Griechenland-Erlebnis",
         "home.pkg2.desc": "Eine exklusive Premium-Erfahrung mit erweiterten Kulturmomenten, privaten Erlebnissen und luxuriösen Inselabenteuern.",
         "home.pkg2.priceLabel": "15 Tage Premium ab",
-        "home.pkg2.f1": "Premium-Hotels mit Meerblick",
-        "home.pkg2.f2": "Gourmet-Erlebnisse & Weine",
-        "home.pkg2.f3": "Private Masterclasses",
-        "home.pkg2.f4": "Private Insel-Erlebnisse",
+        "home.pkg2.f1": "Unterkunft",
+        "home.pkg2.f2": "Frühstück, Mittagessen und Abendessen",
+        "home.pkg2.f3": "Alle Workshops und Aktivitäten",
+        "home.pkg2.f4": "Erweiterte Insel- und Kulturerlebnisse",
 
         // Package shared keys
         "package.1.title": "10 Tage All-Inclusive Experience",
@@ -68,7 +68,7 @@ const translations = {
         "package.2.title": "15 Tage Premium Experience",
         "package.2.price": "3.000 €",
         "package.includes": "Leistungen:",
-        "package.note": "Hinweis: Getränke sind nicht inklusive",
+        "package.note": "Hinweis:<br>• Getränke sind nicht inklusive",
         "package.btn": "Reise beginnen",
 
         // Home – Activity Cards
@@ -406,10 +406,10 @@ const translations = {
         "home.pkg1.title": "Cultural Discovery Journey",
         "home.pkg1.desc": "Perfect for travelers who want to experience authentic Greece in an intense and inspiring journey.",
         "home.pkg1.priceLabel": "10 Days Experience from",
-        "home.pkg1.f1": "Boutique Hotel Accommodation",
-        "home.pkg1.f2": "Traditional Full Board",
-        "home.pkg1.f3": "Traditional Workshops",
-        "home.pkg1.f4": "Guided Group Tours",
+        "home.pkg1.f1": "Accommodation",
+        "home.pkg1.f2": "Breakfast, lunch and dinner",
+        "home.pkg1.f3": "Workshops and activities",
+        "home.pkg1.f4": "Guided island experiences",
 
         // Home – Package 2
         "home.pkg2.badge": "Deep Cultural Insights",
@@ -418,10 +418,10 @@ const translations = {
         "home.pkg2.title": "Exclusive Greece Experience",
         "home.pkg2.desc": "An exclusive premium experience with extended cultural moments, private experiences and luxurious island adventures.",
         "home.pkg2.priceLabel": "15 Days Premium from",
-        "home.pkg2.f1": "Premium Hotels with Sea View",
-        "home.pkg2.f2": "Gourmet Experiences & Wines",
-        "home.pkg2.f3": "Private Masterclasses",
-        "home.pkg2.f4": "Private Island Experiences",
+        "home.pkg2.f1": "Accommodation",
+        "home.pkg2.f2": "Breakfast, lunch and dinner",
+        "home.pkg2.f3": "All workshops and activities",
+        "home.pkg2.f4": "Expanded island and cultural experiences",
 
         // Package shared keys
         "package.1.title": "10 Days All-Inclusive Experience",
@@ -429,7 +429,7 @@ const translations = {
         "package.2.title": "15 Days Premium Experience",
         "package.2.price": "€3,000",
         "package.includes": "Includes:",
-        "package.note": "Note: Drinks are not included",
+        "package.note": "Note:<br>• Drinks are not included",
         "package.btn": "Start Journey",
 
         // Home – Activity Cards
@@ -767,10 +767,10 @@ const translations = {
         "home.pkg1.title": "Voyage de Découverte Culturelle",
         "home.pkg1.desc": "Parfait pour les voyageurs qui souhaitent vivre la Grèce authentique lors d'un voyage intense et inspirant.",
         "home.pkg1.priceLabel": "10 Jours Expérience à partir de",
-        "home.pkg1.f1": "Hébergement en Hôtels Boutique",
-        "home.pkg1.f2": "Pension Complète Traditionnelle",
-        "home.pkg1.f3": "Ateliers Traditionnels",
-        "home.pkg1.f4": "Visites Guidées en Groupe",
+        "home.pkg1.f1": "Hébergement",
+        "home.pkg1.f2": "Petit-déjeuner, déjeuner et dîner",
+        "home.pkg1.f3": "Ateliers et activités",
+        "home.pkg1.f4": "Expériences insulaires guidées",
 
         // Home – Package 2
         "home.pkg2.badge": "Immersion Culturelle Profonde",
@@ -779,10 +779,10 @@ const translations = {
         "home.pkg2.title": "Expérience Exclusive en Grèce",
         "home.pkg2.desc": "Une expérience premium exclusive avec des moments culturels prolongés, des expériences privées et des aventures insulaires luxueuses.",
         "home.pkg2.priceLabel": "15 Jours Premium à partir de",
-        "home.pkg2.f1": "Hôtels Premium avec Vue Mer",
-        "home.pkg2.f2": "Expériences Gastronomiques & Vins",
-        "home.pkg2.f3": "Masterclasses Privées",
-        "home.pkg2.f4": "Expériences Privées sur l'Île",
+        "home.pkg2.f1": "Hébergement",
+        "home.pkg2.f2": "Petit-déjeuner, déjeuner et dîner",
+        "home.pkg2.f3": "Tous les ateliers et activités",
+        "home.pkg2.f4": "Expériences insulaires et culturelles étendues",
 
         // Package shared keys
         "package.1.title": "10 Jours Expérience All-Inclusive",
@@ -790,7 +790,7 @@ const translations = {
         "package.2.title": "15 Jours Expérience Premium",
         "package.2.price": "3 000 €",
         "package.includes": "Inclus :",
-        "package.note": "Remarque : Les boissons ne sont pas incluses",
+        "package.note": "Remarque :<br>• Les boissons ne sont pas incluses",
         "package.btn": "Commencer le Voyage",
 
         // Home – Activity Cards
