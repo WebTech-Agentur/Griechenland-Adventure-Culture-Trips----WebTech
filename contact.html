@@ -372,24 +372,53 @@
         }
 
         function handleFormSubmit() {
-            document.getElementById('booking-step-form').style.display = 'none';
-            document.getElementById('booking-step-sending').style.display = 'block';
-            
-            const emailInput = document.getElementById('email').value;
+            const emailInput = document.getElementById('email').value.trim();
+            const nameInput = document.getElementById('name').value.trim();
             const packageSelect = document.getElementById('package-select');
             const selectedOption = packageSelect.options[packageSelect.selectedIndex];
             const price = parseInt(selectedOption.getAttribute('data-price')) || 0;
+            const travelDate = document.getElementById('travel-date').value;
 
-            setTimeout(() => {
-                document.getElementById('booking-step-sending').style.display = 'none';
-                document.getElementById('booking-step-payment').style.display = 'block';
-                document.getElementById('conf-email-display').textContent = emailInput;
-                document.getElementById('payment-amount-display').textContent = price.toLocaleString() + ' €';
-                
-                // Reset select payment method
-                selectPaymentMethod('card');
-                lucide.createIcons();
-            }, 2000);
+            document.getElementById('booking-step-form').style.display = 'none';
+            document.getElementById('booking-step-sending').style.display = 'block';
+
+            // Send a real email via FormSubmit AJAX to the entered email address
+            fetch("https://formsubmit.co/ajax/" + emailInput, {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    Name: nameInput,
+                    Email: emailInput,
+                    Paket: selectedOption.text,
+                    Reisedatum: travelDate,
+                    Gesamtpreis: price.toLocaleString() + ' €',
+                    _subject: "Griechenland-Reise: Reservierungsbestätigung",
+                    _captcha: "false"
+                })
+            })
+            .then(() => {
+                // Proceed to payment selection
+                proceedToPayment(emailInput, price);
+            })
+            .catch((error) => {
+                console.error("Email sending error:", error);
+                // Fallback: Proceed anyway so the checkout doesn't block
+                proceedToPayment(emailInput, price);
+            });
+        }
+
+        function proceedToPayment(emailInput, price) {
+            document.getElementById('booking-step-sending').style.display = 'none';
+            document.getElementById('booking-step-payment').style.display = 'block';
+            document.getElementById('conf-email-display').textContent = emailInput;
+            document.getElementById('payment-amount-display').textContent = price.toLocaleString() + ' €';
+            
+            // Reset select payment method
+            selectPaymentMethod('card');
+            lucide.createIcons();
         }
 
         function handlePaymentSubmit() {
