@@ -117,21 +117,9 @@
                             </select>
                         </div>
                         
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <label for="travel-date" data-i18n="booking.label.date">Gewünschtes Reisedatum</label>
-                                <input type="date" id="travel-date" name="date" class="luxury-input" required>
-                            </div>
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <label for="guest-count" data-i18n="booking.label.guests">Teilnehmeranzahl</label>
-                                <select id="guest-count" name="guests" class="luxury-input" style="appearance: none; -webkit-appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220%22 y=%220%22 fill=%22none%22 stroke=%22%23798A75%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 15px center; background-size: 16px;" required>
-                                    <option value="1">1 Person</option>
-                                    <option value="2" selected>2 Personen</option>
-                                    <option value="3">3 Personen</option>
-                                    <option value="4">4 Personen</option>
-                                    <option value="5">5+ Personen</option>
-                                </select>
-                            </div>
+                        <div class="form-group">
+                            <label for="travel-date" data-i18n="booking.label.date">Gewünschtes Reisedatum</label>
+                            <input type="date" id="travel-date" name="date" class="luxury-input" required>
                         </div>
 
                         <div class="form-group">
@@ -167,16 +155,12 @@
                                     <span id="summary-pkg-name">10 Tage All-Inclusive Experience</span>
                                     <span id="summary-pkg-price">2.600 €</span>
                                 </div>
-                                <div style="display: flex; justify-content: space-between;">
-                                    <span data-i18n="booking.summary.guests">Teilnehmer</span>
-                                    <span id="summary-guests">2x</span>
-                                </div>
                                 <div id="summary-addons-row" style="display: none; flex-direction: column; gap: 0.25rem; border-top: 1px dashed rgba(0,0,0,0.1); padding-top: 0.5rem; margin-top: 0.25rem;">
                                     <!-- Addons dynamically injected -->
                                 </div>
                                 <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(121, 138, 117, 0.3); padding-top: 0.8rem; margin-top: 0.5rem; font-weight: 700; color: var(--color-primary); font-size: 1.15rem;">
                                     <span data-i18n="booking.summary.total">Geschätzter Gesamtpreis</span>
-                                    <span id="summary-total-price">5.200 €</span>
+                                    <span id="summary-total-price">2.600 €</span>
                                 </div>
                             </div>
                         </div>
@@ -237,22 +221,19 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const packageSelect = document.getElementById('package-select');
-            const guestSelect = document.getElementById('guest-count');
             const addonTransfer = document.getElementById('addon-transfer');
             const addonWine = document.getElementById('addon-wine');
             
             const summaryPkgName = document.getElementById('summary-pkg-name');
             const summaryPkgPrice = document.getElementById('summary-pkg-price');
-            const summaryGuests = document.getElementById('summary-guests');
             const summaryAddonsRow = document.getElementById('summary-addons-row');
             const summaryTotalPrice = document.getElementById('summary-total-price');
 
             function updatePrice() {
                 const selectedOption = packageSelect.options[packageSelect.selectedIndex];
                 const basePrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
-                const guests = parseInt(guestSelect.value) || 1;
                 
-                let pkgTotalPrice = basePrice * guests;
+                let pkgTotalPrice = basePrice;
                 let addonsPrice = 0;
                 let addonsHTML = '';
 
@@ -262,15 +243,7 @@
 
                 let pkgName = selectedOption.text.split('(')[0].trim();
                 summaryPkgName.textContent = pkgName;
-                summaryPkgPrice.textContent = (basePrice).toLocaleString() + ' € / Pers.';
-                
-                if (isEnglish) {
-                    summaryGuests.textContent = guests + (guests > 1 ? ' Guests' : ' Guest');
-                } else if (isFrench) {
-                    summaryGuests.textContent = guests + (guests > 1 ? ' Participants' : ' Participant');
-                } else {
-                    summaryGuests.textContent = guests + (guests > 1 ? ' Personen' : ' Person');
-                }
+                summaryPkgPrice.textContent = (basePrice).toLocaleString() + ' €';
 
                 if (addonTransfer.checked) {
                     const price = parseInt(addonTransfer.getAttribute('data-price'));
@@ -280,11 +253,10 @@
                 }
 
                 if (addonWine.checked) {
-                    const pricePerPerson = parseInt(addonWine.getAttribute('data-price'));
-                    const price = pricePerPerson * guests;
+                    const price = parseInt(addonWine.getAttribute('data-price'));
                     addonsPrice += price;
                     let name = isEnglish ? 'Private Wine Tasting Masterclass' : isFrench ? 'Masterclass Privée de Dégustation' : 'Private Weinverkostung Masterclass';
-                    addonsHTML += `<div style="display: flex; justify-content: space-between;"><span>+ ${name}</span><span>${price} € (${pricePerPerson} € x ${guests})</span></div>`;
+                    addonsHTML += `<div style="display: flex; justify-content: space-between;"><span>+ ${name}</span><span>${price} €</span></div>`;
                 }
 
                 if (addonsHTML) {
@@ -300,7 +272,6 @@
 
             // Listeners
             packageSelect.addEventListener('change', updatePrice);
-            guestSelect.addEventListener('change', updatePrice);
             addonTransfer.addEventListener('change', updatePrice);
             addonWine.addEventListener('change', updatePrice);
 
