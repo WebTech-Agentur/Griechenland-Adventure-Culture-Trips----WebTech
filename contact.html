@@ -105,53 +105,194 @@
                 </div>
 
                 <!-- Right: Glassmorphism Reservation Form -->
+                <style>
+                    @keyframes spin {
+                        0% { transform: rotate(0deg); }
+                        100% { transform: rotate(360deg); }
+                    }
+                    .btn-payment-method {
+                        background: transparent;
+                        border: 2px solid rgba(121, 138, 117, 0.2);
+                        border-radius: var(--radius-sm);
+                        padding: 1rem;
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
+                        color: var(--color-text-light);
+                        font-weight: 600;
+                        transition: all 0.3s ease;
+                        font-family: 'Outfit', sans-serif;
+                    }
+                    .btn-payment-method.active {
+                        background: rgba(121, 138, 117, 0.08) !important;
+                        border-color: var(--color-primary) !important;
+                        color: var(--color-primary) !important;
+                    }
+                </style>
                 <div id="contact-form" class="contact-glass-form">
-                    <span class="contact-form-pretitle" data-i18n="contact.form.pretitle">JETZT ANFRAGEN</span>
-                    <h3 data-i18n="contact.form.title">Dein Erlebnis reservieren</h3>
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="package-select" data-i18n="booking.label.package">Wunsch-Paket</label>
-                            <select id="package-select" name="package" class="luxury-input" style="appearance: none; -webkit-appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220%22 y=%220%22 fill=%22none%22 stroke=%22%23798A75%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 15px center; background-size: 16px; padding-right: 40px;" required>
-                                <option value="pkg1" data-price="2600" data-i18n="booking.package1">10 Tage All-Inclusive Experience (2.600 € / Person)</option>
-                                <option value="pkg2" data-price="3000" data-i18n="booking.package2">15 Tage Premium Experience (3.000 € / Person)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="travel-date" data-i18n="booking.label.date">Gewünschtes Reisedatum</label>
-                            <input type="date" id="travel-date" name="date" class="luxury-input" required>
+                    <!-- Step 1: Reservation Details Form -->
+                    <div id="booking-step-form">
+                        <span class="contact-form-pretitle" data-i18n="contact.form.pretitle">JETZT ANFRAGEN</span>
+                        <h3 data-i18n="contact.form.title">Dein Erlebnis reservieren</h3>
+                        <form id="reservation-form" action="#" method="POST" onsubmit="event.preventDefault(); handleFormSubmit();">
+                            <div class="form-group">
+                                <label for="package-select" data-i18n="booking.label.package">Wunsch-Paket</label>
+                                <select id="package-select" name="package" class="luxury-input" style="appearance: none; -webkit-appearance: none; background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220%22 y=%220%22 fill=%22none%22 stroke=%22%23798A75%22 stroke-width=%222%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22><path d=%22m6 9 6 6 6-6%22/></svg>'); background-repeat: no-repeat; background-position: right 15px center; background-size: 16px; padding-right: 40px;" required>
+                                    <option value="pkg1" data-price="2600" data-i18n="booking.package1">10 Tage All-Inclusive Experience (2.600 € / Person)</option>
+                                    <option value="pkg2" data-price="3000" data-i18n="booking.package2">15 Tage Premium Experience (3.000 € / Person)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="travel-date" data-i18n="booking.label.date">Gewünschtes Reisedatum</label>
+                                <input type="date" id="travel-date" name="date" class="luxury-input" required>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label for="name" data-i18n="contact.form.label.name">Name</label>
+                                    <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" data-i18n-placeholder="contact.form.placeholder.name" required>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label for="email" data-i18n="contact.form.label.email">E-Mail</label>
+                                    <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" data-i18n-placeholder="contact.form.placeholder.email" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Real-time Booking Summary Box -->
+                            <div class="booking-summary-box" style="background: rgba(121, 138, 117, 0.08); border: 1px solid rgba(121, 138, 117, 0.2); border-radius: var(--radius-sm); padding: 1.5rem; margin-bottom: 2rem;">
+                                <h4 style="font-family: 'Playfair Display', serif; color: var(--color-primary); margin-bottom: 1rem; font-size: 1.25rem;" data-i18n="booking.summary.title">Deine Reservierungsübersicht</h4>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text-light);">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <span id="summary-pkg-name">10 Tage All-Inclusive Experience</span>
+                                        <span id="summary-pkg-price">2.600 €</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(121, 138, 117, 0.3); padding-top: 0.8rem; margin-top: 0.5rem; font-weight: 700; color: var(--color-primary); font-size: 1.15rem;">
+                                        <span data-i18n="booking.summary.total">Geschätzter Gesamtpreis</span>
+                                        <span id="summary-total-price">2.600 €</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn-luxury btn-luxury-gold" style="width: 100%; text-align: center; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <i data-lucide="calendar-check" style="width: 18px; height: 18px;"></i> <span data-i18n="contact.form.submit">Buchungsanfrage senden</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Simulated Email Sending Loader -->
+                    <div id="booking-step-sending" style="display: none; text-align: center; padding: 4rem 1.5rem;">
+                        <div style="border: 4px solid rgba(121, 138, 117, 0.2); border-left-color: var(--color-primary); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
+                        <h4 style="font-family: 'Playfair Display', serif; color: var(--color-primary); font-size: 1.5rem; margin-bottom: 0.5rem;" data-i18n="booking.sending.title">E-Mail wird gesendet...</h4>
+                        <p style="color: var(--color-text-light);" data-i18n="booking.sending.desc">Wir bereiten deine Bestätigung vor.</p>
+                    </div>
+
+                    <!-- Step 3: Email Confirmation Sent & Payment Options Form -->
+                    <div id="booking-step-payment" style="display: none;">
+                        <div style="text-align: center; margin-bottom: 2rem;">
+                            <div style="background: rgba(121, 138, 117, 0.1); border: 2px solid var(--color-primary); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--color-primary);">
+                                <i data-lucide="mail-check" style="width: 30px; height: 30px;"></i>
+                            </div>
+                            <h3 data-i18n="booking.email.sent" style="font-family: 'Playfair Display', serif; color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem;">Bestätigung gesendet!</h3>
+                            <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.5; margin: 0;">
+                                <span data-i18n="booking.email.desc">Eine Bestätigungs-E-Mail wurde gesendet an:</span><br>
+                                <strong id="conf-email-display" style="color: var(--color-primary); font-size: 1.05rem;"></strong>
+                            </p>
                         </div>
 
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <label for="name" data-i18n="contact.form.label.name">Name</label>
-                                <input type="text" id="name" name="name" class="luxury-input" placeholder="Dein vollständiger Name" data-i18n-placeholder="contact.form.placeholder.name" required>
+                        <hr style="border: 0; border-top: 1px solid rgba(121, 138, 117, 0.2); margin: 1.5rem 0;">
+
+                        <div id="payment-options-block">
+                            <span class="contact-form-pretitle" data-i18n="booking.payment.pretitle">SCHNELL & SICHER</span>
+                            <h4 data-i18n="booking.payment.title" style="font-family: 'Playfair Display', serif; color: var(--color-primary); font-size: 1.3rem; margin-bottom: 1rem;">Zahlungsmethode wählen</h4>
+                            
+                            <!-- Payment Switcher -->
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                                <button type="button" id="pay-btn-card" class="btn-payment-method active" onclick="selectPaymentMethod('card')">
+                                    <i data-lucide="credit-card" style="width: 24px; height: 24px;"></i>
+                                    <span data-i18n="booking.payment.card">Kreditkarte</span>
+                                </button>
+                                <button type="button" id="pay-btn-paypal" class="btn-payment-method" onclick="selectPaymentMethod('paypal')">
+                                    <i data-lucide="wallet" style="width: 24px; height: 24px;"></i>
+                                    <span>PayPal</span>
+                                </button>
                             </div>
-                            <div class="form-group" style="margin-bottom: 0;">
-                                <label for="email" data-i18n="contact.form.label.email">E-Mail</label>
-                                <input type="email" id="email" name="email" class="luxury-input" placeholder="Deine E-Mail Adresse" data-i18n-placeholder="contact.form.placeholder.email" required>
+
+                            <!-- Payment Details -->
+                            <div id="pay-details-card" class="payment-method-details">
+                                <div class="form-group">
+                                    <label for="card-number" data-i18n="booking.payment.cardno">Kartennummer</label>
+                                    <input type="text" id="card-number" class="luxury-input" placeholder="0000 0000 0000 0000" style="letter-spacing: 0.05em;">
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="card-expiry" data-i18n="booking.payment.cardexp">Ablaufdatum</label>
+                                        <input type="text" id="card-expiry" class="luxury-input" placeholder="MM/JJ">
+                                    </div>
+                                    <div class="form-group" style="margin-bottom: 0;">
+                                        <label for="card-cvv" data-i18n="booking.payment.cardcvv">CVC/CVV</label>
+                                        <input type="text" id="card-cvv" class="luxury-input" placeholder="123">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="pay-details-paypal" class="payment-method-details" style="display: none; text-align: center; padding: 1.5rem 1rem; border: 1px dashed rgba(121, 138, 117, 0.3); border-radius: var(--radius-sm); margin-bottom: 1.5rem; background: rgba(121,138,117,0.02);">
+                                <i data-lucide="external-link" style="width: 24px; height: 24px; color: var(--color-primary); margin-bottom: 0.5rem;"></i>
+                                <p style="font-size: 0.9rem; color: var(--color-text-light); margin: 0;" data-i18n="booking.payment.paypalclick">Klicke unten, um dich sicher bei PayPal anzumelden und zu bezahlen.</p>
+                            </div>
+
+                            <div style="background: rgba(121, 138, 117, 0.05); padding: 1rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; border: 1px solid rgba(121,138,117,0.15);">
+                                <span style="font-weight: 600; color: var(--color-primary);" data-i18n="booking.payment.totalamount">Zahlungsbetrag</span>
+                                <span id="payment-amount-display" style="font-weight: 700; color: var(--color-primary); font-size: 1.25rem;"></span>
+                            </div>
+
+                            <button type="button" id="pay-submit-btn" onclick="handlePaymentSubmit()" class="btn-luxury btn-luxury-gold" style="width: 100%; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-size: 1.1rem;">
+                                <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i> <span id="pay-submit-text" data-i18n="booking.payment.submit">Jetzt bezahlen</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Success Ticket / Confirmation -->
+                    <div id="booking-step-success" style="display: none; text-align: center;">
+                        <div style="background: rgba(121, 138, 117, 0.1); border: 2px solid var(--color-accent); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--color-accent);">
+                            <i data-lucide="check-circle" style="width: 30px; height: 30px;"></i>
+                        </div>
+                        <h3 data-i18n="booking.success.title" style="font-family: 'Playfair Display', serif; color: var(--color-primary); font-size: 1.75rem; margin-bottom: 0.5rem;">Zahlung erfolgreich!</h3>
+                        <p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 2rem;" data-i18n="booking.success.desc">Deine Reservierung ist nun offiziell bestätigt. Wir freuen uns auf dich!</p>
+
+                        <!-- Simulated Ticket -->
+                        <div style="background: white; border: 1px solid rgba(0,0,0,0.1); border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); overflow: hidden; max-width: 360px; margin: 0 auto; text-align: left;">
+                            <div style="background: var(--color-primary); color: white; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: bold; letter-spacing: 0.05em;">GREECE TRIP TICKET</span>
+                                <i data-lucide="ticket" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; font-size: 0.9rem;">
+                                <div>
+                                    <span style="color: var(--color-text-light); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="booking.ticket.package">Ausgewähltes Paket</span>
+                                    <div id="ticket-pkg-name" style="font-weight: 600; color: var(--color-primary); font-size: 0.95rem; margin-top: 0.1rem;"></div>
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div>
+                                        <span style="color: var(--color-text-light); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="booking.ticket.date">Reisedatum</span>
+                                        <div id="ticket-date" style="font-weight: 600; color: var(--color-primary); margin-top: 0.1rem;"></div>
+                                    </div>
+                                    <div>
+                                        <span style="color: var(--color-text-light); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="booking.ticket.bookingid">Buchungs-ID</span>
+                                        <div id="ticket-id" style="font-weight: 600; color: var(--color-accent); margin-top: 0.1rem; font-family: monospace;"></div>
+                                    </div>
+                                </div>
+                                <div style="border-top: 1px dashed rgba(0,0,0,0.1); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="font-weight: 600; color: var(--color-primary);" data-i18n="booking.ticket.total">Bezahlter Betrag</span>
+                                    <span id="ticket-price" style="font-weight: 700; color: var(--color-primary); font-size: 1.15rem;"></span>
+                                </div>
+                            </div>
+                            <div style="background: rgba(121, 138, 117, 0.05); text-align: center; padding: 0.8rem; border-top: 1px solid rgba(0,0,0,0.05); font-size: 0.8rem; color: var(--color-text-light);" data-i18n="booking.ticket.info">
+                                Ein Beleg wurde per E-Mail versendet.
                             </div>
                         </div>
-                        
-                        <!-- Real-time Booking Summary Box -->
-                        <div class="booking-summary-box" style="background: rgba(121, 138, 117, 0.08); border: 1px solid rgba(121, 138, 117, 0.2); border-radius: var(--radius-sm); padding: 1.5rem; margin-bottom: 2rem;">
-                            <h4 style="font-family: 'Playfair Display', serif; color: var(--color-primary); margin-bottom: 1rem; font-size: 1.25rem;" data-i18n="booking.summary.title">Deine Reservierungsübersicht</h4>
-                            <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-text-light);">
-                                <div style="display: flex; justify-content: space-between;">
-                                    <span id="summary-pkg-name">10 Tage All-Inclusive Experience</span>
-                                    <span id="summary-pkg-price">2.600 €</span>
-                                </div>
-                                <div style="display: flex; justify-content: space-between; border-top: 1px solid rgba(121, 138, 117, 0.3); padding-top: 0.8rem; margin-top: 0.5rem; font-weight: 700; color: var(--color-primary); font-size: 1.15rem;">
-                                    <span data-i18n="booking.summary.total">Geschätzter Gesamtpreis</span>
-                                    <span id="summary-total-price">2.600 €</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button type="submit" class="btn-luxury btn-luxury-gold" style="width: 100%; text-align: center; border: none; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                            <i data-lucide="calendar-check" style="width: 18px; height: 18px;"></i> <span data-i18n="contact.form.submit">Buchungsanfrage senden</span>
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -202,6 +343,104 @@
     <script src="js/main.js"></script>
     <script>lucide.createIcons();</script>
     <script>
+        let selectedPayment = 'card';
+
+        function selectPaymentMethod(method) {
+            selectedPayment = method;
+            const btnCard = document.getElementById('pay-btn-card');
+            const btnPaypal = document.getElementById('pay-btn-paypal');
+            const detailsCard = document.getElementById('pay-details-card');
+            const detailsPaypal = document.getElementById('pay-details-paypal');
+            const submitText = document.getElementById('pay-submit-text');
+
+            const isEnglish = document.documentElement.lang === 'en';
+            const isFrench = document.documentElement.lang === 'fr';
+
+            if (method === 'card') {
+                btnCard.classList.add('active');
+                btnPaypal.classList.remove('active');
+                detailsCard.style.display = 'block';
+                detailsPaypal.style.display = 'none';
+                submitText.textContent = isEnglish ? 'Pay Now' : isFrench ? 'Payer maintenant' : 'Jetzt bezahlen';
+            } else {
+                btnCard.classList.remove('active');
+                btnPaypal.classList.add('active');
+                detailsCard.style.display = 'none';
+                detailsPaypal.style.display = 'block';
+                submitText.textContent = isEnglish ? 'Pay with PayPal' : isFrench ? 'Payer avec PayPal' : 'Mit PayPal bezahlen';
+            }
+        }
+
+        function handleFormSubmit() {
+            document.getElementById('booking-step-form').style.display = 'none';
+            document.getElementById('booking-step-sending').style.display = 'block';
+            
+            const emailInput = document.getElementById('email').value;
+            const packageSelect = document.getElementById('package-select');
+            const selectedOption = packageSelect.options[packageSelect.selectedIndex];
+            const price = parseInt(selectedOption.getAttribute('data-price')) || 0;
+
+            setTimeout(() => {
+                document.getElementById('booking-step-sending').style.display = 'none';
+                document.getElementById('booking-step-payment').style.display = 'block';
+                document.getElementById('conf-email-display').textContent = emailInput;
+                document.getElementById('payment-amount-display').textContent = price.toLocaleString() + ' €';
+                
+                // Reset select payment method
+                selectPaymentMethod('card');
+                lucide.createIcons();
+            }, 2000);
+        }
+
+        function handlePaymentSubmit() {
+            // If credit card, do simple validation of fields
+            if (selectedPayment === 'card') {
+                const cardNumber = document.getElementById('card-number').value.trim();
+                const cardExpiry = document.getElementById('card-expiry').value.trim();
+                const cardCvv = document.getElementById('card-cvv').value.trim();
+
+                if (!cardNumber || !cardExpiry || !cardCvv) {
+                    alert(document.documentElement.lang === 'en' ? 'Please fill in all credit card details.' : document.documentElement.lang === 'fr' ? 'Veuillez remplir toutes les informations de carte.' : 'Bitte fülle alle Kreditkartendaten aus.');
+                    return;
+                }
+            }
+
+            const btn = document.getElementById('pay-submit-btn');
+            const submitText = document.getElementById('pay-submit-text');
+            btn.disabled = true;
+            submitText.textContent = document.documentElement.lang === 'en' ? 'Processing...' : document.documentElement.lang === 'fr' ? 'Traitement...' : 'Wird verarbeitet...';
+
+            setTimeout(() => {
+                document.getElementById('booking-step-payment').style.display = 'none';
+                document.getElementById('booking-step-success').style.display = 'block';
+
+                const packageSelect = document.getElementById('package-select');
+                const selectedOption = packageSelect.options[packageSelect.selectedIndex];
+                const basePrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
+                let pkgName = selectedOption.text.split('(')[0].trim();
+                
+                // Travel date formatting
+                const travelDateInput = document.getElementById('travel-date').value;
+                let formattedDate = travelDateInput;
+                if (travelDateInput) {
+                    const parts = travelDateInput.split('-');
+                    if (parts.length === 3) {
+                        formattedDate = `${parts[2]}.${parts[1]}.${parts[0]}`;
+                    }
+                }
+
+                // Random booking ID
+                const randomId = 'GR-' + Math.floor(100000 + Math.random() * 900000);
+
+                document.getElementById('ticket-pkg-name').textContent = pkgName;
+                document.getElementById('ticket-date').textContent = formattedDate;
+                document.getElementById('ticket-id').textContent = randomId;
+                document.getElementById('ticket-price').textContent = basePrice.toLocaleString() + ' €';
+
+                lucide.createIcons();
+            }, 1500);
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             const packageSelect = document.getElementById('package-select');
             
@@ -210,6 +449,7 @@
             const summaryTotalPrice = document.getElementById('summary-total-price');
 
             function updatePrice() {
+                if (!packageSelect) return;
                 const selectedOption = packageSelect.options[packageSelect.selectedIndex];
                 const basePrice = parseInt(selectedOption.getAttribute('data-price')) || 0;
 
@@ -220,7 +460,9 @@
             }
 
             // Listeners
-            packageSelect.addEventListener('change', updatePrice);
+            if (packageSelect) {
+                packageSelect.addEventListener('change', updatePrice);
+            }
 
             // Initial calculation
             updatePrice();
