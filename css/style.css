@@ -9,7 +9,7 @@
     --color-beige: #E8DFD3; /* Sand Stone Beige */
     --color-bg: #FAF5ED; /* Warm Ivory / Soft Beige */
     --color-text: #132230; /* Premium Charcoal Slate */
-    --color-text-light: #5A6B7C; /* Elegant Soft Slate */
+    --color-text-light: #435363; /* Darker Slate for improved readability and contrast */
     --color-white: #FFFFFF;
     --color-dark-navy: #0A2E46;
     
@@ -49,7 +49,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     overflow-x: hidden;
-    zoom: 75%;
+    font-size: 1.05rem; /* Increased from 1rem for better readability */
 }
 
 a {
