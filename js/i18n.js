@@ -357,7 +357,27 @@ const translations = {
         "privacy.sec2.subtitle2": "Wie erfassen wir Ihre Daten?",
         "privacy.sec2.text2": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
         "privacy.sec3.title": "3. Kontaktformular",
-        "privacy.sec3.text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+        "privacy.sec3.text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+        
+        // Terms & Conditions (AGB)
+        "terms.hero.pretitle": "RECHTLICHE HINWEISE",
+        "terms.hero.title": "Allgemeine Geschäftsbedingungen",
+        "terms.hero.badge": "Gültig ab Juni 2026",
+        "terms.sidebar.scope": "1. Geltungsbereich",
+        "terms.sidebar.contract": "2. Vertragsabschluss",
+        "terms.sidebar.services": "3. Leistungen & Preise",
+        "terms.sidebar.cancel": "4. Stornierung",
+        "terms.sidebar.liability": "5. Haftung",
+        "terms.sec1.title": "1. Geltungsbereich",
+        "terms.sec1.text": "Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über Reiseleistungen und Buchungen zwischen Griechenland Adventure & Culture Trips und unseren Kunden. Mit der Buchung werden diese AGB anerkannt.",
+        "terms.sec2.title": "2. Vertragsabschluss",
+        "terms.sec2.text": "Mit der Buchungsanfrage (per E-Mail oder über die Website) bietet der Kunde den Abschluss eines Reisevertrages verbindlich an. Der Vertrag kommt erst mit unserer schriftlichen Buchungsbestätigung per E-Mail zustande.",
+        "terms.sec3.title": "3. Leistungen und Preise",
+        "terms.sec3.text": "Der Umfang der vertraglichen Leistungen ergibt sich aus der Leistungsbeschreibung des jeweiligen Pakets (10 Tage All-Inclusive oder 15 Tage Premium Experience) zum Zeitpunkt der Buchung. Zahlungsbedingungen und Fristen werden in der Buchungsbestätigung mitgeteilt.",
+        "terms.sec4.title": "4. Rücktritt und Stornierung",
+        "terms.sec4.text": "Der Kunde kann jederzeit vor Reisebeginn zurücktreten. Im Falle eines Rücktritts stehen uns folgende Stornierungsgebühren zu: Bis 30 Tage vor Reisebeginn: 20 %, bis 15 Tage vor Reisebeginn: 50 %, ab 14 Tage vor Reisebeginn oder bei Nichtantritt: 90 % des Reisepreises.",
+        "terms.sec5.title": "5. Haftung und Gewährleistung",
+        "terms.sec5.text": "Wir haften im Rahmen der gesetzlichen Bestimmungen für die gewissenhafte Reisevorbereitung und die ordnungsgemäße Erbringung der vereinbarten Reiseleistungen. Für Leistungsstörungen durch höhere Gewalt oder Drittanbieter übernehmen wir keine Haftung."
     },
 
     en: {
@@ -718,7 +738,27 @@ const translations = {
         "privacy.sec2.subtitle2": "How do we collect your data?",
         "privacy.sec2.text2": "On the one hand, your data is collected when you communicate it to us. This can, for example, be data that you enter in a contact form.",
         "privacy.sec3.title": "3. Contact Form",
-        "privacy.sec3.text": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We do not pass on this data without your consent."
+        "privacy.sec3.text": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We do not pass on this data without your consent.",
+        
+        // Terms & Conditions (AGB)
+        "terms.hero.pretitle": "LEGAL INFORMATION",
+        "terms.hero.title": "Terms & Conditions",
+        "terms.hero.badge": "Effective June 2026",
+        "terms.sidebar.scope": "1. Scope",
+        "terms.sidebar.contract": "2. Contract Conclusion",
+        "terms.sidebar.services": "3. Services & Prices",
+        "terms.sidebar.cancel": "4. Cancellation",
+        "terms.sidebar.liability": "5. Liability",
+        "terms.sec1.title": "1. Scope of Application",
+        "terms.sec1.text": "These Terms and Conditions apply to all contracts for travel services and bookings between Greece Adventure & Culture Trips and our customers. By booking, these Terms are accepted.",
+        "terms.sec2.title": "2. Conclusion of Contract",
+        "terms.sec2.text": "By submitting a booking request (via email or through the website), the customer makes a binding offer to enter into a travel contract. The contract is concluded only upon our written booking confirmation via email.",
+        "terms.sec3.title": "3. Services and Prices",
+        "terms.sec3.text": "The scope of contractual services results from the description of the respective package (10 Days All-Inclusive or 15 Days Premium Experience) at the time of booking. Payment terms and deadlines will be provided in the booking confirmation.",
+        "terms.sec4.title": "4. Cancellation and Withdrawal",
+        "terms.sec4.text": "The customer may cancel the trip at any time prior to departure. In the event of cancellation, the following cancellation fees shall apply: Up to 30 days before departure: 20%, up to 15 days before departure: 50%, from 14 days before departure or in case of no-show: 90% of the total price.",
+        "terms.sec5.title": "5. Liability and Warranty",
+        "terms.sec5.text": "We are liable within the scope of legal regulations for diligent travel preparation and the proper provision of the agreed services. We assume no liability for service disruptions caused by force majeure or third-party providers."
     },
 
     fr: {
@@ -1079,7 +1119,27 @@ const translations = {
         "privacy.sec2.subtitle2": "Comment collectons-nous vos données ?",
         "privacy.sec2.text2": "D'une part, vos données sont collectées lorsque vous nous les communiquez. Il peut s'agir, par exemple, de données que vous saisissez dans un formulaire de contact.",
         "privacy.sec3.title": "3. Formulaire de contact",
-        "privacy.sec3.text": "Si vous nous envoyez des demandes via le formulaire de contact, vos indications du formulaire de demande, y compris les coordonnées que vous y avez fournies, seront stockées chez nous dans le but de traiter la demande et en cas de questions complémentaires. Nous ne transmettons pas ces données sans votre consentement."
+        "privacy.sec3.text": "Si vous nous envoyez des demandes via le formulaire de contact, vos indications du formulaire de demande, y compris les coordonnées que vous y avez fournies, seront stockées chez nous dans le but de traiter la demande et en cas de questions complémentaires. Nous ne transmettons pas ces données sans votre consentement.",
+        
+        // Terms & Conditions (AGB)
+        "terms.hero.pretitle": "INFORMATIONS JURIDIQUES",
+        "terms.hero.title": "Conditions Générales de Vente",
+        "terms.hero.badge": "Applicable à partir de juin 2026",
+        "terms.sidebar.scope": "1. Champ d'application",
+        "terms.sidebar.contract": "2. Conclusion",
+        "terms.sidebar.services": "3. Tarifs & Prestations",
+        "terms.sidebar.cancel": "4. Annulation",
+        "terms.sidebar.liability": "5. Responsabilité",
+        "terms.sec1.title": "1. Champ d'application",
+        "terms.sec1.text": "Les présentes conditions générales s'appliquent à tous les contrats de prestations de voyage et réservations entre Grèce Adventure & Culture Trips et nos clients. La réservation implique l'acceptation de ces conditions.",
+        "terms.sec2.title": "2. Conclusion du contrat",
+        "terms.sec2.text": "En soumettant une demande de réservation (par e-mail ou via le site web), le client propose la conclusion d'un contrat de voyage. Le contrat est conclu uniquement après notre confirmation écrite par e-mail.",
+        "terms.sec3.title": "3. Prestations et prix",
+        "terms.sec3.text": "L'étendue des prestations contractuelles découle de la description du forfait correspondant (10 jours All-Inclusive ou 15 jours Expérience Premium) au moment de la réservation. Les conditions de paiement et les délais sont indiqués dans la confirmation de réservation.",
+        "terms.sec4.title": "4. Annulation par le client",
+        "terms.sec4.text": "Le client peut annuler le voyage à tout moment avant le départ. En cas d'annulation, les frais suivants s'appliquent : jusqu'à 30 jours avant le départ : 20 %, jusqu'à 15 jours avant le départ : 50 %, à partir de 14 jours avant le départ ou en cas de non-présentation : 90 % du prix total.",
+        "terms.sec5.title": "5. Responsabilité et garantie",
+        "terms.sec5.text": "Nous sommes responsables, conformément aux dispositions légales, de la préparation soignée du voyage et de la fourniture conforme des prestations convenues. Nous déclinons toute responsabilité en cas de force majeure ou de défaillance de tiers."
     }
 };
 

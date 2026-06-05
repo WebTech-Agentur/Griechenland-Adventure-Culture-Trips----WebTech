@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum - Griechenland Adventure & Culture Trips</title>
+    <title data-i18n="imprint.sidebar.terms">Allgemeine Geschäftsbedingungen - Griechenland Adventure & Culture Trips</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -16,7 +16,7 @@
             </a>
             <nav class="nav-links">
                 <a href="homepage.html" data-i18n="nav.home">Homepage</a>
-                <a href="activities.html" data-i18n="nav.activities">AktivitÃ¤ten</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
             </nav>
@@ -40,10 +40,10 @@
                 <div class="orb orb-2"></div>
             </div>
             <div class="legal-hero-content">
-                <div class="legal-hero-pretitle" data-i18n="imprint.hero.pretitle">TRUST & TRANSPARENCY</div>
-                <h1 class="legal-hero-title" data-i18n="imprint.hero.title">Impressum</h1>
+                <div class="legal-hero-pretitle" data-i18n="terms.hero.pretitle">RECHTLICHE HINWEISE</div>
+                <h1 class="legal-hero-title" data-i18n="terms.hero.title">Allgemeine Geschäftsbedingungen</h1>
                 <div class="legal-hero-badge">
-                    <i data-lucide="check-circle"></i> <span data-i18n="imprint.hero.badge">Official Info</span>
+                    <i data-lucide="check-circle"></i> <span data-i18n="terms.hero.badge">Gültig ab Juni 2026</span>
                 </div>
             </div>
         </section>
@@ -53,61 +53,39 @@
             <!-- Sticky Navigation -->
             <aside class="legal-sidebar">
                 <ul class="legal-nav">
-                    <li><a href="imprint.html" class="active" data-i18n="imprint.sidebar.imprint">Impressum</a></li>
-                    <li><a href="privacy.html" data-i18n="imprint.sidebar.privacy">Datenschutz</a></li>
-                    <li><a href="terms.html" data-i18n="imprint.sidebar.terms">AGB</a></li>
-                    <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+                    <li><a href="#geltung" class="active" data-i18n="terms.sidebar.scope">1. Geltungsbereich</a></li>
+                    <li><a href="#vertragsabschluss" data-i18n="terms.sidebar.contract">2. Vertragsabschluss</a></li>
+                    <li><a href="#leistungen" data-i18n="terms.sidebar.services">3. Leistungen & Preise</a></li>
+                    <li><a href="#stornierung" data-i18n="terms.sidebar.cancel">4. Stornierung</a></li>
+                    <li><a href="#haftung" data-i18n="terms.sidebar.liability">5. Haftung</a></li>
                 </ul>
             </aside>
 
             <!-- Legal Cards -->
             <div class="legal-content">
-                <style>
-                    @media (max-width: 768px) {
-                        .center-on-mobile,
-                        .center-on-mobile .legal-info-block h3, 
-                        .center-on-mobile .legal-info-block p,
-                        .center-on-mobile .legal-signature,
-                        .center-on-mobile .legal-signature p {
-                            text-align: center !important;
-                            justify-content: center !important;
-                        }
-                    }
-                </style>
-                <section class="legal-card center-on-mobile" style="padding-bottom: 2rem;">
-                    
-                    <div class="legal-info-block">
-                        <h3><i data-lucide="map-pin"></i> <span data-i18n="imprint.company.title">Company</span></h3>
-                        <p><strong data-i18n="imprint.company.name">Griechenland Adventure & Culture Trips</strong><br>
-                        <span data-i18n="imprint.company.addr">Sample Street 1<br>12345 Athens, Greece</span></p>
-                    </div>
+                <section id="geltung" class="legal-card">
+                    <h2 data-i18n="terms.sec1.title">1. Geltungsbereich</h2>
+                    <p data-i18n="terms.sec1.text">Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über Reiseleistungen und Buchungen zwischen Griechenland Adventure & Culture Trips und unseren Kunden. Mit der Buchung werden diese AGB anerkannt.</p>
+                </section>
 
-                    <hr class="legal-divider">
+                <section id="vertragsabschluss" class="legal-card">
+                    <h2 data-i18n="terms.sec2.title">2. Vertragsabschluss</h2>
+                    <p data-i18n="terms.sec2.text">Mit der Buchungsanfrage (per E-Mail oder über die Website) bietet der Kunde den Abschluss eines Reisevertrages verbindlich an. Der Vertrag kommt erst mit unserer schriftlichen Buchungsbestätigung per E-Mail zustande.</p>
+                </section>
 
-                    <div class="legal-info-block">
-                        <h3><i data-lucide="phone"></i> <span data-i18n="imprint.contact.title">Contact</span></h3>
-                        <p><span data-i18n="imprint.contact.phone">Phone: +30 210 123 4567</span><br>
-                        <span data-i18n="imprint.contact.email">Email: </span><a href="mailto:hello@greecetrips.com" style="color: var(--color-gold); text-decoration: none;">hello@greecetrips.com</a></p>
-                    </div>
+                <section id="leistungen" class="legal-card">
+                    <h2 data-i18n="terms.sec3.title">3. Leistungen und Preise</h2>
+                    <p data-i18n="terms.sec3.text">Der Umfang der vertraglichen Leistungen ergibt sich aus der Leistungsbeschreibung des jeweiligen Pakets (10 Tage All-Inclusive oder 15 Tage Premium Experience) zum Zeitpunkt der Buchung. Zahlungsbedingungen und Fristen werden in der Buchungsbestätigung mitgeteilt.</p>
+                </section>
 
-                    <hr class="legal-divider">
+                <section id="stornierung" class="legal-card">
+                    <h2 data-i18n="terms.sec4.title">4. Rücktritt und Stornierung</h2>
+                    <p data-i18n="terms.sec4.text">Der Kunde kann jederzeit vor Reisebeginn zurücktreten. Im Falle eines Rücktritts stehen uns folgende Stornierungsgebühren zu: Bis 30 Tage vor Reisebeginn: 20 %, bis 15 Tage vor Reisebeginn: 50 %, ab 14 Tage vor Reisebeginn oder bei Nichtantritt: 90 % des Reisepreises.</p>
+                </section>
 
-                    <div class="legal-info-block">
-                        <h3><i data-lucide="user"></i> <span data-i18n="imprint.responsible.title">Responsible Person</span></h3>
-                        <p>Max Mustermann</p>
-                    </div>
-
-                    <hr class="legal-divider">
-
-                    <div class="legal-info-block">
-                        <h3><i data-lucide="shield"></i> <span data-i18n="imprint.vat.title">VAT ID</span></h3>
-                        <p data-i18n="imprint.vat.text">VAT identification number according to §27 a of the German VAT Act:<br>EL 123456789</p>
-                    </div>
-
-                    <div class="legal-signature">
-                        <i data-lucide="sun"></i>
-                        <p style="font-size: 0.85rem; font-family: 'Outfit', sans-serif; letter-spacing: 2px; text-transform: uppercase; margin-top: 0.5rem; font-weight: 500; color: rgba(212, 175, 55, 0.8);" data-i18n="home.concept.boutique">Boutique Experiences</p>
-                    </div>
+                <section id="haftung" class="legal-card">
+                    <h2 data-i18n="terms.sec5.title">5. Haftung und Gewährleistung</h2>
+                    <p data-i18n="terms.sec5.text">Wir haften im Rahmen der gesetzlichen Bestimmungen für die gewissenhafte Reisevorbereitung und die ordnungsgemäße Erbringung der vereinbarten Reiseleistungen. Für Leistungsstörungen durch höhere Gewalt oder Drittanbieter übernehmen wir keine Haftung.</p>
                 </section>
             </div>
         </section>
@@ -117,12 +95,12 @@
         <div class="footer-content">
             <div class="footer-col">
                 <a href="homepage.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span style="color: var(--color-accent)">Trips</span></a>
-                <p>Authentische Erlebnisse auf griechischen Inseln.</p>
+                <p data-i18n="footer.desc">Authentische Erlebnisse auf griechischen Inseln.</p>
             </div>
             <div class="footer-col">
                 <h3 data-i18n="footer.links">Links</h3>
                 <a href="homepage.html" data-i18n="nav.home">Homepage</a>
-                <a href="activities.html" data-i18n="nav.activities">AktivitÃ¤ten</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
             </div>
@@ -151,7 +129,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p data-i18n="footer.rights">Â© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
     <script src="js/i18n.js"></script>
@@ -159,4 +137,3 @@
     <script>lucide.createIcons();</script>
 </body>
 </html>
-
