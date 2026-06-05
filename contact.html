@@ -22,6 +22,7 @@
                 <a href="homepage.html" data-i18n="nav.home">Homepage</a>
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="about.html" data-i18n="nav.about">Über uns</a>
                 <a href="contact.html" class="active" data-i18n="nav.contact">Kontakt</a>
             </nav>
 
@@ -302,6 +303,7 @@
                 <a href="homepage.html" data-i18n="nav.home">Homepage</a>
                 <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
                 <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="about.html" data-i18n="nav.about">Über uns</a>
                 <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
             </div>
             <div class="footer-col">
@@ -451,6 +453,13 @@
             // Listeners
             if (packageSelect) {
                 packageSelect.addEventListener('change', updatePrice);
+            }
+
+            // Check query parameter to select correct package
+            const urlParams = new URLSearchParams(window.location.search);
+            const packageParam = urlParams.get('package');
+            if (packageParam && packageSelect) {
+                packageSelect.value = packageParam;
             }
 
             // Initial calculation

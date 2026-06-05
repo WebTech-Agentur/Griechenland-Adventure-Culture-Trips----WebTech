@@ -397,7 +397,34 @@ const translations = {
         "terms.sec4.title": "4. Rücktritt und Stornierung",
         "terms.sec4.text": "Der Kunde kann jederzeit vor Reisebeginn zurücktreten. Im Falle eines Rücktritts stehen uns folgende Stornierungsgebühren zu: Bis 30 Tage vor Reisebeginn: 20 %, bis 15 Tage vor Reisebeginn: 50 %, ab 14 Tage vor Reisebeginn oder bei Nichtantritt: 90 % des Reisepreises.",
         "terms.sec5.title": "5. Haftung und Gewährleistung",
-        "terms.sec5.text": "Wir haften im Rahmen der gesetzlichen Bestimmungen für die gewissenhafte Reisevorbereitung und die ordnungsgemäße Erbringung der vereinbarten Reiseleistungen. Für Leistungsstörungen durch höhere Gewalt oder Drittanbieter übernehmen wir keine Haftung."
+        "terms.sec5.text": "Wir haften im Rahmen der gesetzlichen Bestimmungen für die gewissenhafte Reisevorbereitung und die ordnungsgemäße Erbringung der vereinbarten Reiseleistungen. Für Leistungsstörungen durch höhere Gewalt oder Drittanbieter übernehmen wir keine Haftung.",
+
+        // About Us Page
+        "nav.about": "Über uns",
+        "about.hero.pretitle": "UNSERE PHILOSOPHIE",
+        "about.hero.title": "Wer wir <span class=\"highlight-gold\">sind</span>",
+        "about.hero.desc": "Wir verbinden Reisende mit den tiefen Wurzeln der griechischen Inselkultur – authentisch, nachhaltig und im Einklang mit der Natur.",
+        "about.story.pretitle": "UNSERE GESCHICHTE",
+        "about.story.title": "Die Liebe zum wahren Griechenland",
+        "about.story.p1": "Griechenland Adventure & Culture Trips entstand aus einer einfachen Idee: Wir wollten die versteckten Ecken zeigen, die auf keiner Postkarte zu sehen sind. Die abgelegenen Ziegenpfade, das Klappern der Webstühle in den Bergdörfern und die Herzlichkeit eines echten traditionellen Osterfestes.",
+        "about.story.p2": "Unsere Gründer, Eleni und Nikolas, haben jahrelang die Inseln der Ägäis bereist, um enge Beziehungen zu lokalen Familien, Künstlern, Winzern und Fischern aufzubauen. Heute teilen wir diese intimsten Erlebnisse mit kleinen, exklusiven Gruppen.",
+        "about.values.title": "Unsere Werte",
+        "about.value1.title": "Echte Authentizität",
+        "about.value1.desc": "Keine inszenierten Shows. Du erlebst den echten Alltag der Inselbewohner und nimmst direkt an ihren jahrhundertealten Bräuchen teil.",
+        "about.value2.title": "Sanfter Tourismus",
+        "about.value2.desc": "Wir unterstützen die lokale Wirtschaft direkt. Unsere Kooperationen sichern den Erhalt traditioneller Berufe und schützen die Natur.",
+        "about.value3.title": "Exklusive Nähe",
+        "about.value3.desc": "Kleine Premium-Gruppen ermöglichen uns tiefe Einblicke und einen respektvollen Umgang auf Augenhöhe mit den Gastgebern vor Ort.",
+        "about.team.title": "Unser Team vor Ort",
+        "about.team.desc": "Unsere Guides und Partner teilen nicht nur ihr Wissen, sondern auch ihr Herz mit dir.",
+        "about.member1.role": "Gründerin & Kulturexpertin",
+        "about.member1.bio": "Eleni wuchs auf Naxos auf und widmet sich der Bewahrung von Web- und Töpfertraditionen.",
+        "about.member2.role": "Gründer & Abenteuer-Guide",
+        "about.member2.bio": "Nikolas kennt jeden Ziegenpfad und sorgt für unvergessliche Wanderungen in den Bergen.",
+        "about.member3.role": "Lokaler Fischer & Tavernen-Wirt",
+        "about.member3.bio": "Dimitris teilt seine Bootsfischerei-Geheimnisse und bereitet den Fang frisch für uns zu.",
+        "about.cta.title": "Erlebe Griechenland mit uns",
+        "about.cta.desc": "Lass uns gemeinsam ein unvergessliches und authentisches Abenteuer planen."
     },
 
     en: {
@@ -798,7 +825,34 @@ const translations = {
         "terms.sec4.title": "4. Cancellation and Withdrawal",
         "terms.sec4.text": "The customer may cancel the trip at any time prior to departure. In the event of cancellation, the following cancellation fees shall apply: Up to 30 days before departure: 20%, up to 15 days before departure: 50%, from 14 days before departure or in case of no-show: 90% of the total price.",
         "terms.sec5.title": "5. Liability and Warranty",
-        "terms.sec5.text": "We are liable within the scope of legal regulations for diligent travel preparation and the proper provision of the agreed services. We assume no liability for service disruptions caused by force majeure or third-party providers."
+        "terms.sec5.text": "We are liable within the scope of legal regulations for diligent travel preparation and the proper provision of the agreed services. We assume no liability for service disruptions caused by force majeure or third-party providers.",
+
+        // About Us Page
+        "nav.about": "About Us",
+        "about.hero.pretitle": "OUR PHILOSOPHY",
+        "about.hero.title": "Who we <span class=\"highlight-gold\">are</span>",
+        "about.hero.desc": "We connect travelers with the deep roots of Greek island culture – authentic, sustainable, and in harmony with nature.",
+        "about.story.pretitle": "OUR STORY",
+        "about.story.title": "A Love for the True Greece",
+        "about.story.p1": "Greece Adventure & Culture Trips was born from a simple idea: we wanted to show the hidden corners that don't appear on any postcard. The remote goat paths, the clattering of looms in mountain villages, and the warmth of a true traditional Easter celebration.",
+        "about.story.p2": "Our founders, Eleni and Nikolas, spent years traveling the Aegean islands to build close relationships with local families, artisans, winemakers, and fishermen. Today, we share these intimate experiences with small, exclusive groups.",
+        "about.values.title": "Our Values",
+        "about.value1.title": "Real Authenticity",
+        "about.value1.desc": "No staged shows. You experience the real daily life of the islanders and participate directly in their centuries-old customs.",
+        "about.value2.title": "Slow & Green Tourism",
+        "about.value2.desc": "We support the local economy directly. Our partnerships ensure the preservation of traditional professions and protect nature.",
+        "about.value3.title": "Exclusive Proximity",
+        "about.value3.desc": "Small premium groups allow us deep insights and a respectful relationship on equal footing with local hosts.",
+        "about.team.title": "Our Local Team",
+        "about.team.desc": "Our guides and partners do not just share their knowledge, but also their hearts with you.",
+        "about.member1.role": "Co-Founder & Culture Expert",
+        "about.member1.bio": "Eleni grew up on Naxos and is dedicated to preserving weaving and pottery traditions.",
+        "about.member2.role": "Co-Founder & Adventure Guide",
+        "about.member2.bio": "Nikolas knows every goat path and ensures unforgettable hikes in the mountains.",
+        "about.member3.role": "Local Fisherman & Host",
+        "about.member3.bio": "Dimitris shares his boat fishing secrets and prepares the catch fresh for us.",
+        "about.cta.title": "Experience Greece With Us",
+        "about.cta.desc": "Let's plan an unforgettable and authentic adventure together."
     },
 
     fr: {
@@ -1199,7 +1253,34 @@ const translations = {
         "terms.sec4.title": "4. Annulation par le client",
         "terms.sec4.text": "Le client peut annuler le voyage à tout moment avant le départ. En cas d'annulation, les frais suivants s'appliquent : jusqu'à 30 jours avant le départ : 20 %, jusqu'à 15 jours avant le départ : 50 %, à partir de 14 jours avant le départ ou en cas de non-présentation : 90 % du prix total.",
         "terms.sec5.title": "5. Responsabilité et garantie",
-        "terms.sec5.text": "Nous sommes responsables, conformément aux dispositions légales, de la préparation soignée du voyage et de la fourniture conforme des prestations convenues. Nous déclinons toute responsabilité en cas de force majeure ou de défaillance de tiers."
+        "terms.sec5.text": "Nous sommes responsables, conformément aux dispositions légales, de la préparation soignée du voyage et de la fourniture conforme des prestations convenues. Nous déclinons toute responsabilité en cas de force majeure ou de défaillance de tiers.",
+
+        // About Us Page
+        "nav.about": "À propos",
+        "about.hero.pretitle": "NOTRE PHILOSOPHIE",
+        "about.hero.title": "Qui nous <span class=\"highlight-gold\">sommes</span>",
+        "about.hero.desc": "Nous connectons les voyageurs avec les racines profondes de la culture insulaire grecque – authentique, durable et en harmonie avec la nature.",
+        "about.story.pretitle": "NOTRE HISTOIRE",
+        "about.story.title": "L'amour de la Grèce authentique",
+        "about.story.p1": "Grèce Adventure & Culture Trips est né d'une idée simple : nous voulions montrer les coins cachés qui n'apparaissent sur aucune carte postale. Les sentiers de chèvres reculés, le cliquetis des métiers à tisser dans les villages de montagne et la chaleur d'une véritable fête de Pâques traditionnelle.",
+        "about.story.p2": "Nos fondateurs, Eleni et Nikolas, ont passé des années à parcourir les îles de la mer Égée pour nouer des relations étroites avec les familles locales, les artisans, les vignerons et les pêcheurs. Aujourd'hui, nous partageons ces expériences intimes avec de petits groupes exclusifs.",
+        "about.values.title": "Nos Valeurs",
+        "about.value1.title": "Authenticité Réelle",
+        "about.value1.desc": "Pas de spectacles mis en scène. Vous vivez le quotidien des insulaires et participez directement à leurs coutumes ancestrales.",
+        "about.value2.title": "Tourisme Durable",
+        "about.value2.desc": "Nous soutenons directement l'économie locale. Nos partenariats assurent la préservation des métiers traditionnels et protègent la nature.",
+        "about.value3.title": "Proximité Exclusive",
+        "about.value3.desc": "De petits groupes premium permettent des observations approfondies et une relation respectueuse sur un pied d'égalité avec les hôtes locaux.",
+        "about.team.title": "Notre Équipe Locale",
+        "about.team.desc": "Nos guides et partenaires ne partagent pas seulement leur savoir, mais aussi leur cœur avec vous.",
+        "about.member1.role": "Co-fondatrice & Experte Culture",
+        "about.member1.bio": "Eleni a grandi à Naxos et se consacre à la préservation des traditions de tissage et de poterie.",
+        "about.member2.role": "Co-fondateur & Guide d'aventure",
+        "about.member2.bio": "Nikolas connaît tous les sentiers de chèvres et assure des randonnées inoubliables en montagne.",
+        "about.member3.role": "Pêcheur Local & Hôte",
+        "about.member3.bio": "Dimitris partage ses secrets de pêche en bateau et prépare le poisson frais pour nous.",
+        "about.cta.title": "Vivez la Grèce Avec Nous",
+        "about.cta.desc": "Planifions ensemble une aventure inoubliable et authentique."
     }
 };
 

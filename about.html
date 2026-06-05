@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Griechenland Adventure & Culture Trips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="homepage.html" class="logo">
+                <i data-lucide="tree-palm"></i>Greece<span>Trips</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="homepage.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise / Packages</a>
+                <a href="about.html" class="active" data-i18n="nav.about">Über uns</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                </div>
+                <a href="contact.html#contact-form" class="header-cta" data-i18n="nav.book">Buchen</a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Cinematic Luxury Hero -->
+        <section class="hero-cinematic" style="background: linear-gradient(rgba(10, 46, 70, 0.6), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0'); background-size: cover; background-position: center; min-height: 50vh;">
+            <!-- Animated Background Lights -->
+            <div class="hero-light-orbs">
+                <div class="orb orb-1" style="background: rgba(212, 175, 55, 0.3);"></div>
+                <div class="orb orb-2" style="background: rgba(255, 255, 255, 0.1);"></div>
+                <div class="orb orb-3"></div>
+            </div>
+
+            <div class="hero-cinematic-content">
+                <div class="hero-pre-title" data-i18n="about.hero.pretitle">UNSERE PHILOSOPHIE</div>
+                <h1 class="hero-headline-asym" style="color: white;" data-i18n="about.hero.title">
+                    Wer wir <span class="highlight-gold">sind</span>
+                </h1>
+                <p class="hero-description" style="color: rgba(255,255,255,0.9); max-width: 650px;" data-i18n="about.hero.desc">
+                    Wir verbinden Reisende mit den tiefen Wurzeln der griechischen Inselkultur – authentisch, nachhaltig und im Einklang mit der Natur.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Story & Philosophy -->
+        <section class="container" style="margin-top: 4rem;">
+            <div class="grid-2" style="align-items: center;">
+                <div>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(212,175,55,0.1); color: #b8962e; padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem;">
+                        <i data-lucide="history" style="width: 14px; height: 14px;"></i> <span data-i18n="about.story.pretitle">UNSERE GESCHICHTE</span>
+                    </div>
+                    <h2 style="text-align: left; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;" data-i18n="about.story.title">Die Liebe zum wahren Griechenland</h2>
+                    <p style="color: var(--color-text-light); margin-bottom: 1.5rem; font-size: 1.05rem;" data-i18n="about.story.p1">
+                        Griechenland Adventure & Culture Trips entstand aus einer einfachen Idee: Wir wollten die versteckten Ecken zeigen, die auf keiner Postkarte zu sehen sind. Die abgelegenen Ziegenpfade, das Klappern der Webstühle in den Bergdörfern und die Herzlichkeit eines echten traditionellen Osterfestes.
+                    </p>
+                    <p style="color: var(--color-text-light); margin-bottom: 0; font-size: 1.05rem;" data-i18n="about.story.p2">
+                        Unsere Gründer, Eleni und Nikolas, haben jahrelang die Inseln der Ägäis bereist, um enge Beziehungen zu lokalen Familien, Künstlern, Winzern und Fischern aufzubauen. Heute teilen wir diese intimsten Erlebnisse mit kleinen, exklusiven Gruppen.
+                    </p>
+                </div>
+                <div class="activity-feature-img" style="border-radius: var(--radius-lg); overflow: hidden; min-height: 380px; box-shadow: var(--shadow-md); position: relative;">
+                    <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=800" alt="Greece Story" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top:0; left:0;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="container" style="margin-top: 6rem; position: relative;">
+            <!-- Background atmosphere for values section -->
+            <div style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; background: rgba(212, 175, 55, 0.03); filter: blur(100px); border-radius: 50%; pointer-events: none; z-index: 0;"></div>
+            
+            <div class="section-title" style="position: relative; z-index: 1;">
+                <span style="font-size: 0.85rem; font-weight: 600; letter-spacing: 3px; color: var(--color-gold); text-transform: uppercase;" data-i18n="about.hero.pretitle">UNSERE PHILOSOPHIE</span>
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 0.5rem;" data-i18n="about.values.title">Unsere Werte</h2>
+            </div>
+            
+            <div class="grid-3" style="margin-top: 4rem; position: relative; z-index: 1; gap: 2.5rem;">
+                <!-- Value 1 -->
+                <div class="card" style="padding: 3rem 2.5rem; background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: var(--radius-lg); position: relative; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: var(--shadow-sm);" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='var(--color-gold)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(212, 175, 55, 0.2)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <!-- Large number badge -->
+                    <span style="position: absolute; top: 1.5rem; right: 2rem; font-family: 'Playfair Display', serif; font-size: 4.5rem; font-weight: 700; color: rgba(212, 175, 55, 0.08); line-height: 1; pointer-events: none; user-select: none;">01</span>
+                    
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.05) 100%); color: #b8962e; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; border: 1px solid rgba(212, 175, 55, 0.3);">
+                        <i data-lucide="sun" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--color-primary); margin-bottom: 1.2rem;" data-i18n="about.value1.title">Echte Authentizität</h3>
+                    <p style="color: var(--color-text-light); font-size: 1rem; line-height: 1.7; margin: 0;" data-i18n="about.value1.desc">
+                        Keine inszenierten Shows. Du erlebst den echten Alltag der Inselbewohner und nimmst direkt an ihren jahrhundertealten Bräuchen teil.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="card" style="padding: 3rem 2.5rem; background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(121, 138, 117, 0.2); border-radius: var(--radius-lg); position: relative; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: var(--shadow-sm);" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='var(--color-secondary)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(121, 138, 117, 0.2)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <!-- Large number badge -->
+                    <span style="position: absolute; top: 1.5rem; right: 2rem; font-family: 'Playfair Display', serif; font-size: 4.5rem; font-weight: 700; color: rgba(121, 138, 117, 0.08); line-height: 1; pointer-events: none; user-select: none;">02</span>
+                    
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(121, 138, 117, 0.25) 0%, rgba(121, 138, 117, 0.05) 100%); color: var(--color-secondary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; border: 1px solid rgba(121, 138, 117, 0.35);">
+                        <i data-lucide="leaf" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--color-primary); margin-bottom: 1.2rem;" data-i18n="about.value2.title">Sanfter Tourismus</h3>
+                    <p style="color: var(--color-text-light); font-size: 1rem; line-height: 1.7; margin: 0;" data-i18n="about.value2.desc">
+                        Wir unterstützen die lokale Wirtschaft direkt. Unsere Kooperationen sichern den Erhalt traditioneller Berufe und schützen die Natur.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="card" style="padding: 3rem 2.5rem; background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(211, 97, 53, 0.2); border-radius: var(--radius-lg); position: relative; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: var(--shadow-sm);" onmouseover="this.style.transform='translateY(-10px)'; this.style.borderColor='var(--color-accent)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(211, 97, 53, 0.2)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <!-- Large number badge -->
+                    <span style="position: absolute; top: 1.5rem; right: 2rem; font-family: 'Playfair Display', serif; font-size: 4.5rem; font-weight: 700; color: rgba(211, 97, 53, 0.08); line-height: 1; pointer-events: none; user-select: none;">03</span>
+                    
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, rgba(211, 97, 53, 0.2) 0%, rgba(211, 97, 53, 0.05) 100%); color: var(--color-accent); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; border: 1px solid rgba(211, 97, 53, 0.3);">
+                        <i data-lucide="sparkles" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    
+                    <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--color-primary); margin-bottom: 1.2rem;" data-i18n="about.value3.title">Exklusive Nähe</h3>
+                    <p style="color: var(--color-text-light); font-size: 1rem; line-height: 1.7; margin: 0;" data-i18n="about.value3.desc">
+                        Kleine Premium-Gruppen ermöglichen uns tiefe Einblicke und einen respektvollen Umgang auf Augenhöhe mit den Gastgebern vor Ort.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="container" style="margin-top: 4rem;">
+            <div class="section-title">
+                <h2 style="font-family: 'Playfair Display', serif;" data-i18n="about.team.title">Unser Team vor Ort</h2>
+                <p class="title-subtitle" data-i18n="about.team.desc">Unsere Guides und Partner teilen nicht nur ihr Wissen, sondern auch ihr Herz mit dir.</p>
+            </div>
+
+            <div class="grid-3" style="margin-top: 3rem;">
+                <!-- Team Member 1 -->
+                <div class="card" style="padding: 2.5rem; text-align: center; align-items: center; background: white; border: 1px solid rgba(0,0,0,0.03);">
+                    <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); border: 3px solid var(--color-gold);">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400" alt="Eleni Pappas" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="margin-bottom: 0.2rem; font-family: 'Playfair Display', serif;">Eleni Pappas</h3>
+                    <span style="color: var(--color-accent); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;" data-i18n="about.member1.role">Gründerin & Kulturexpertin</span>
+                    <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.6; margin-top: 0.5rem;" data-i18n="about.member1.bio">
+                        Eleni wuchs auf Naxos auf and widmet sich der Bewahrung von Web- und Töpfertraditionen.
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="card" style="padding: 2.5rem; text-align: center; align-items: center; background: white; border: 1px solid rgba(0,0,0,0.03);">
+                    <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); border: 3px solid var(--color-gold);">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400" alt="Nikolas Vance" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="margin-bottom: 0.2rem; font-family: 'Playfair Display', serif;">Nikolas Vance</h3>
+                    <span style="color: var(--color-accent); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;" data-i18n="about.member2.role">Gründer & Abenteuer-Guide</span>
+                    <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.6; margin-top: 0.5rem;" data-i18n="about.member2.bio">
+                        Nikolas kennt jeden Ziegenpfad und sorgt für unvergessliche Wanderungen in den Bergen.
+                    </p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="card" style="padding: 2.5rem; text-align: center; align-items: center; background: white; border: 1px solid rgba(0,0,0,0.03);">
+                    <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); border: 3px solid var(--color-gold);">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400" alt="Dimitris Chronis" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="margin-bottom: 0.2rem; font-family: 'Playfair Display', serif;">Dimitris Chronis</h3>
+                    <span style="color: var(--color-accent); font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;" data-i18n="about.member3.role">Lokaler Fischer & Tavernen-Wirt</span>
+                    <p style="color: var(--color-text-light); font-size: 0.95rem; line-height: 1.6; margin-top: 0.5rem;" data-i18n="about.member3.bio">
+                        Dimitris teilt seine Bootsfischerei-Geheimnisse und bereitet den Fang frisch für uns zu.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container activities-cta-section" style="padding-top: 4rem; padding-bottom: 4rem;">
+            <div class="activities-cta-card">
+                <!-- Decorative gradient border top -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--color-accent), var(--color-secondary), var(--color-primary));"></div>
+                
+                <!-- Decorative shapes -->
+                <div style="position: absolute; top: -80px; right: -80px; width: 250px; height: 250px; background: linear-gradient(135deg, rgba(211,97,53,0.08), transparent); border-radius: 50%;"></div>
+                <div style="position: absolute; bottom: -80px; left: -80px; width: 250px; height: 250px; background: linear-gradient(135deg, transparent, rgba(121,138,117,0.08)); border-radius: 50%;"></div>
+
+                <div style="position: relative; z-index: 1; max-width: 650px; margin: 0 auto;">
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(211,97,53,0.1); color: var(--color-accent); padding: 0.5rem 1.2rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1.5rem;">
+                        <i data-lucide="compass" style="width: 16px; height: 16px;"></i> <span data-i18n="act.cta.badge">AUTHENTIC EXPERIENCES</span>
+                    </div>
+                    <h2 style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 1.5rem;" data-i18n="about.cta.title">Erlebe Griechenland mit uns</h2>
+                    <p style="color: var(--color-text-light); font-size: 1.1rem; margin-bottom: 2.5rem;" data-i18n="about.cta.desc">Lass uns gemeinsam ein unvergessliches und authentisches Abenteuer planen.</p>
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html#contact-form" class="btn btn-primary" style="font-size: 1.05rem; padding: 1.2rem 2.5rem; border-radius: 50px; box-shadow: 0 10px 25px rgba(211,97,53,0.3);" data-i18n="cta.btn.contact">Kontakt aufnehmen</a>
+                        <a href="pricing.html#packages" class="btn btn-outline" style="font-size: 1.05rem; padding: 1.2rem 2.5rem; border-radius: 50px;" data-i18n="pricing.hero.scroll">Pakete ansehen</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="homepage.html" class="logo" style="color: white; margin-bottom: 1rem;"><i data-lucide="tree-palm"></i>Greece<span>Trips</span></a>
+                <p data-i18n="footer.desc">Authentische Erlebnisse auf griechischen Inseln.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.links">Links</h3>
+                <a href="homepage.html" data-i18n="nav.home">Homepage</a>
+                <a href="activities.html" data-i18n="nav.activities">Aktivitäten</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Preise</a>
+                <a href="about.html" data-i18n="nav.about">Über uns</a>
+                <a href="contact.html" data-i18n="nav.contact">Kontakt</a>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.legal">Legal</h3>
+                <a href="imprint.html" data-i18n="footer.imprint">Impressum</a>
+                <a href="privacy.html" data-i18n="footer.privacy">Datenschutz</a>
+                <a href="terms.html" data-i18n="imprint.sidebar.terms">AGB</a>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.social">Social Media</h3>
+                <div class="footer-social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-svg-icon"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.rights">© 2026 Griechenland Adventure & Culture Trips. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
